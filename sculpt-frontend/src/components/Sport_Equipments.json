@@ -1,0 +1,38 @@
+[
+    {
+        "id": "equip1",
+        "cycle": true,
+        "treadmills": false,
+        "spinbikes": false,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "Rimo 27.5' 21-speed steel MTB (Shimano gears)",
+        "price": "39999",
+        "offerPrice": "15699",
+        "perOff": "61 % Off",
+        "properties": [
+            " Fitness just got smarter with the all new range of cultsport cycles. Designed for the everyday athlete, this fully fledged 21-speed Shimano geared cycle with its rigid steel frame and the most interactive workout experience on the market will be your all-weather riding companion . Connect your smartphone/tablet with the cultsport app and unlock:",
+            "Community classes: Weekly trainer led events across 20+ cities",
+            "Ride tracking: Track your routes, log your rides & monitor progress",
+            "Free diet coaching: Free 1:1 dietician consultations and customized 3-month diet plan",
+            "Free Installation & care: Get free on-time installation and servicing right at your doorstep",
+            "Free 1 month cultpass elite subscription - acess all cult centres, gyms and live workout sessions",
+            "Warranty: 6 months on manufacturing defects"
+        ],
+        "details": [
+            "Model: Rimo, Color: Yellow",
+            "Frame: Steel, Tire Size: 27.5 Inches, Frame Size - 18.5",
+            "Gears: 21 Gear Shimano Derailleurs and Shifters",
+            "Gear Type: Thumb Shifters, Front & Rear Brake: Disc Brake",
+            "Suspension: Only Front Suspension, Rim: Double Wall Alloy",
+            "Max Rider Height: 5.5 Ft to 6 Ft"
+        ],
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/ZJBYsrvTZKUc9QzYK6fh4f8n",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/ZJBYsrvTZKUc9QzYK6fh4f8n",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/dUr5Q9zrKBvbPvufvZ8G7fGA",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/YMPBvZWkcGBT4r6kfWyQVB5o",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/NaQgLTuSi2JK8o8EyLuMh6bn"
+        ]
+    }
+]

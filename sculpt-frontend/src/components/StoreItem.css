@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.store-item-main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.store-item-images {
+    width: 60vw;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.store-item-leftImages {
+    width: 100%;
+}
+
+.store-item-leftImages img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.store-item-right {
+    width: 40vw;
+    padding-top: 65px;
+    padding-left: 15px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.store-item-right hr {
+    width: 95%;
+    background-color: grey;
+    height: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+.store-item-link {
+    display: flex;
+}
+
+.store-item-link p {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.store-item-titles {
+    line-height: 10px;
+}
+
+.store-item-titles p {
+    padding-top: 5px;
+    font-size: 1rem;
+    font-family: 'Alegreya SC', serif;
+    color: gray;
+    padding-bottom: 3px;
+}
+
+.store-item-titles h2 {
+    font-size: 1.9rem;
+    font-family: 'Nuosu SIL', serif;
+    transform: translateY(-40%);
+    margin-bottom: 2px;
+}
+
+.store-item-prices {
+    display: flex;
+    line-height: 10px;
+    font-size: 1.2rem;
+}
+
+.store-item-op {
+    display: flex;
+    color: red;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.store-item-op i {
+    transform: translateY(-10%);
+}
+
+.store-item-op p {
+    transform: translateX(-5%);
+}
+
+.store-item-pr {
+    display: flex;
+    color: gray;
+    padding-right: 20px;
+}
+
+.store-item-pr i {
+    transform: translateY(-10%);
+}
+
+.store-item-pr p {
+    transform: translateX(-5%);
+}
+
+.store-item-off {
+    height: 25px;
+    transform: translateY(-30%);
+}
+
+.store-item-off p {
+    background-color: orange;
+    padding: 7px 5px;
+    margin-bottom: 0px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.store-item-desp {
+    width: 90%;
+    padding-top: 5px;
+    font-size: 0.9rem;
+    font-family: 'Alegreya SC', serif;
+    color: gray;
+}
+
+.store-item-sizes {
+    transform: translateY(-10%);
+}
+
+.store-item-sizes p {
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+}
+
+.size-row {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    font-size: 1.1rem;
+}
+
+.store-item-nestedSizes:hover {
+    border: 2px solid orange;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.store-item-nestedSizes p {
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.store-item-buttons {
+    padding-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-item-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.store-item-button-2 {
+    color: #fff;
+    border: 3px solid rgb(239, 44, 44);
+    background-image: linear-gradient(30deg, rgb(239, 44, 44) 50%, transparent 50%);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+}
+
+.store-item-button-2:hover,
+.store-item-button-2 a:hover {
+    background-position: 100%;
+    color: black;
+}
+
+.store-item-product p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: rgb(56, 55, 55);
+    font-weight: bold;
+}
+
+.store-item-nestedDetail li {
+    color: grey;
+    font-weight: 100;
+    font-size: 0.8rem;
+    padding-left: 15px;
+}
+
+.store-item-delivery {
+    padding-top: 5px;
+}
+
+.store-item-delivery input {
+    border: 2px solid gray;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 0.8rem;
+    height: 30px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.store-item-delivery-info li {
+    color: grey;
+    font-weight: 100;
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+
+.store-item-specs p {
+    font-size: 0.9rem;
+    color: rgb(57, 53, 53);
+    padding-left: 5px;
+}

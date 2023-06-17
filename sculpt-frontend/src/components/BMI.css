@@ -1,0 +1,86 @@
+.sculpt-bmi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #223452, black);
+}
+
+.bmi-logo {
+    width: 15%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.bmi-logo img {
+    width: 100%;
+}
+
+.sculpt-bmi h1 {
+    color: rgb(41, 196, 72);
+    font-size: 50px;
+}
+
+.sculpt-bmi h2 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.sculpt-bmi span {
+    margin: 12px 0;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+.sculpt-area-input {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sculpt-area-input input {
+    background-color: #DCDCDC;
+    color: #202020;
+    font-size: 16px;
+    height: 46px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+}
+
+.sculpt-area-input input::placeholder {
+    color: #202020;
+}
+
+.sculpt-area-input input:hover {
+    background-color: rgb(220, 220, 220, 0.8);
+}
+
+.sculpt-area-input button {
+    background-color: #1a63e0;
+    color: white;
+    height: 46px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+}
+
+.sculpt-area-input button:hover {
+    background-color: rgb(26, 99, 224, 0.8);
+}
+
+/* When the screen size is less than 500px */
+@media (max-width: 500px) {
+    .area-input {
+        width: 300px;
+    }
+}

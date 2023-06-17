@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+.care {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.care-navbar {
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding-left: 30px;
+}
+
+.care-nav {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 60px;
+    padding: 5px 0px; */
+    background-color: rgba(23, 26, 38, 255);
+}
+
+.care-nav img {
+    width: 150px;
+}
+
+.care-slide-item {
+    overflow: hidden;
+    z-index: 0;
+}
+
+.care-slide-item img {
+    width: 100%;
+}
+
+.care-space {
+    transform: translateY(-2%);
+}
+
+.care-main {
+    width: 100%;
+    position: relative;
+    height: 270vh;
+}
+
+.care-main-top {
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.care-main-title {
+    line-height: 8px;
+}
+
+.care-main-title h2 {
+    font-family: 'Nuosu SIL', serif;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.care-main-title p {
+    font-family: 'Alegreya SC', serif;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.care-main-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.care-header-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.care-search-bar {
+    width: 30vw;
+    height: 6vh;
+    background: rgba(211, 81, 81, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 60px;
+    padding: 2px 3px;
+    backdrop-filter: blur(4px) saturation(180%);
+}
+
+.care-search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(3, 3, 50);
+    padding: 0 1em;
+    flex: 1;
+}
+
+.care-search-bar button {
+    border: 0;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(244, 131, 131);
+    cursor: pointer;
+}
+
+.care-main-search button {
+    color: rgb(211, 15, 8);
+    font-size: 22px;
+}
+
+.care-main-content .row {
+    padding-top: 0 !important;
+}
+
+.care-main-faqs {
+    width: 100vw;
+    padding-top: 8vh;
+    /* background-color: rgba(10, 16, 23, 255); */
+    position: relative;
+    height: 100vh;
+}

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* width: 100%; */
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+
+.slider3-card-wrapper {
+    position: relative;
+    width: 20vw;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slider3-card-wrapper:active,
+.slider3-card-wrapper:hover,
+.slider3-card-wrapper:focus {
+    outline: none;
+    border: none;
+}
+
+.sld3-card {
+    width: 90%;
+    height: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.slider3-card-container .slick-prev,
+.slider3-card-container .slick-next {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.slider3-card-container .slick-next,
+.slider3-card-container .slick-prev {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    z-index: 99 !important;
+    box-shadow: rgba(12, 135, 235, 0.5) 0px 0px 20px 5px;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.slider3-card-container .slick-prev {
+    left: -4% !important;
+}
+
+.slider3-card-container .slick-next {
+    right: -2% !important;
+}
+
+.slider3-card-container .slick-arrow img {
+    width: 25px !important;
+    font-size: 4px;
+}
+
+.sld3-card .sld3-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: .5s;
+}
+
+.sld3-card .sld3-card-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.sld3-card:hover img {
+    opacity: .4;
+    transition: .5s;
+}
+
+.sld3-card:hover .sld3-card-image {
+    transform: translateY(-130px);
+    transition: all .9s;
+}
+
+.sld3-card:hover li:nth-child(1) a {
+    transition-delay: .1s;
+}
+
+.sld3-card:hover li:nth-child(2) a {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.sld3-card:hover li:nth-child(3) a {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.sld3-card:hover li:nth-child(4) a {
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+.sld3-details {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+    padding: 10px;
+    transition: .6s;
+}
+
+.sld3-details p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.sld3-details-benefits {
+    width: 100%;
+    font-size: 0.8rem;
+    color: rgba(131, 133, 136, 255);
+}
+
+.sld3-details-calories {
+    position: absolute;
+    top: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sld3-details-calories p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.sld3-details-calories span {
+    display: flex;
+    padding-left: 10px;
+    color: rgba(131, 133, 136, 255);
+}
+
+.sld3-card:hover .sld3-details {
+    bottom: 0;
+}

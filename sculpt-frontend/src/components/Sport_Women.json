@@ -1,0 +1,843 @@
+[
+    {
+        "id": "women1",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "FormFit High Impact Ivy sportsBra",
+        "price": "2499",
+        "offerPrice": "1549",
+        "perOff": "38 % Off",
+        "desp": "Your perfect training partner, this sportsBra with its hidden stabilizer panels promises extra support and bounce control, especially during high impact activities. The power mesh allows for better ventilation and the hook & eye closure adds to your convenience while offering additional adjustability. Time to be fit with FormFit!",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Padded",
+            "High Impact",
+            "Detachable Straps For Criss Cross Option",
+            "Hook And Eye Closure"
+        ],
+        "specs": "Sri Lanka",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/mU1dZAHqT6pjRn55ZWYvq6Mf",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/bFNaeVGrnJ2wagRkkTgBEv1n",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/sq873wTcoGcsMmaKtjtDsbtk",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/qzQmE6e63CujJ9GuzxQtaf89",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/YQaQHMCnFuBP2tYBdefz8X34"
+        ]
+    },
+    {
+        "id": "women2",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "FormFit Training sportsBra",
+        "price": "2099",
+        "offerPrice": "899",
+        "perOff": "58 % Off",
+        "desp": "Move with comfort and ease with this medium support with power mesh ventilation workout bra. Pair them up with your favourite Absolute leggings for a coordinated look.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Teal",
+            "Fabric: 82% Polyester 18% spandex",
+            "High Impact",
+            "Power Mesh for Ventilation",
+            "Breathable fabric, Padded"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/jsnGp3tbniZqKagkt9g9tgRz",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/MHJ84ECZo76UVsAvyfBHWyhm",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/GQSAbEu1gpnHRsUpRiJGdyJR",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/ufSaY4WvypniB3DphwV4ynh7",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/K4kPpr21o5Dv3MaFGqYDBryE"
+        ]
+    },
+    {
+        "id": "women3",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Printed sportsBra",
+        "price": "2599",
+        "offerPrice": "1299",
+        "perOff": "50 % Off",
+        "desp": "Move with comfort and ease with this medium support criss cross back detail Made for Yoga workout bra which comes with a feature of removable padding .Add a stylish touch with the brushed stroke soothing print and half mesh lining this bra will be the perfect pick.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Blue",
+            "Fabric: 80% Polyester, 20% Spandex",
+            "Medium Impact",
+            "Power Mesh for Ventilation",
+            "Reflective Details"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/pzqQRku8Axetp7P65ZuKHoAe",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/xcHPdq5iE2r8uQE4BnznNYHm",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/qkxXxtfzVxTfthZTcMqkC7FN",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/yUQL3S2NxdLTqwGJaY2GA5wt",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/QxkWgacX7gMDTvew14yykKfK"
+        ]
+    },
+    {
+        "id": "women4",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Cleo Slip-on sportsBra",
+        "price": "1999",
+        "offerPrice": "1199",
+        "perOff": "40 % Off",
+        "desp": "Mix some fashion with your passion! Enjoy superior support and bounce control with this high impact sportsBra. Its double-layered design adds style while the mesh panel offers high coverage during your workouts. Time to look smarter, train harder!",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Tulip",
+            "Fabric: 83% Polyester 17% spandex",
+            "Mesh Paneling, Non Padded",
+            "Wide Straps for better support",
+            "Adjustable Straps"
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/xfyTUvSwRaKGThjzqH54yNHB",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/7JkEX9E9cxuY57wVEc9mx4ww",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/6PC4S8EKENPWNJ1o2JGHY5CU",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/WNbvx2QiD9T4VDzE8R7tCy6Q",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/xfyTUvSwRaKGThjzqH54yNHB"
+        ]
+    },
+    {
+        "id": "women5",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Prism Print sportsBra",
+        "price": "2399",
+        "offerPrice": "1199",
+        "perOff": "50 % Off",
+        "desp": "Move with comfort and ease with this medium support criss cross back detail workout bra which comes with a feature of removable padding. Pair them up with your favourite Absolute leggings for a coordinated look.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Mutlicolour",
+            "Fabric: 83% Polyester 17% spandex",
+            "Reflective Details",
+            "Medium Impact",
+            "Easy Slip on wear"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/B2h9k2JTaQvDmCkCm6NNPfHV",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/seXPXCWpaVEZRKLPgbksUGYG",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/L9XDDFuhkJqN7P4aJVU8QNea",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/2orF25smAEPwr5ZqHyNayPWD",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Lej5zQgBz4wC2VTwjEn9e2fE"
+        ]
+    },
+    {
+        "id": "women6",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Seamless Ida sportsBra",
+        "price": "1899",
+        "offerPrice": "699",
+        "perOff": "60 % Off",
+        "desp": "This sportsBra is made using seamless technology to prevent chafing and irritation meaning there are no seams to cause discomfort. This will be the most comfortable sportsBra you will ever use.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Grey",
+            "Fabric:25% Polyester 65% Nylon 10% Spandex",
+            "Anti-Chaffing Seam",
+            "Medium Impact",
+            "Light Padded, Seamless"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/sSfJxZrPmXqBFJnhdZrwYxYm",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/fvzSZJ8wdedi1GKM6RUNPzZs",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/83orTQ4RF5E8teXED4wqr9YY",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/wxG6wN4cQCmmsD99NZqp4qsh",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/uja2otUHvMw2qpzfz4b8NcUu"
+        ]
+    },
+    {
+        "id": "women7",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Neon Streak Print sportsBra",
+        "price": "2199",
+        "offerPrice": "1099",
+        "perOff": "50 % Off",
+        "desp": "Move with comfort and ease with this medium support criss cross back detail workout bra which comes with a feature of removable padding. Pair them up with your favourite Absolute leggings for a coordinated look.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Purple",
+            "Fabric: 80% Polyester 20% Spandex",
+            "Reflective Details",
+            "Medium Impact",
+            "Easy Slip on wear"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/gLWzNgcAQ8AVx6eyjRDjyUu7",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/mcmota9CDzQTsSoburpwbjKW",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XDCLgsvHMzCqLjEjTygQoh6e",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/8sBAibwB8VNcPsras9YnzZPo",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/AodXyEYXEGytTQgASjnR1tbX"
+        ]
+    },
+    {
+        "id": "women8",
+        "sportsBra": true,
+        "tights": false,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "FormFit Medium Impact Lia sportsBra",
+        "price": "2899",
+        "offerPrice": "1799",
+        "perOff": "38 % Off",
+        "desp": "Superior comfort meets style in this medium impact sportsBra. Its front closure design allows easy wearability, the hidden stabilizer panels provide extra support and its power mesh offers better ventilation as you move. So now, breathe easy & train hard.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Medium Impact",
+            "Adjustable Shoulder Straps",
+            "Front Zip Closure",
+            "Easy Slip on wear"
+        ],
+        "specs": "Sri Lanka",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/Uu1kQhejknGYC25zujcV1MYS",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/mzwJrA2kAcY7Q5rCNmKncyhe",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XKh78ii8FWjN4LfHfGm1dBU8",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Uu1kQhejknGYC25zujcV1MYS",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/sHhmxqr2SpKagn45VZrBopub"
+        ]
+    },
+    {
+        "id": "women9",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "AbsoluteFit Ombre Yoga Tights",
+        "price": "3699",
+        "offerPrice": "2199",
+        "perOff": "40 % Off",
+        "desp": "Designed with flexibility in mind this high-waisted Made for Yoga Ombre leggings to give you all the technical features you could want for your workout. They have everything you could want: a high waistband, a shaping effect, no camel toe, ultra-flat seams for more comfort.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Green",
+            "Fabric: 80% Polyester 20% Spandex",
+            "Flydry",
+            "Moisture Wicking, Compression",
+            "Easy Slip on wear"
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/h3GZmYakJY4w99LPFK5RfxYz",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/EZJauCghheZ9geSMPTDT7GDw",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/uxg7YceuCQvHDCvBpsiTSWu9",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/h3GZmYakJY4w99LPFK5RfxYz",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/dyeVhZoYXdq4JVv1KVmF9ysa"
+        ]
+    },
+    {
+        "id": "women10",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "AbsoluteFit Solid Workout Tights",
+        "price": "2499",
+        "offerPrice": "1249",
+        "perOff": "50 % Off",
+        "desp": "Smoothing and sculpting comes together with these compression leggings with a flattering high waistband for plenty of coverage. Supersoft fabric is moisture-wicking, quick-drying and breathable, so you feel fresh and comfortable throughout your workout.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 80% Polyester 20% Spandex",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Breathable fabric, Moisture Wicking",
+            "No Waist Slippage , No Camel toe, Compression"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/jLu5hJW6W3nu9MQ7PVaXQNFR",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/jLu5hJW6W3nu9MQ7PVaXQNFR",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/9vBYtazvSBgi912gw6ktN4yR",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/vb4z6j9abTboDRy5zt74MjLy",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/9Fd1RaM8BD1eA1v8Wjwf6ogz"
+        ]
+    },
+    {
+        "id": "women11",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Do It All Ombre Prism Tights",
+        "price": "3699",
+        "offerPrice": "2049",
+        "perOff": "45 % Off",
+        "desp": "Stretch the day away or be the boss lady or an evening out with your tribe, just Do It All in these soft high rise waistband tights that hugs you in all the right places. With minimal seam detailing for a smooth and comfortable fit. Did someone say pockets?",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Navy",
+            "Fabric: 75% Polyester 25% Spandex",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Breathable fabric, Moisture Wicking",
+            "Side pocket , No Camel toe"
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/QsooiXHKUycwsG88BZvho57Z",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/QsooiXHKUycwsG88BZvho57Z",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/24xLzLD7M4ooDmCm8kyMdjCF",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/PTJrkL4JPjmDmtcPmv9BjAZu",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/bZ549mUFD77G22RYvanSDo3Y"
+        ]
+    },
+    {
+        "id": "women12",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "AbsoluteFit Contrast Panel Tights",
+        "price": "2799",
+        "offerPrice": "1599",
+        "perOff": "45 % Off",
+        "desp": "We name it AbsoluteFit and stay true to it. Slay in the AbsoluteFit Leggings with side colourblock panels , odour resistance and Fly Dry technology to wick away sweat as keep up to your workout game.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 80% Polyester 20% spandex",
+            "Anti slip waistband",
+            "Anti Microbial, Anti-Chaffing Seam",
+            "Breathable fabric, No Transparency"
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/FXQvadpgtKwPd7aAjmWKb4Dg",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/FXQvadpgtKwPd7aAjmWKb4Dg",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/HkqsSGJHDCE7LdiP1Sjebiok",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/F26CEk5Rj4AjaqoAHjojWLu1",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/HyRN4mwEKGi8CrzSVNRtEcP2"
+        ]
+    },
+    {
+        "id": "women13",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Stripe Detail Leggings",
+        "price": "2599",
+        "offerPrice": "1799",
+        "perOff": "30 % Off",
+        "desp": "Reinvent your workoutfit with AbsoluteFit. Add an edgy look to your workout wardrobe with the AbsoluteFit Solid Leggings with striped details on front, odour resistance and Fly Dry technology to wick away sweat as keep up to your workout game.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 80% Polyester 20% spandex",
+            "Anti Microbial, Anti-Chaffing Seam",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Breathable fabric, No Transparency"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/rx5Mtu8KuJmrogAUtQs26qHw",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/rx5Mtu8KuJmrogAUtQs26qHw",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/gwjS4NZTZqpZygCLqFnrtS9c",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/BMfySAsdzo7QgHaSbxjGMDcU",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/QWkdaMbN6dkGdW23QHZJnE2m"
+        ]
+    },
+    {
+        "id": "women14",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "AbsoluteFit Prism Print Tights",
+        "price": "2799",
+        "offerPrice": "1735",
+        "perOff": "38 % Off",
+        "desp": "How about a big NO to adjusting and a bigger YES to a fab workout with the AbsoluteFit Leggings! Designed to support you like no other leggings, the AbsoluteFit does what it promises - it fits you just right! Thoughtfully crafted, these prism print leggings feature 7/8th length that fits you at the ankle, are chic, provide compression & muscle support and boost your performance by allowing you to focus only on what truly needs your attention - your training!",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Prism Print",
+            "Fabric: 80% Polyester 20% spandex",
+            "Anti-chafing Seam",
+            "No Waist Slippage",
+            "No Transparency"
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/wpX3HF8JMGy9oKkfipViCEkU",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/PLrf5EqCWqrTnDXGWLZ1hgZA",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/FgY4yWZc3q9RfbdgNnq9cPVR",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/sQXJanADSXKgQCfhmjTbYyPY",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/933YMAzowf9FserXq6VNCZuG"
+        ]
+    },
+    {
+        "id": "women15",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "AbsoluteFit Colourblock Tights",
+        "price": "2399",
+        "offerPrice": "1599",
+        "perOff": "35 % Off",
+        "desp": "We name it AbsoluteFit and stay true to it. Slay in the AbsoluteFit Leggings with Neon Pop colourblock panels , odour resistance and Fly Dry technology to wick away sweat as keep up to your workout game.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 80% Polyester 20% spandex",
+            "Anti Microbial, Anti-Chaffing Seam",
+            "Breathable fabric, No Transparency",
+            "Anti slip waistband"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/o6ujJ1hNiryE6fVYSrazvBXK",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/1i5Q8HJfdxsQ4bj9viZjqWuo",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/JLJHEwqZ1pLrXZ9JFJ3xnYW9",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/2jVciYmvHWP7AFYx1T9pkfZn",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/rSTHbuKfBnHxENbkLerJeUPc"
+        ]
+    },
+    {
+        "id": "women16",
+        "sportsBra": false,
+        "tights": true,
+        "shorts": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Seamless Solid Anti Chafing Tights",
+        "price": "2999",
+        "offerPrice": "1499",
+        "perOff": "50 % Off",
+        "desp": "Get the confidence and support you need to train and perform in the leggings featuring with seamless knitted fabric. A high-waisted and form-accentuating fit, contouring shape and a ribbed waistband make these leggings perfect for a workout.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Orange",
+            "Fabric: 90% Nylon 10% Spandex",
+            "No Waist Slippage",
+            "Anti-Chaffing Seam",
+            "No Transparency, No Camel toe, Gives added support to muscles"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/dUxetPhsjzUtZj8Qn1X7GKDX",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/H7nhM28b24dZjk6HcjbFm7up",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/PVAcs5EUcg4FPXoUc5fETDiC",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/tGFDH3hwNXAVZc5juNxtJ62f",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/2jSu6uKXxso2Je7CqpvHzZfi"
+        ]
+    },
+    {
+        "id": "women17",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "Halftone Print Active Shorts",
+        "price": "1599",
+        "offerPrice": "959",
+        "perOff": "45 % Off",
+        "desp": "All about the shorts. Comfort with performance comes together in these stretchable cotton short.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Burgundy",
+            "Fabric: 95% Cotton 5% Spandex",
+            "No Waist Slippage",
+            "Anti-Chaffing Seam",
+            "Bio Wash"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/iK5BVWbaQ6KoEt1hwBUMuCdq",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/KMwSu5mfTTAwPhwLkMq2wfE6",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/1DtjSBVDmeAUVKa9XsZZzoty",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/T6pHhwoTRxvFp1uegUCfHiVT",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/2vhf2xVshqfW8U4YwxeK26my"
+        ]
+    },
+    {
+        "id": "women18",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Halftone Logo Active Shorts",
+        "price": "1999",
+        "offerPrice": "999",
+        "perOff": "50 % Off",
+        "desp": "All about the shorts. Comfort with performance comes together in these stretchable cotton short.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 88% Cotton, 10% Poly, 2% Spandex",
+            "No Waist Slippage",
+            "Anti-Chaffing Seam",
+            "Bio Wash"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/htjEJCau5FfPzq6orYWXz1vb",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Fxqqgu2wiUKkL4YV3EayQtfB",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/qsMvejJKwQGiuv7Bg9DDEzot",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/rgunujQyApVrDN9QijEmrbCi",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/HBn1dmoHdnkm3ctKUthmXXWC"
+        ]
+    },
+    {
+        "id": "women19",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Solid Workout Shorts",
+        "price": "1499",
+        "offerPrice": "899",
+        "perOff": "40 % Off",
+        "desp": "Absolute must-have shorts for the summer workout sessions. With its trademark sweat-wicking technology and anti-odour finish, you won't have to stress about sweat anymore.",
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Black, Light-weight fabric",
+            "Fabric: 100% Polyester",
+            "Hi-viz: Reflective print for high visibility in low light",
+            "Breathable fabric, Anti-microbial finish to stay odour-free",
+            "Odour Resistant"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/q1RRjfnRcNUYgSzLD8wM8oEv",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/kuYpFPWxvktsBwYMzgreqDXo",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/TumeoWY25m64JAC6DLTPAUC9",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XbEwPHtF4B8ggxifZtfhtN84",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/VfKUo9JhJ7BVnVtT38GzSPMi"
+        ]
+    },
+    {
+        "id": "women20",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Printed Workout Shorts",
+        "price": "1899",
+        "offerPrice": "1234",
+        "perOff": "35 % Off",
+        "desp": "Too good to be true Shorts! Feel good in the lightweight, breathable fabric of these workout shorts. Inner tights provide coverage while you stay cool.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Navy Blue",
+            "Fabric: 100% Polyester",
+            "Inner Tights to prevent chaffing",
+            "Light-weight fabric",
+            "Odour Resistant"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/97vpMg1j2NsXWGLeZGuU9N57",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/AkHb3XtyFRuT5TneUrboaF3t",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/8Ez4GfVhwans9idZ5rBYgG2w",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Qp2obNhSoszLw1R5Pqt6js61",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/mqTgM8HH6TwUpfNW9rytYnRB"
+        ]
+    },
+    {
+        "id": "women21",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Workout Shorts with Inner Tights",
+        "price": "1499",
+        "offerPrice": "1049",
+        "perOff": "30 % Off",
+        "desp": "Working out made easier with these double layer shorts that includes inner tights which in preventing thigh chaffing due to sweat and friction. So get those high knees going!",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Blue",
+            "Fabric: 100% Polyester",
+            "Inner tights to prevent chaffing",
+            "Breathable fabric, Anti-microbial finish to stay odour-free",
+            "Flydry, Light-weight fabric"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/jDRMFXuNgQPAM3fTJZ9grYZ4",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/4bnjunpPmBrUfXsGMoW3aMzr",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/1BEAcfWnnamnPW2ctGCepj4d",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/LsGTBMrsV9GWqBZbvPBF7e3D",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/RPckvHuxGxBYDxfnMzzsL763"
+        ]
+    },
+    {
+        "id": "women22",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Brushstroke Logo Active Shorts",
+        "price": "1599",
+        "offerPrice": "959",
+        "perOff": "50 % Off",
+        "desp": "All about the shorts. Comfort with performance comes together in these stretchable cotton short. ",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Bottle green",
+            "Fabric: 95% Cotton 5% Spandex",
+            "Inner tights",
+            "Breathable fabric, Anti-microbial finish to stay odour-free",
+            "Bio Wash"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/h4YfFzfxoSohdE6o4vBLnW4u",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/h4YfFzfxoSohdE6o4vBLnW4u",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/MhXWQsHVhatLTebkxNyvKULo",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Mr6wXmZ2NG59Lz2RY8dzqE49",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Tzj4cC9okJdeAtdsNfLnQM8G"
+        ]
+    },
+    {
+        "id": "women23",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Tonal Print Active Shorts",
+        "price": "2099",
+        "offerPrice": "1259",
+        "perOff": "40 % Off",
+        "desp": "Keep it short!Uber stylish performace shorts with printed side panel and breathable features. With adjustable drawstring adds more functionality your workout wear.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 100% Polyester",
+            "Breathable fabric",
+            "Drawcord at Waistband",
+            "Bio Wash"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/x9mz1kKwTCXM5qWcDFZNiBKR",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/pyuqwXwGk6YeWbg5YnWcFrBz",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/bdeRRDNALktBdLA3J4b9FvEG",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/x9mz1kKwTCXM5qWcDFZNiBKR",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/WcLrhmGkRPno5kxZ1xg2uDyK"
+        ]
+    },
+    {
+        "id": "women24",
+        "sportsBra": false,
+        "tights": false,
+        "shorts": true,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "Supersoft Leisure Shorts",
+        "price": "1399",
+        "offerPrice": "489",
+        "perOff": "65 % Off",
+        "desp": "Functionality meets Fashion with this trendy shorts. Supersoft and breathable fabric to add your comfort and ease while you workout.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Light Grey Melange",
+            "Fabric: 95% Cotton, 5% Spandex",
+            "Breathable fabric",
+            "Supersoft",
+            "Branded waistband at back"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/R1ed1mgVUd1pwpjycSJsrJVa",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/xPcPBRhwNnDn2fTGESzzx5mD",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/qtoxjzu9PCrpiimkCJVrPsTN",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/u1hvWxkuauaUL9owHnBgckib",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Fd8WUcwcLBKy5HSQXK3DSZPo"
+        ]
+    }
+]

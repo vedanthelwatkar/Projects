@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.store-main-bs {
+    width: 100%;
+    height: 80vh;
+    margin-top: 30px;
+    position: relative;
+}
+
+.store-main-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.store-tag {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    left: 7vw;
+    /* width: 12vw; */
+}
+
+.store-hover::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 30px;
+    background-color: rgb(65, 214, 241);
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.store-hover:hover::before {
+    width: 110%;
+}
+
+.store-hover a {
+    z-index: 1;
+    text-decoration: none;
+    margin-left: 0.5vw;
+}
+
+.store-hover h2 {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Lilita One', cursive;
+    font-weight: bolder;
+}
+
+.store-main-bs span {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-left: 7.5vw;
+    color: grey;
+    transform: translateY(-30%);
+    font-family: 'Alegreya SC', serif;
+}
+
+.store-main-bs-slider {
+    /* padding-top: 3vh; */
+    position: relative;
+    width: 100%;
+}
+
+.shop-workout-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vw;
+}
+
+.shop-workout-images img {
+    padding-top: 3vh;
+    width: 300px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+
+.shop-workout-images img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.store-main-faqs {
+    width: 100vw;
+    /* padding-top: 8vh; */
+    /* background-color: rgba(10, 16, 23, 255); */
+    position: relative;
+    height: 65vh;
+}

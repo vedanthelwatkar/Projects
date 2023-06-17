@@ -1,0 +1,366 @@
+[
+    {
+        "id": "1",
+        "therapyName": "Couple Therapy",
+        "therapyDesp": "Resolve emotional conflicts in relationships and marriage",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/9ce1d9a2-d3c6-4a19-91bd-028d52f58c84.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1800",
+        "offerPrice": "1250",
+        "therapyAbout": "Build a relationship that you & your partner want - with expert help. (NOTE: Partners need to join from the same device)",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19226_1session_9b901434-405d-4c41-9b71-0f92e3179757",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1800",
+                "offer": "1250",
+                "perSession": "1250",
+                "desp": "Conflict Resolution"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "4",
+                "price": "5200",
+                "offer": "4680",
+                "perSession": "1170",
+                "desp": "Moderate relationship stress | Conflict Resolution | Communication Skills"
+            },
+            {
+                "key": "1c",
+                "noSession": "8",
+                "noMonths": "8",
+                "price": "10400",
+                "offer": "8320",
+                "perSession": "1040",
+                "desp": "Moderate relationship stress | Difficult couple dynamics | Co-parenting"
+            },
+            {
+                "key": "1d",
+                "noSession": "12",
+                "noMonths": "12",
+                "price": "15600",
+                "offer": "8320",
+                "perSession": "975",
+                "desp": "Long-term relationship stress | Trust and communication concerns| Divorce or Separation"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "therapyName": "Therapy",
+        "therapyDesp": "Experts who help solve personal emotional problems",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/9355d11a-f088-4f10-b9df-72ea3ecf8e0b.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1500",
+        "offerPrice": "990",
+        "therapyAbout": "Consult with our experts and begin your therapy journey via video call",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_800,c_fit/dpr_2/image/singles/care/tc/MindTherapy.png",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "2000",
+                "offer": "1500",
+                "perSession": "375",
+                "desp": "Emotional Problems Resolutions"
+            },
+            {
+                "key": "1b",
+                "noSession": "6",
+                "noMonths": "3",
+                "price": "6000",
+                "offer": "4200",
+                "perSession": "700",
+                "desp": "Conflict Resolution "
+            },
+            {
+                "key": "1c",
+                "noSession": "4",
+                "noMonths": "4",
+                "price": "5000",
+                "offer": "4000",
+                "perSession": "1000",
+                "desp": "Self Improvement Sessions"
+            },
+            {
+                "key": "1d",
+                "noSession": "8",
+                "noMonths": "8",
+                "price": "12000",
+                "offer": "9600",
+                "perSession": "1200",
+                "desp": "Long-term stress | Ccommunication concerns| Mental Health Problems"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "therapyName": "Covid Stress",
+        "therapyDesp": "Seek expert help from our therapists for coping with isolation and COVID-related stress",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/5e9f8ee5-83dd-4dca-beca-61885323ce3c.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1200",
+        "offerPrice": "499",
+        "therapyAbout": "Speak to our therapists about your COVID & isolation-related worries",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19218_COVIDStress_2e9f5466-651a-4ff7-8009-ceabf625c60d",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1200",
+                "offer": "499",
+                "perSession": "499",
+                "desp": "Stress Issues due to Covid"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "4000",
+                "offer": "3200",
+                "perSession": "800",
+                "desp": "Mental Health Issues due to Covid"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "therapyName": "Better Sleep",
+        "therapyDesp": "Consult with experts to learn effective strategies for restful sleep and good sleep health",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/84248218-f8c0-44d8-b2d6-be415b742b9a.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1500",
+        "offerPrice": "899",
+        "therapyAbout": "Learn strategies for restful sleep by talking to our experts today",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19216_BetterSleep-1session_7bcbfed4-28cb-4ade-a54f-d7f55aa6c551",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1500",
+                "offer": "899",
+                "perSession": "899",
+                "desp": "Insomnia Issues"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "5000",
+                "offer": "4000",
+                "perSession": "1000",
+                "desp": "Fatigueness and Health Issues due to less sleep"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "therapyName": "Rise to Confidence",
+        "therapyDesp": "Grow into a more confident and self-assured you by talking to our experts",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/dcd1728e-d7dc-4952-b552-b1b1c97e9ac1.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1000",
+        "offerPrice": "699",
+        "therapyAbout": "Become a more confident & self-assured you with our expert help",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19224_Confidence-1Session_b35abf01-1814-4dbb-8aaf-998c8206aaeb",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1000",
+                "offer": "699",
+                "perSession": "699",
+                "desp": "Communication Concerns"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "4000",
+                "offer": "3000",
+                "perSession": "750",
+                "desp": "Low Self Confidence"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "therapyName": "Thrive at work",
+        "therapyDesp": "Make work fulfilling and meaningful with the help of our experts",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/18a8d3b2-d262-4f78-908b-79a55a40ef68.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1200",
+        "offerPrice": "899",
+        "therapyAbout": "Let our therapists show you how work can be meaningful & fulfilling",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19225_ThriveAtWork-1Session_b9207339-80e4-4dbf-8b28-834fabafd43d",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1200",
+                "offer": "899",
+                "perSession": "899",
+                "desp": "Be better at your job or business"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "5000",
+                "offer": "4000",
+                "perSession": "1000",
+                "desp": "Expand your business"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "therapyName": "Healthy Relationships",
+        "therapyDesp": "Understand your relationship patterns and exploring healthy ways of connecting",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/1a2d8f7e-2c24-4cbf-88be-e2cf266dfa23.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1500",
+        "offerPrice": "599",
+        "therapyAbout": "How can you have better relationships? Let our therapists teach you.",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19230_HealthyRelationships-1Session_32221a1e-cf2e-4717-aecb-dd39d6d32da3",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1500",
+                "offer": "599",
+                "perSession": "599",
+                "desp": "Build more meaningful relationships"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "3500",
+                "offer": "2800",
+                "perSession": "700",
+                "desp": "Explore healthy ways of building relationships"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "therapyName": "Transform Your Thinking",
+        "therapyDesp": "Manage negative or anxious thoughts or overthinking",
+        "firstImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_580,ar_2.279,c_fit/dpr_2/image/vm/aebc57c2-ee58-41f7-a854-00fb5c5d55f9.png",
+        "therapyTime": "50 Mins Session",
+        "therapyPrice": "1300",
+        "offerPrice": "499",
+        "therapyAbout": "Feeling negative? Anxious? Overthinking? Heres how to beat it.",
+        "secondImage": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_600,c_fit/dpr_2/image/carefit/bundle/19228_TransformThinking-1Session_df91aa32-4928-4322-8a8c-635ae2e02940",
+        "therapyOffer": [
+            {
+                "key": "1a",
+                "offer": "Flat 10% OFF applied on this pack"
+            },
+            {
+                "key": "1b",
+                "offer": "Get unlimited access to meditation & yoga live classes for 4 months"
+            }
+        ],
+        "therapySession": [
+            {
+                "key": "1a",
+                "noSession": "1",
+                "noMonths": "1",
+                "price": "1300",
+                "offer": "499",
+                "perSession": "499",
+                "desp": "Manage your negative thoughts"
+            },
+            {
+                "key": "1b",
+                "noSession": "4",
+                "noMonths": "2",
+                "price": "3000",
+                "offer": "2400",
+                "perSession": "600",
+                "desp": "Get control over your anxious thoughts and avoid overthinking"
+            }
+        ]
+    }
+]

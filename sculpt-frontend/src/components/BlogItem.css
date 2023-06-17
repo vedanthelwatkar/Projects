@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.blog-card {
+    /* width: 100%; */
+    border: 1px solid rgb(0, 225, 255);
+    border-radius: 0.7rem;
+    margin: 0 12rem;
+}
+
+.blog-card a {
+    text-decoration: none;
+}
+
+.blog-card-img img {
+    width: 100%;
+    height: 85vh;
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.blog-card-info {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: black;
+}
+
+.blog-info-title h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.blog-info-desp {
+    padding-bottom: 10px;
+}

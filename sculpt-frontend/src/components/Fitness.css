@@ -1,0 +1,795 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.fitness-custom-btn {
+    width: 130px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 20px;
+    font-family: 'Lato', sans-serif;
+    /* font-weight: 500; */
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    /* display: inline-block; */
+    /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none; */
+}
+
+.fitness-nav {
+    /* background-color: rgba(23, 26, 38, 255); */
+}
+
+.sculpt-fitness {
+    background-color: rgba(0, 9, 37, 255);
+}
+
+.fitness-main1 {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 9, 37, 255); */
+}
+
+.fitness-main1 video {
+    /* width: 30vw; */
+    width: 100vw;
+    height: 85vh;
+    /* text-align: right; */
+    /* margin-left: 10vw; */
+}
+
+.fitness-container {
+    position: relative;
+    top: 87vh;
+    background-color: rgba(23, 26, 38, 255);
+    width: 100vw;
+}
+
+.fitness-main2 {
+    position: relative;
+    /* top: 100%; */
+    /* top: 87vh; */
+    padding-top: 30px;
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 9, 37, 255)0%, rgba(23, 26, 38, 255)60%);
+}
+
+.fitness-main2-passes {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.fitness-main2-elite {
+    padding: 15px;
+    margin-right: 20px;
+    border: 1px solid black;
+    text-align: center;
+    width: 20vw;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(13, 29, 60, 255);
+}
+
+.fitness-main2-pro {
+    padding: 15px;
+    margin-right: 20px;
+    border: 1px solid black;
+    text-align: center;
+    width: 20vw;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(14, 22, 48, 255);
+
+}
+
+.fitness-main2-live {
+    padding: 15px;
+    margin-right: 20px;
+    border: 1px solid black;
+    text-align: center;
+    width: 20vw;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(14, 24, 52, 255);
+}
+
+
+.fitness-main2 h5 {
+    font-size: 1.3rem;
+    background: #757F9A;
+    background: linear-gradient(to right, #D7DDE8, #757F9A);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fitness-main2-elite h2 {
+    font-size: 2rem;
+    background: #00c3ff;
+    padding-bottom: 7px;
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.fitness-main2-pro h2 {
+    font-size: 2rem;
+    padding-bottom: 7px;
+    font-weight: bold;
+    background: #bdc3c7;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fitness-main2-live h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 7px;
+    background: #7F00FF;
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main2-pass-price {
+    display: flex;
+    font-size: 0.8rem;
+    color: rgba(162, 163, 168, 255);
+    font-weight: bold;
+    justify-content: center;
+    padding-left: 2.2vw;
+    padding-right: 2.2vw;
+}
+
+.main2-pass-price i {
+    transform: translateY(15%);
+    padding-left: 3px;
+}
+
+.fitness-main3 {
+    width: 100vw;
+    position: relative;
+    padding: 5vh 10vw;
+    background-color: rgba(23, 26, 38, 255);
+}
+
+.fitness-main3 h3 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-bottom: 17px;
+}
+
+.main3-centers {
+    display: flex;
+    justify-content: center;
+}
+
+.main3-center {
+    margin-left: 20px;
+    border: 2px solid rgba(47, 50, 55, 255);
+    background-color: rgba(47, 50, 55, 255);
+    border-radius: 15px;
+}
+
+.main3-center-video video {
+    width: 37vw;
+    border-radius: 15px;
+}
+
+.center-info-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+
+.center-data-title {
+    padding-left: 20px;
+}
+
+.center-data-title h3 {
+    padding: 0;
+    color: white;
+}
+
+.center-data-title span {
+    display: flex;
+    color: rgba(131, 133, 136, 255);
+    align-items: center;
+}
+
+.center-data-title h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.center-data-title p {
+    padding-left: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.btn-1 {
+    font-size: 0.8rem;
+    background: rgba(68, 71, 75, 255);
+    border: none;
+}
+
+.btn-1:hover {
+    background: grey;
+}
+
+.fitness-hr {
+    margin: 3px 15px;
+    background-color: rgba(80, 83, 87, 255);
+    height: 2px;
+}
+
+.main3-center-info p {
+    color: rgba(121, 122, 122, 255);
+    padding-left: 1.4vw;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fitness-main4 {
+    padding: 2vh 0px;
+    width: 100vw;
+    padding: 3vh 10vw;
+    background-color: rgba(23, 26, 38, 255);
+    position: relative;
+}
+
+.main4-color img {
+    position: absolute;
+    left: -10%;
+    top: -30%;
+}
+
+.fitness-main4 h5 {
+    padding-top: 4vh;
+    text-align: center;
+    color: rgba(131, 133, 136, 255);
+    font-weight: bold;
+}
+
+.fitness-main4 h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 2vh;
+}
+
+.main4-slider {
+    position: relative;
+    width: 100%;
+    /* height: 80vh; */
+}
+
+.fitness-main5 {
+    width: 100vw;
+    padding: 8vh 10vw;
+    background-color: rgba(23, 26, 38, 255);
+    position: relative;
+}
+
+.main5-color img {
+    position: absolute;
+    top: -20%;
+    right: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 40vw;
+}
+
+.fitness-main5 h5 {
+    padding-top: 4vh;
+    text-align: center;
+    color: rgba(131, 133, 136, 255);
+    font-weight: bold;
+}
+
+.fitness-main5 h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 3vh;
+}
+
+.main5-slider {
+    padding-top: 3vh;
+    position: relative;
+    width: 100%;
+}
+
+.fitness-main6 {
+    width: 100vw;
+    padding: 8vh 10vw;
+    background-color: rgba(23, 26, 38, 255);
+    position: relative;
+}
+
+.main6-color-violet img {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 40vw;
+    opacity: 0.4;
+}
+
+.main6-color-cornflower img {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+}
+
+.main6-color-yellow img {
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    opacity: 0.2;
+}
+
+.fitness-main6 h5 {
+    padding-bottom: 4vh;
+    text-align: center;
+    color: rgba(131, 133, 136, 255);
+    font-weight: bold;
+}
+
+.fitness-main6 h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 3vh;
+}
+
+.main6-plans {
+    width: 100%;
+    color: white;
+}
+
+.main6-plans-table {
+    border: none;
+    border-collapse: collapse;
+    margin-left: 12vw;
+}
+
+.main6-plans-table tr:first-child th {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.main6-plans-table tr:first-child th:nth-child(2) {
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main6-plans-table tr:first-child th:nth-child(3) {
+    background: #00416A;
+    background: linear-gradient(to right, #E4E5E6, #00416A);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main6-plans-table tr:first-child th:nth-child(4) {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main6-plans-table td {
+    border: 2px solid rgba(39, 40, 45, 255);
+}
+
+.main6-plans-table tr td:first-child {
+    font-weight: bold;
+    width: 15vw;
+    margin-right: 5vw;
+    border: none;
+}
+
+.main6-plans-table tr td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+    text-align: center;
+}
+
+.main6-plans-table tr:nth-child(2) td {
+    border-top: none;
+}
+
+.main6-plans-table tr:nth-child(6) td {
+    border-bottom: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main6-plans-table tr td {
+    padding-top: 4vh;
+    padding-bottom: 1.5vh;
+}
+
+.main6-plans-table tr td .tick {
+    color: rgba(6, 147, 198, 255);
+}
+
+.main6-plans-table tr td .cross {
+    color: rgba(114, 114, 118, 255);
+}
+
+.main6-plans-table tr:nth-child(6) td span {
+    display: flex;
+    justify-content: center;
+    /* line-height: 2px; */
+}
+
+.main6-plans-table tr:nth-child(6) td span i {
+    transform: translateY(10%);
+    padding-left: 5px;
+}
+
+.main6-plans-table tr:nth-child(6) td h6 {
+    transform: translateY(-60%);
+    margin-bottom: 0;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-3 {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+.fitness-main7 {
+    width: 100vw;
+    padding: 8vh 2vw;
+    background-color: rgba(10, 16, 23, 255);
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 5vw;
+}
+
+.main7-color img {
+    position: absolute;
+    top: -20%;
+    left: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 40vw;
+}
+
+.main7-slider {
+    width: 50vw !important;
+    margin: 0 !important;
+}
+
+.main7-details {
+    padding-left: 10vw;
+    width: 50vw;
+    color: white;
+    padding-right: 5vw;
+    padding-top: 1vh;
+}
+
+.main7-details-pass span {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+
+.main7-details h3 {
+    font-size: 2rem;
+}
+
+.main7-details h4 {
+    font-size: 2rem;
+    padding-left: 15px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main7-details h5 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+
+.main7-details-access p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.main7-details-access span {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+}
+
+.main7-details-access span i {
+    padding-right: 1vw;
+    transform: translateY(13%);
+    color: rgba(207, 135, 89, 255);
+}
+
+.main7-details-access span p {
+    font-size: 1rem;
+    color: rgba(171, 173, 175, 255);
+}
+
+.main7-details-prices {
+    padding-top: 6vh;
+    color: rgba(171, 173, 175, 255);
+}
+
+.main7-details-buttons {
+    font-size: 0.8rem;
+}
+
+.fitness-main8 {
+    width: 100vw;
+    padding: 8vh 2vw;
+    background-color: rgba(10, 16, 23, 255);
+    position: relative;
+    display: flex;
+    padding-right: 5vw;
+}
+
+.main8-color img {
+    position: absolute;
+    top: -20%;
+    right: 20%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 40vw;
+}
+
+.fitness-main8 h4 {
+    font-size: 2rem;
+    padding-left: 15px;
+    font-weight: bold;
+    background: #00416A;
+    background: linear-gradient(to right, #E4E5E6, #00416A);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fitness-main9 {
+    width: 100vw;
+    padding: 8vh 2vw;
+    background-color: rgba(10, 16, 23, 255);
+    position: relative;
+    padding-right: 5vw;
+}
+
+.main9-video-item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main9-video {
+    width: 60vw;
+}
+
+.main9-video::after {
+    position: absolute;
+    top: 0;
+    left: 17.75%;
+    width: 65vw;
+    height: 100%;
+    content: '';
+    background-image: radial-gradient(circle at 20% 48%,
+            #000000,
+            rgba(11, 39, 65, 0.32) 87%,
+            rgba(0, 0, 0, 0));
+}
+
+.main9-video video {
+    width: 65vw;
+    border-radius: 15px;
+}
+
+.main9-color-violet img {
+    position: absolute;
+    top: -20%;
+    right: 0%;
+    opacity: 0.7;
+    width: 40vw;
+}
+
+.main9-color-yellow img {
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    opacity: 0.2;
+}
+
+.main9-pos {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+}
+
+.fitness-main9 h4 {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.fitness-main10 {
+    width: 100vw;
+    padding-top: 8vh;
+    background-color: rgba(10, 16, 23, 255);
+    position: relative;
+    /* padding-bottom: 4vh; */
+}
+
+.fitness-main10 img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.fitness-main11 {
+    width: 100vw;
+    padding: 8vh 0vw;
+    background: #4b6cb7;
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main11-details {
+    padding-left: 12vw;
+}
+
+.main11-details h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(171, 173, 175, 255);
+}
+
+.main11-details h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.main11-image img {
+    width: 40vw;
+    margin-right: 10vw;
+}

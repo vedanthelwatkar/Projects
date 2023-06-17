@@ -1,0 +1,181 @@
+@import url("https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+}
+
+.register-form {
+    position: relative;
+    padding-top: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    padding-left: 150px;
+}
+
+.rform {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 40%;
+    height: 90vh;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 0;
+    border-radius: 55px;
+}
+
+.reg-img {
+    width: 150px;
+}
+
+.rlogo p {
+    font-size: 0.8rem;
+}
+
+.rform h4 {
+    font-size: 2.5rem;
+    transform: translateY(-15%);
+    font-family: 'Nuosu SIL', serif;
+    font-weight: bold;
+    color: rgb(213, 167, 167);
+}
+
+.register-details {
+    padding-top: 10px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.register-details p {
+    font-size: 0.9rem;
+    color: rgb(238, 172, 172);
+}
+
+.register-input-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.register-input_box {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-input_box input {
+    background: none;
+    text-align: center;
+    border: 3px solid rgb(120, 6, 6);
+    padding: 5px 5px;
+    width: 200px;
+    outline: none;
+    color: rgb(92, 6, 6);
+    border-radius: 10px;
+    background-color: white;
+    height: 40px;
+    font-size: 0.8rem;
+    transform: translateY(-20%);
+}
+
+.register-input_box p {
+    padding-left: 10px;
+}
+
+.register-input_box input:focus {
+    border: 3px solid rgb(190, 57, 57);
+}
+
+.r-button {
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    /* font-weight: 200; */
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    height: 40px;
+}
+
+.r-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.r-button-2 {
+    color: #fff;
+    border: 3px solid rgb(85, 4, 4);
+    background-image: linear-gradient(30deg, rgb(85, 4, 4) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+}
+
+.r-button-2:hover,
+.r-button-2 a:hover {
+    background-position: 100%;
+    color: rgb(95, 3, 3);
+    background-color: rgb(239, 192, 192);
+}
+
+.register-other {
+    transform: translateY(-50%);
+}
+
+.register-other h3 {
+    font-size: 1rem;
+    color: rgb(238, 172, 172);
+}
+
+.register-other-methods {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-10%);
+}
+
+.register-other-methods i {
+    cursor: pointer;
+}
+
+.r-extra {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: rgb(207, 175, 175);
+}
+
+.r-extra span {
+    padding: 0 5px;
+}

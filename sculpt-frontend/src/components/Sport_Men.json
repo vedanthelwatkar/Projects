@@ -1,0 +1,842 @@
+[
+    {
+        "id": "men1",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "Vitals Running T-Shirt",
+        "price": "1499",
+        "offerPrice": "779",
+        "perOff": "48 % Off",
+        "desp": "Run your own race, defy the norms and cook up a storm in this workout T-shirt.Meant to move with you, this combines design and technology to deliver a performance as impressive as yours.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Grey",
+            " Fabric: 65% Cotton, 35%Polyester",
+            "Bio Wash",
+            "Breathable Fabric"
+        ],
+        "specs": "US",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/8vVR6uLBQSmX2vMsh6hfkXT2",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/8vVR6uLBQSmX2vMsh6hfkXT2",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/NhmwrvMX5W9Rqo5CFKpgHfjP",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/nCrjYNEhcvQppbWMHA9UuYtR",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/5E32STP9oJHztZfRDBjS4hPE"
+        ]
+    },
+    {
+        "id": "men2",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Team Argentina Football Jersey",
+        "price": " 1899",
+        "offerPrice": "1234",
+        "perOff": "35 % Off",
+        "desp": "Football fever is in full swing! Get in the spirit of football and cheer on your favorite team with this cool football t-shirt from Cultsport. In addition to the vibrant colors, the t-shirt features contrast panels at the sides. Come join us in representing the spirit of the game and global sportsmanship.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: White",
+            "Fabric: 100% Polyester",
+            "Flydry",
+            "Moisture Wicking",
+            "Light weight"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/k1TBuGPMCa2NkTDKEiqVbmCW",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/5q815AdhJQWbPsjgt83o2E6a",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/cYgqxMmmZcMMUi6cGsj7JtLF",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/e7XkHaEQxmAuXPiAHQJyh4Yq",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Uy7bvw3TLNjSSSMhP5HsyM6z"
+        ]
+    },
+    {
+        "id": "men3",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Team Germnay Football Jersey",
+        "price": " 1899",
+        "offerPrice": "1234",
+        "perOff": "35 % Off",
+        "desp": "Football fever is in full swing! Get in the spirit of football and cheer on your favorite team with this cool football t-shirt from Cultsport. In addition to the vibrant colors, the t-shirt features contrast panels at the sides. Come join us in representing the spirit of the game and global sportsmanship.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: White",
+            "Fabric: 100% Polyester",
+            "Flydry",
+            "Moisture Wicking",
+            "Light weight"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/zgCo1jNuBJN4RwcK2i8fRwnV",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/LzX4ojBJhtT8bEQ54qR7dRt7",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/7gBejDdqZebHbKDzTsQJvKYe",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/cbXMXnszZkLv1EqWBynjAqv9",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/ifA8UooGLczJ4wQF3EGkPG6P"
+        ]
+    },
+    {
+        "id": "men4",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Textured Performance Tshirt",
+        "price": " 999",
+        "offerPrice": "499",
+        "perOff": "50 % Off",
+        "desp": "Work out in comfort with this quick-dry training t-shirt from Cultsport One. Made for medium to light intensity activities with optimum performnce features. The breathable, moisture-wicking fabric keeps you feeling cool and dry.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Grey",
+            "Fabric: 100% Polyester",
+            "Breathable fabric",
+            "Flydry, Moisture Wicking",
+            "Medium to Light intensity activities",
+            "Supersoft, Light weight"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/gyEKit98fH6VGSZ2jv1fFkSm",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/bprsSVhJbbYwWNJYrTzHSWdx",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XpWKDtGjw4zGSDrQN3XNaRni",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/YXT3X7FpKZe4nV8H6uweqGG8",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/j7Mf5uHBEEK9W1dzrTMgQcgT"
+        ]
+    },
+    {
+        "id": "men5",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Vitals Lifestyle T-Shirt",
+        "price": " 1499",
+        "offerPrice": "799",
+        "perOff": "48 % Off",
+        "desp": "Give fitness fashion a new meaning with the this crew neck running Tshirt. With fabric that lets you breathe without restriction, combines the sweat-wicking Flydry technology and supersoft feel.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Black",
+            "Fabric: 100% Cotton",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Bio Wash",
+            "Breathable Fabric"
+        ],
+        "specs": "Uk",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/LyE1rUQrAcWtwUJvnrdZqwTf",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/yNtEh4orqok6LntLQKXCA9WP",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/2YThTBcvnyGoqPi9ogqvkMbD",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/uiTa2F1ZRQwgjpR7av7vyb1V",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/GfsZ8LG3RkenY5XMFwwXe5aK"
+        ]
+    },
+    {
+        "id": "men6",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Vitals Lifestyle Polo Tshirt",
+        "price": " 1799",
+        "offerPrice": "935",
+        "perOff": "48 % Off",
+        "desp": "Not so classic polo T-shirt. This polo is made for preppy and versatile outfit just for you. Accented by signature branding , contrast details & super comfortable styling.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Navy",
+            "Fabric: 100% Cotton",
+            "Signature Branding Details",
+            "Bio Wash",
+            "Contrast Details"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/GTsdULwpCrv1hFMNDgQ5vrsP",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/BH9j8Vc6xficN66S27K7D9ms",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/gQ7nrX4ceJ7mNXAPTumtTcAG",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/TVMnVUTGm9vEZbLRVgNmmvTs",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/rr8DfvbTZu2tsqoG1PsYe7UA"
+        ]
+    },
+    {
+        "id": "men7",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Graphic Print Workout Tshirt",
+        "price": " 1799",
+        "offerPrice": "1049",
+        "perOff": "42 % Off",
+        "desp": "Amp your fitness wardrobe with this Graphic Print crew neck workout t-shirt. With fabric that lets you breathe without restriction, this t-shirt keeps up with your active life!",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Light Purple",
+            "Fabric :98% Polyester, 2% Spandex",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Anti Microbial",
+            "Odour Resistant",
+            "Breathable fabric"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/bxUetfAMWWG3NiX3KErbez2c",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/nkK6Dx1g4bRj7kPz7rhuXQ38",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Ejp8Bd3tUtK6yJeHrJ4JyC2Z",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/7AvGuHBoR82V3kNpeHMNbGk5",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/wfxML5kBwU7uy9EXExCLTAgf"
+        ]
+    },
+    {
+        "id": "men8",
+        "tshirt": true,
+        "joggers": false,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Colourblock Active Polo T-shirt",
+        "price": " 1899",
+        "offerPrice": "1180",
+        "perOff": "38 % Off",
+        "desp": "The All Day Play Polo is your ultimate pick for a preppy workoutfit . Accented with signature branding , details & super comfortable styling.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Navy",
+            "Fabric: 100% Polyester",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Breathable fabric"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/XHrhVnJVKpn4MmruG8obr4kH",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/b3ioyLTF8KiHvMvfD6sGcan3",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/T7yFF9R8GKduVauewFT4EmUB",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/P6ME8hMuMX9iqnZpFgWxSUnM",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XHrhVnJVKpn4MmruG8obr4kH"
+        ]
+    },
+    {
+        "id": "men9",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "Vitals Plus Workout Jogger",
+        "price": " 2799",
+        "offerPrice": "1679",
+        "perOff": "40 % Off",
+        "desp": "The perfect pair of performance joggers that are designed to ensure all day comfort. Made with supersoft breathable fabric and a clean waistband with inside drawstring that let's you move with extra ease.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Black",
+            "Fabric: 93% Polyester, 7% Spandex",
+            "Breathable Fabric",
+            "Inside drawstring"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/fLftzANKZcU5cq41ZvnWfpTs",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/W28wUzCrYQxb67k3RLE9uyR3",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/dZH9KbZdrD2wcmBAWBY5wERe",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/e3qkBL3DDtgmCptRoMhRnFa7",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/ZyJyWN4LjgALNUZcxdKRv32R"
+        ]
+    },
+    {
+        "id": "men10",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Supersoft Solid Trackpants",
+        "price": " 2399",
+        "offerPrice": "1249",
+        "perOff": "48 % Off",
+        "desp": "The perfect pair of performance trackpants that are designed to ensure all day comfort. Made with supersoft breathable fabric and a clean waistband with inside drawstring that let's you move with extra ease.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Navy",
+            "Fabric: 95% Cotton 5% Spandex",
+            "Breathable",
+            "Supersoft",
+            "Inside drawstring"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/qrgQ6FUaVwHAfaqb2A9p2o1z",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XpnoAGSFmLPmSfpbR1sbfm75",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/bXxDgEUd15chGpYuABkpXBN1",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/1odoyjvW2WaguT6ZyeHUwfN5",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/sLnzLUg7MEb6P12RpK1XfL3W"
+        ]
+    },
+    {
+        "id": "men11",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Neon Highlight Joggers",
+        "price": " 3299",
+        "offerPrice": "1715",
+        "perOff": "48 % Off",
+        "desp": "Snug, stretchy, soft - what more could you really ask for, in the perfect pair of joggers? Designed for all-day comfort, this jogger with its neon-ic design detailing, waistband drawstring to secure the perfect fit and smart tapered fit is your perfect partner for a nice jog across the park or for a quick stroll to the market.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Grey",
+            "Fabric: 95% Cotton 5% Spandex",
+            "Relaxed Tapered Fit",
+            "Adjustable Waist-band",
+            "Biowashed"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/dfKDqzmjqkqRwW5zaFTcCBZq",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/caZFyMJgvLVKx2XWTaSsAExn",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/o7w7bVuS73e8H5VKizSLchPz",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/XupY8emEpg29DF8UXDEUuQNM",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/iGrx45UHBTDNvYghiyvmbAac"
+        ]
+    },
+    {
+        "id": "men12",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Solid Active Cuffed Joggers",
+        "price": " 1599",
+        "offerPrice": "799",
+        "perOff": "50 % Off",
+        "desp": "These joggers are designed with optimum performance features like moisture wicking and ultimate comfort. Made from lighweight and breathable fabric.Activewear for the everyday athlete.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Black",
+            "Fabric: 94% Polyester, 6% Spandex",
+            "Relaxed Tapered Fit",
+            "Light weight",
+            "Moisture Wicking"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/6X1iHzTKaeVPpedg8J8gPJeu",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/BqZj12Rraz1uCUzLPiD9Ur9P",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Dahcm1BTkwDJNR9onCVxBFgd",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/16k9V9Bk7uDdUQ37ZVe7QnbH",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/QB5vz8zJM5K28GzDB5t9NPYa"
+        ]
+    },
+    {
+        "id": "men13",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Flexoft Men's Slim Lounge Joggers",
+        "price": " 1999",
+        "offerPrice": "1299",
+        "perOff": "35 % Off",
+        "desp": "Looking for something comfortable yet cool to wear before or after your workout? Well then your search ends here! Designed to ensure all-day comfort during the cooler part of the year, this jogger features a sophisticated slim fit, a convenient pocket with zip closure and a clean waist-band with an inwards drawstring. Smart yet snug, these joggers are ideal for a day-in that involves working(out) from home or a day-out that includes embracing the cold air and warm sun during a revitalizing jog!",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Bottle Green",
+            "Fabric: 95% Cotton, 5% Spandex",
+            "Relaxed Tapered Fit with Adjustable waist-band",
+            "Light weight",
+            "Biowashed"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/QbNwkamH4KYhWgUi7N2mTKQt",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Sv9MAgVhZenpHoTBEzcHDhBg",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/A7xWDgZNPGQGUYKv73dHWgWb",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/2uTMP8VSVmLfg2HFg8g7qoXv",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/gm9B6FA6U1vAyQc1PbEktDpZ"
+        ]
+    },
+    {
+        "id": "men14",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Solid Workout Joggers",
+        "price": " 2799",
+        "offerPrice": "1679",
+        "perOff": "40 % Off",
+        "desp": "The perfect pair of performance joggers that are designed to ensure all day comfort. Made with supersoft breathable fabric and a clean waistband with inside drawstring that let's you move with extra ease.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Grey",
+            "Fabric: 93% Polyester, 7% Spandex",
+            "Relaxed Tapered Fit with Adjustable waist-band",
+            "Breathable Fabric",
+            "Inside drawstring"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/6o8Vk1QT5WVZrcS1ywud1De9",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Xg6sjanxHhBcukVZjuMB3UJQ",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/Akt5THH6R9DQnSKJt4Atspm4",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/BELTaxKtyQJDyqejqazXfNKY",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/yBzKHjZVKt2e1XoRqcb1gwtU"
+        ]
+    },
+    {
+        "id": "men15",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Vitals Solid Running Joggers",
+        "price": " 2599",
+        "offerPrice": "1351",
+        "perOff": "48 % Off",
+        "desp": "All day comfort jogger is your go to pair when you need maximum comfort and minimum worries . Its supersoft and made with breathable fabric . You can size it to your comfort with waistband drawcord.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Colour: Dark Grey",
+            "Fabric: 48% Cotton, 48% Polyester, 4% Spandex",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Anti Microbial",
+            "Odour Resistant"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/uDUMkaqg9SVSYY8APDvXGejY",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/bSxkV9Gq1gCYedxsVkn5Tzb5",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/pHK92HeuYRAkMiWyruYEBPzJ",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/RhKozWSCpFKAfDQDuhEAAGHv",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/VJaaUb2ysLG8f2uUhgskTnMd"
+        ]
+    },
+    {
+        "id": "men16",
+        "tshirt": false,
+        "joggers": true,
+        "footwear": false,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "FlashRun Reflective Men's Running Trackpants",
+        "price": " 2299",
+        "offerPrice": "1195",
+        "perOff": "48 % Off",
+        "desp": "Run that extra mile in the FlashRun Reflective Men's Running Trackpants with reflective side detail. Whether amateur or star of the future, these pants are designed to enhance performance at every level. Specially designed for the ones who believe in No Rules and Just Run.",
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "details": [
+            "Color: Olive",
+            "Fabric: 100% Polyester",
+            "Flydry: sweat-wicking tech to keep your workouts dry",
+            "Hi-viz: Reflective print for high visibility in low light",
+            "Antimicrobial finish",
+            "Odour Resistant, Breathable Fabric"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/NREJhJYRcqjEGsFp3WecBbvV",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/WSRGNgcyfL6FtNLWi868uzpS",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/jXXJiMeG3cZ9VdnUpEpy7gHT",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/EHyEutse4PzghQomLsvgsDrK",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/4GVmFqut2SdkMw6MRdVLEKRQ"
+        ]
+    },
+    {
+        "id": "men17",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": true,
+        "justLaunched": false,
+        "name": "Dazsh Men Running Shoe",
+        "price": " 4999",
+        "offerPrice": "2499",
+        "perOff": "50 % Off",
+        "desp": "Need something for your daily runs or a pair that provides comfort all day long? Look no further. Introducing the Dazsh. With a German engineered insole, these runners give you the cushioning and rebound you need. An 8mm heel to toe drop, and an overall combination of durability and support these shoes make every run a smooth one. A must have for the everyday athlete!",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Colour: Black/Red",
+            "German technology in the insole provides cushioning while retaining its shape over time.",
+            "Upper mesh engineered for better breathability.",
+            "Compressed EVA midsole for higher rebound.",
+            "High quality carbon rubber in the outsole for durability, enhanced grip, traction, flexibility."
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/LivxymbN9UXFqFSki2BTgRQt",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/jmEJ2sxVsuE9BrqSHyG98mi4",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/xE2zyaLerR1MrjQdiRY8gUyh",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/1M2EKUXgaaFZaqRToK9fU6Tn",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/qh6BqDVL9jP7gowAdD4aTJFk"
+        ]
+    },
+    {
+        "id": "men18",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": true,
+        "name": "Firebird Men Running Shoe",
+        "price": " 4599",
+        "offerPrice": "2499",
+        "perOff": "43 % Off",
+        "desp": "Introducing the Firebird Men Running Shoe. With a German engineered insole, these runners give you the cushioning and rebound you need. An 8mm heel to toe drop, and an overall combination of durability and support these shoes make every run a smooth one.",
+        "sizes": [
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10",
+            "UK11"
+        ],
+        "details": [
+            "Colour: Black/Orange",
+            "German technology in the insole provides cushioning while retaining its shape over time.",
+            "Upper mesh engineered for better breathability.",
+            "Compressed EVA midsole for higher rebound.",
+            "Anti Microbial."
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/AMWzPiqyx5Um8HrTtrn2bac1",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/unQwLt3aTZALj7CPUghBiTJU",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/WJ1tioVA16jvXWc2MpVzD6Ej",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/YfHqq8De256DASzkZpr6SBot",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/qfT5uXDoUCt5pcHZuPX65nM3"
+        ]
+    },
+    {
+        "id": "men19",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Avant Men's Lightweight Running and Walking Shoes",
+        "price": " 1999",
+        "offerPrice": "799",
+        "perOff": "60 % Off",
+        "desp": "It's time to lace up and bounce off in Avant's Lightweight Running and Walking Shoes. These shoes have been designed for an athletic body, due to specialised features such as its thickly padded plush comfy midsole - that has been engineered to handle foot pressure during impact and take-off, it’s high quality breathable upper mesh - that regulates the inflow and outflow of air keeping your feet cozy so you can run the extra mile!",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Sole: nylon",
+            "Rubber Sole for Increased Durability and Traction. Far Superior to traditional TPR soles in terms",
+            "5 mm extra cushioned padded Eva Insole",
+            "Super Lightweight and Breathable Mesh Upper",
+            "Shock Absorbing high density Eva Midsole"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/xdECaCNuAcuUwuCKCNZd66Dr",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/1zDuW6KLhmVvepT2KAiiTFu2",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/skyrsujkVYQe37QLYXAxW5Lc",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/yPKuNsNuCCyCwMaX8on6aBmb",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/HrY2GF8ZKvzAcucoaeSHZLJu"
+        ]
+    },
+    {
+        "id": "men20",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Flomo Men Running Shoe",
+        "price": " 1999",
+        "offerPrice": "799",
+        "perOff": "60 % Off",
+        "desp": "Flomo Men Running Shoe are designed to provide added support and comfort through the entire duration of your activity. These shoes comes with great cushsoning to support all kinds of movement and encorage flexibility.",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Colour: Navy",
+            "German technology in the insole provides cushioning while retaining its shape over time.",
+            "Upper mesh engineered for better breathability.",
+            "Super Lightweight and Breathable Mesh Upper",
+            "Compressed EVA midsole for higher rebound."
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/fwTSU9v4AQ8vcdSVvCwH7wDv",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/NrB5qyHT2aDgzhm4vrRNnKrU",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/B6eGTmJrXohCbjA2H6UqzZx6",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/4TeFs9BTgH4DgDWMJsP46Djo",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/yc4B637xpW4mAzZAuEBRoKK8"
+        ]
+    },
+    {
+        "id": "men21",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Harerun Men Running Shoes",
+        "price": " 3599",
+        "offerPrice": "1799",
+        "perOff": "50 % Off",
+        "desp": "The Cultsportone Viper running shoe adds functionality and style to your running routine.Designed with breathable mesh, the engineered upper enhances your comfort during long running sessions. Added protection is given to your toes by fusing in the toe area. This shoe features a rubberised EVA outsole with a high abrasion compound that ensures durability at every pace, and a heel collar that protects the ankle. Superior cushioning and rebound are provided by German-engineered insoles. Take to the streets in this shoe that seamlessly blends style and functionality.",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Colour: Navy/ Red",
+            "Material: Mesh",
+            "Enhanced cushioning",
+            "Breathable fabric",
+            "Flexible"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/iskHghJ7GtFs39N4por37jYX",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/maoY2u1yhT9WVURtn4eYMLL1",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/A6faNV98qw2hAJHYox14PfwN",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/SwtAWyz7U3U9AXdpk6kWFoFG",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/QmEAbQXmTMDAJmoJFzSjr5qj"
+        ]
+    },
+    {
+        "id": "men22",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Avant Men's Nitro Running and Gym Shoes",
+        "price": " 1599",
+        "offerPrice": "699",
+        "perOff": "59 % Off",
+        "desp": "Avant's Signature Shoes- The Nitros that are top on the comfort and style factor. These shoes have central lace-ups, mesh and synthetic upper, cushioned footbed with raised heel padding and removable insole padding for better shock absorption and energy return.",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Comfortable, Stylish and Cool Daily Use Sports Shoe",
+            "5mm Thick Insole - Extra thick insole for added comfort and durability",
+            "Removable Insole: An insole which can be removed to accommodate a medical orthotic.",
+            "Ideal for Running, Training, Gym Usage, Walking and all other daily activities",
+            "Lifestyle: Sports and Casual Wear"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/62kDiggA9YcBtpt6bj2bLc3U",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/aH82bQvoExRVZ4ToB7Q5vuZg",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/A2p58crBqXMkGncfwu52mDSt",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/FxKfJp5hdbDHhg6LMjTKg5vS",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/oVJMFxBvtziBo6G2rDwTcj5k"
+        ]
+    },
+    {
+        "id": "men23",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "X1 Men Training Shoe",
+        "price": " 4999",
+        "offerPrice": "2499",
+        "perOff": "50 % Off",
+        "desp": "Time to step into training mode! Introducing the Cultsport X1. These trainers are designed for the ones looking for durability & support. An upper mesh panel crafted and moulded to provide a great fit but letting your feet breathe at the same time. The outsole is engineered with flex grooves to help with multidirectional foot movements during your sessions. So all you have to worry about is your workout.",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Colour: Grey/Blue/White",
+            "Durable Upper material engineered to provide superior comfort during workouts.",
+            "Compressed EVA midsole for high energy return.",
+            "Superior quality levelled outsole for enhanced grip and exceptional stability during workouts.",
+            "Ergonomically designed Flex Grooves in the outsole that helps in forward and lateral movements."
+        ],
+        "specs": "China",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/h7hggA6xvZa1byV348EfRE5t",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/5upAz98f5FVPyB5cneHRwNKf",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/b59dNFtKLYUE1qLZs4yBMVHW",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/GkKKmg9TvZ5WfPxXXhgDXaEP",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/GSJW1tB3bMm8dHaJ2v1qkeze"
+        ]
+    },
+    {
+        "id": "men24",
+        "tshirt": false,
+        "joggers": false,
+        "footwear": true,
+        "bestSeller": false,
+        "justLaunched": false,
+        "name": "Glissade Men Slides",
+        "price": " 1999",
+        "offerPrice": "999",
+        "perOff": "50 % Off",
+        "desp": "Slide into Style in these uber stylish Cultsport Slides. The contoured footbed cradles your foot and delivers comfort, while the perfectly-placed Cultsport branding adds a pop of style. They're easy to slide in and out of, so you're not wasting time on buckles or straps.",
+        "sizes": [
+            "UK6",
+            "UK7",
+            "UK8",
+            "UK9",
+            "UK10"
+        ],
+        "details": [
+            "Colour: Off White",
+            "Material: EVA",
+            "Slip On",
+            "Enhanced cushioning",
+            "Soft and Durable"
+        ],
+        "specs": "India",
+        "smallImg": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/rDPHFbbqAxVAFNvxxX4P3dms",
+        "mainImg": [
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/rDPHFbbqAxVAFNvxxX4P3dms",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/RrcFNWj1TAVCm27Pp3bbzZKx",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/TyU5T5mtHo5BQpaNoJh58jEY",
+            "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_3:4,c_fill/dpr_2/cultgear-content/4E1t8q71q4CjfJgggf3gqjJE"
+        ]
+    }
+]

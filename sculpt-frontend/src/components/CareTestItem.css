@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.care-tests-page {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.care-test-image {
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 50px;
+}
+
+.care-test-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-test-all {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.care-test-link {
+    display: flex;
+}
+
+.care-test-link p {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.care-test-details {
+    margin-top: 10px;
+}
+
+.care-test-card {
+    position: relative;
+    height: 90%;
+    padding-top: 15px;
+    padding-left: 17px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.care-test-card h2 {
+    font-size: 1.9rem;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.care-test-card p {
+    font-size: 0.9rem;
+    font-family: 'Alegreya SC', serif;
+    color: gray;
+}
+
+.care-test-price {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.care-card-price {
+    display: flex;
+    height: 20px;
+    color: gray;
+}
+
+.care-card-price p {
+    font-size: 1.2rem;
+    transform: translateY(-30%);
+}
+
+.care-card-price i {
+    transform: translateY(40%);
+    font-size: 1.1rem;
+}
+
+.care-card-offerPrice {
+    display: flex;
+    height: 20px;
+    margin-left: 8px;
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+
+.care-card-offerPrice p {
+    color: black;
+    font-size: 1.5rem;
+    transform: translateY(-110%);
+}
+
+.care-card-offerPrice i {
+    font-size: 1.4rem;
+    transform: translateY(30%);
+}
+
+.care-test-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.care-test-repo {
+    display: flex;
+    flex-direction: column;
+}
+
+.care-test-repo-align {
+    display: flex;
+    height: 30%;
+    font-size: 1rem;
+}
+
+.care-test-repo .care-sp {
+    padding-right: 5px;
+}
+
+.care-test-buy {
+    display: flex;
+    align-items: center;
+    transform: translateY(-20%);
+}
+
+.care-button {
+    width: 100px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.care-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.care-button-2 {
+    color: #fff;
+    border: 3px solid rgb(85, 4, 4);
+    background-image: linear-gradient(30deg, rgb(85, 4, 4) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+}
+
+.care-button-2:hover,
+.care-button-2 a:hover {
+    background-position: 100%;
+    color: black;
+}
+
+.care-test-include {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.care-test-include p {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    /* font-weight: bold; */
+}
+
+.care-testInclude-card {
+    width: 150px;
+    height: 140px;
+    cursor: pointer;
+}
+
+.care-testInclude-card-img {
+    height: 80px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.care-testInclude-card-img2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.care-testInclude-card-img2 img {
+    width: 60px;
+    height: 60px;
+}
+
+.care-testInclude-card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.care-testInclude-card-name {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    font-size: 0.9rem;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.care-testInclude-card-name p {
+    font-size: 0.8rem;
+}
+
+#blurPage.activePage {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popupTest {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    /* border: 2px solid black; */
+    width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+#popupTest.activeTest {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.care-popup-all {
+    /* margin: 40px 20px; */
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* left: 5%; */
+}
+
+
+
+.care-popup-test {
+    /* width: 80%; */
+    width: 350px;
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.care-popup-details {
+    display: flex;
+}
+
+.care-popup-details-img {
+    height: 25%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.care-popup-details-img img {
+    width: 60px;
+    height: 60px;
+}
+
+.care-popup-details-info {
+    padding-bottom: 15px;
+}
+
+.care-popup-details-info h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.care-popup-repo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.care-popup-repo-align {
+    display: flex;
+    height: 30%;
+    font-size: 0.8rem;
+    line-height: 5px;
+    color: gray;
+}
+
+.care-popup-repo .care-sp {
+    padding-right: 5px;
+    transform: translateY(-15%);
+}
+
+
+.care-popup-desp {
+    font-size: 0.9rem;
+    font-family: 'Alegreya SC', serif;
+    color: gray;
+}
+
+.bc {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bc button {
+    background-color: grey;
+    border: 1px solid grey;
+}

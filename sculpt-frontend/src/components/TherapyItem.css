@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+}
+
+.mind-card {
+    width: 530px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.mind-card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.mind-card:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.mind-card-details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    color: black;
+    height: 200px;
+}
+
+.mind-card-name {
+    width: 100%;
+    height: 40px;
+}
+
+.mind-card-name p {
+    font-family: 'Nuosu SIL', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mind-card-line {
+    width: 8%;
+    height: 3px;
+    background-color: grey;
+    margin-bottom: 10px;
+}
+
+.mind-card-desp {
+    font-size: 0.8rem;
+    width: 70%;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(74, 71, 71);
+}
+
+.mind-card-session {
+    display: flex;
+    font-size: 0.9rem;
+    width: 100%;
+    transform: translateY(-10%);
+}
+
+.mind-card-session i {
+    font-size: 1.2rem;
+    color: green;
+}
+
+.mind-card-session p {
+    padding-left: 5px;
+    transform: translateY(-10%);
+    color: rgb(52, 49, 49);
+}
+
+.mind-card-p {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.mind-card-p i {
+    transform: translateY(10%);
+}
+
+.mind-card-p p {
+    transform: translateY(-65%);
+}
+
+.mind-card-price {
+    display: flex;
+    height: 20px;
+    color: gray;
+    /* bottom: 0; */
+}
+
+.mind-card-offerPrice {
+    display: flex;
+    height: 20px;
+    margin-left: 8px;
+}

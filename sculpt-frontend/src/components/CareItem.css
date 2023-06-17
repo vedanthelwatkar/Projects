@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+}
+
+.care-card {
+    width: 220px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.care-card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.care-card a {
+    text-decoration: none;
+}
+
+.care-card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.care-card-details {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 0px 3px;
+}
+
+.care-card-pr {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.care-card-offer {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    font-size: 0.9rem;
+    color: black;
+    transform: translateY(-10%);
+    font-weight: bold;
+}

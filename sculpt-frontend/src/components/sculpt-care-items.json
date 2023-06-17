@@ -1,0 +1,562 @@
+[
+    {
+        "id": "1",
+        "testName": "Full Body Health Checkup",
+        "testDesc": "This test will help you understand the status of your key health indicators. It helps in early detection of common chronic & lifestyle health conditions related to thyroid, diabetes, liver, kidney, heart and blood.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/FitCheck_Magazine-02.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/FitCheckHero012020.png",
+        "price": "1990",
+        "offerPrice": "990",
+        "noOfTests": "73 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "1a",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "1b",
+                "name": "Glucose - Fasting Blood (FBS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A glucose test is used to determine the amount of glucose in the blood. It is mainly used in screening for pre-diabetes or diabetes."
+            },
+            {
+                "key": "1c",
+                "name": "Glycosylated Haemoglobin (HbA1c)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "2 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "This test evaluates the average amount of glucose in the blood over the last 2 to 3 months. It monitors blood glucose levels for already diagnosed diabetics so that the risk of complications related to it can be assessed and prevented. It can also be used to assess predisposition to diabetes."
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "testName": "Vitamin Screening (VitB12,VitD)",
+        "testDesc": "This pack checks for Vitamin B12 and vitamin D levels in your body. It is recommended for people showing symptoms of Vitamin B12 deficiency include low energy levels, muscle weakness or mouth ulcers, bone pain.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Vitamin_Profile_clp.jpg",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/mp/diag_pack_Vitamin_Profile_hero.jpg",
+        "price": "1990",
+        "offerPrice": "790",
+        "noOfTests": "2 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "2a",
+                "name": "Vitamin B12",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00533.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A deficiency of vitamin B12 can cause lack of energy and tiredness. Vitamin B12 works closely with vitamin B9 to help make red blood cells and to make nerves and iron work better in the body."
+            },
+            {
+                "key": "2b",
+                "name": "Vitamin D Total",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00536.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Vitamin D helps your body absorb calcium. Vitamin D deficiency is linked to fatigue, bone and muscle pain, as well as getting ill more often than usual."
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "testName": "Thyroid Screening (T3,T4,TSH)",
+        "testDesc": "Thyroid secretes hormones which influence the metabolic rate, protein synthesis and development of your body. This test checks the amount of the following critical hormones: T3, T4, TSH.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Thyroid_Screening_clp.jpg",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/mp/diag_pack_Thyroid_Screening_hero.jpg",
+        "price": "590",
+        "offerPrice": "390",
+        "noOfTests": "3 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "3a",
+                "name": "Thyroid Stimulating Hormone (TSH)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00487.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "This test is done to screen for and diagnose thyroid disorders. It is done if you have symptoms of hyperthyroidism like weight loss, nervousness, tremors or hypothyroidism like weight gain, constipation, fatigue, cold intolerance."
+            },
+            {
+                "key": "3b",
+                "name": "Thyroxine Total (T4)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00109.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A thyroxine test helps diagnose disorders of the thyroid. Thyroxine, also known as T4, is a type of thyroid hormone. This test measures the level of T4 in your blood. Too much or too little T4 can indicate thyroid disease."
+            },
+            {
+                "key": "3c",
+                "name": "Triiodothyronine Total (T3)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00351.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "The Triiodothyronine test is performed to detect and diagnose disorders of the thyroid gland including hypothyroidism and to evaluate the effectiveness of the treatment."
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "testName": "Fitness Essentials - Men",
+        "testDesc": "Understand your fitness from the inside out. This pack will help you understand your vitals, hormones and vitamin levels, which will help you understand how to plan your workout journey accordingly.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/WorkoutWellness_men_magazine_web2.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/diagnostics/screening-packs/Workout_Wellness_men_hero.png",
+        "price": "2990",
+        "offerPrice": "1790",
+        "noOfTests": "80 tests",
+        "reportTime": "Report ready in 72 Hrs",
+        "testsInclude": [
+            {
+                "key": "4a",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "4b",
+                "name": "Glucose - Fasting Blood (FBS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A glucose test is used to determine the amount of glucose in the blood. It is mainly used in screening for pre-diabetes or diabetes."
+            },
+            {
+                "key": "4c",
+                "name": "Kidney Function Test (KFT)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00336.jpg",
+                "tests": "10 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "Your kidneys filter out waste materials from the blood and control the levels of water and minerals in the body. In addition, they are critical to the production of Vitamin D, RBCs and hormones that regulate your blood pressure."
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "testName": "Fitness Essentials - Women",
+        "testDesc": "Understand your fitness from the inside out. This pack will help you understand your vitals, hormones and vitamin levels, which will help you understand how to plan your workout journey accordingly.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/WorkoutWellness_women_magazine_web2.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/diagnostics/screening-packs/Workout_Wellness_women_Hero.png",
+        "price": "2990",
+        "offerPrice": "1790",
+        "noOfTests": "56 tests",
+        "reportTime": "Report ready in 72 Hrs",
+        "testsInclude": [
+            {
+                "key": "5a",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "5b",
+                "name": "Glucose - Fasting Blood (FBS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A glucose test is used to determine the amount of glucose in the blood. It is mainly used in screening for pre-diabetes or diabetes."
+            },
+            {
+                "key": "5c",
+                "name": "Kidney Function Test (KFT)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00336.jpg",
+                "tests": "10 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "Your kidneys filter out waste materials from the blood and control the levels of water and minerals in the body. In addition, they are critical to the production of Vitamin D, RBCs and hormones that regulate your blood pressure."
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "testName": "Iron Screening (Ferritin,Iron,TIBC,PTS)",
+        "testDesc": "Iron is an essential trace element and nutrient that is necessary to maintain life. It is an important part of haemoglobin, which carries oxygen throughout your body. Low iron levels can cause fatigue, shortness of breath, anxiety and head pain.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/IronScreeningClp122020.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/IronScreeningHero122020.png",
+        "price": "990",
+        "offerPrice": "590",
+        "noOfTests": "4 tests",
+        "reportTime": "Report ready in 48 Hrs",
+        "testsInclude": [
+            {
+                "key": "6a",
+                "name": "Ferritin",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00285.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Ferritin is the storage form of iron in the body. Iron is released from ferritin when the body needs it. This test measures how much iron is stored in your body. When your iron level is low, your body will pull iron out of storage to use."
+            },
+            {
+                "key": "6b",
+                "name": "Iron",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00334.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Iron is a mineral in your body which is required to make red blood cells and is also an important part of haemoglobin, a protein in your blood that helps carry oxygen from your lungs to the rest of your body. Too little (anemia) or too much (iron overload) iron in your system is harmful for your body."
+            },
+            {
+                "key": "6c",
+                "name": "Percentage Transferrin Saturation",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00155.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "When iron absorption is abnormally high, transferrin proteins become more saturated with iron. An elevated TS value therefore reflects an increase in iron absorption."
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "testName": "Diabetes Screening (FBS,HBA1C)",
+        "testDesc": "Diabetes is a long-term condition that causes high blood sugar levels, along with several other associated symptoms like frequent urination, intense thirst and hunger, weight gain, unusual weight loss and fatigue. This pack helps in monitoring blood glucose levels. It is recommended for people who are diabetic, pre-diabetic, or have a family history of diabetes, heart disease or obesity",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Diabetes_Screening_clp.jpg",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/mp/diag_pack_Diabetes_Screening_hero.jpg",
+        "price": "590",
+        "offerPrice": "450",
+        "noOfTests": "3 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "7a",
+                "name": "Glucose - Fasting Blood (FBS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A glucose test is used to determine the amount of glucose in the blood. It is mainly used in screening for pre-diabetes or diabetes."
+            },
+            {
+                "key": "7b",
+                "name": "Glycosylated Haemoglobin (HbA1c)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "2 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "This test evaluates the average amount of glucose in the blood over the last 2 to 3 months. It monitors blood glucose levels for already diagnosed diabetics so that the risk of complications related to it can be assessed and prevented. It can also be used to assess predisposition to diabetes."
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "testName": "Immunity Screening",
+        "testDesc": "This pack evaluates various health parameters, which can have an impact on your immunity levels.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/ImmunityCcreening_Magazine.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/ImmunityScreening_hero.png",
+        "price": "2990",
+        "offerPrice": "1990",
+        "noOfTests": "43 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "8a",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "8b",
+                "name": "Creatinine",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00334.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Creatinine is a waste product that forms when creatine breaks down and is then filtered out by the Kidneys through urine. This test is done to evaluate the health of Kidneys. It can be done as a part of basic metabolic panel or when you have signs of Kidney disease like swelling of face, ankle, lower back pain, changes in urine output etc."
+            },
+            {
+                "key": "8c",
+                "name": "Ferritin",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00285.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Ferritin is the storage form of iron in the body. Iron is released from ferritin when the body needs it. This test measures how much iron is stored in your body. When your iron level is low, your body will pull iron out of storage to use."
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "testName": "Hair Fall Screening (Ferritin,TSH,VitB12,VitD)",
+        "testDesc": "This pack is recommended for both men and women with hair loss symptoms to identify any deficiencies. It checks for the vitamin, mineral and hormonal levels in your body. These reports help your trichologist to determine the course of your treatment.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/HairFallScreeningClp122019.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/HairFallScreeningHero122019.png",
+        "price": "2990",
+        "offerPrice": "1090",
+        "noOfTests": "4 tests",
+        "reportTime": "Report ready in 48 Hrs",
+        "testsInclude": [
+            {
+                "key": "9a",
+                "name": "Ferritin",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00285.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Ferritin is the storage form of iron in the body. Iron is released from ferritin when the body needs it. This test measures how much iron is stored in your body. When your iron level is low, your body will pull iron out of storage to use."
+            },
+            {
+                "key": "9b",
+                "name": "Thyroid Stimulating Hormone (TSH)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00487.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "This test is done to screen for and diagnose thyroid disorders. It is done if you have symptoms of hyperthyroidism like weight loss, nervousness, tremors or hypothyroidism like weight gain, constipation, fatigue, cold intolerance."
+            },
+            {
+                "key": "9c",
+                "name": "Vitamin B12",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00533.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A deficiency of vitamin B12 can cause lack of energy and tiredness. Vitamin B12 works closely with vitamin B9 to help make red blood cells and to make nerves and iron work better in the body."
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "testName": "Bone Health Screening (ALP,Ca,P,TSH,Uric,VitD)",
+        "testDesc": "This pack is recommended for anyone experiencing bone pain, inactivity and stiffness. It screens for underlying medical conditions which can be reviewed by your Orthopaedic doctor.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/BoneHealthScreening_Magazine.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/BoneHealthScreening_Hero.png",
+        "price": "1490",
+        "offerPrice": "990",
+        "noOfTests": "6 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "10a",
+                "name": "Alkaline Phosphatase (ALP)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00285.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "ALP is an enzyme found in several tissues in the body, majorly in bone and Liver. Elevated levels of ALP in the blood indicate Liver damage, blockage of the bile ducts or a bone disease."
+            },
+            {
+                "key": "10b",
+                "name": "Calcium",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00128.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A blood calcium test is recommended to screen for, diagnose, and monitor a range of conditions relating to the bones, heart, nerves, muscles, Kidneys, thyroid and teeth."
+            },
+            {
+                "key": "10c",
+                "name": "Phosphorus, Serum",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "5 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "This test determines phosphorus levels in the body and aids in the diagnosis of conditions caused by abnormally high or low levels of phosphorus."
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "testName": "Liver Function Test (LFT)",
+        "testDesc": "The liver helps your body get rid of harmful toxins. Poor liver health can lead to chronic disease, unwanted weight gain and loss of energy. Here, we test the levels of various enzymes and proteins in your blood.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Liver_Screening_clp.jpg",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/mp/diag_pack_Liver_Screening_hero.jpg",
+        "price": "690",
+        "offerPrice": "290",
+        "noOfTests": "12 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "11a",
+                "name": "Alanine Aminotransferase (SGPT)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00270.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "ALT is an enzyme found mostly in the cells of the Liver and Kidney. In healthy individuals, ALT levels in the blood are low. When the Liver is damaged, excess ALT is released into the blood, which helps in early detection of Liver damage."
+            },
+            {
+                "key": "11b",
+                "name": "Albumin",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Albumin is a type of protein produced in Liver. It is a carrier protein for many small molecules/ ions and keeps fluid from leaking out of your blood vessels."
+            },
+            {
+                "key": "11c",
+                "name": "Albumin/Globulin Ratio",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00351.jpg",
+                "tests": "3 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "The A/G ratio is calculated from measured Total Protein, Albumin and calculated Globulin (Total Protein - Albumin). Because disease states affect the relative amounts of Albumin and Globulin, the A/G ratio may provide a clue as to the cause of the change in Protein levels."
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "testName": "Fever Panel",
+        "testDesc": "This pack screens for Typhoid, Malaria, Dengue and other causes of fever. It is recommended for those experiencing fever, body pain, headache, loose motion or chills for more than 2 days.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/FeverPanel_Magazine.jpg",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/FeverPanel_Hero.jpg",
+        "price": "1490",
+        "offerPrice": "690",
+        "noOfTests": "45 tests",
+        "reportTime": "Report ready in 60 Hrs",
+        "testsInclude": [
+            {
+                "key": "12a",
+                "name": "CRP Quantitative (C-Reactive Protein)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "1 test",
+                "time": "Reports in 60 Hrs",
+                "desp": "This test measures the level of C-Reactive Protein (CRP) in your blood. CRP is a protein secreted by the liver in response to inflammation or infection. Elevated levels of CRP can indicate viral or bacterial infection and tissue injury."
+            },
+            {
+                "key": "12b",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "12c",
+                "name": "Dengue IgG & IgM",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "3 tests",
+                "time": "Reports in 24 Hrs",
+                "desp": "This test helps diagnose a current or a recent infection by detecting the presence of antibodies produced by the body in response to a dengue fever infection."
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "testName": "Alcohol Risk Assessment",
+        "testDesc": "Assess the status of your liver and pancreatic function due to your alcohol habits. This test can help your physician advise safe limits for your consumption.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/Alcohol_magazine.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/Alcohol_Hero.jpg",
+        "price": "3990",
+        "offerPrice": "2290",
+        "noOfTests": "50 tests",
+        "reportTime": "Report ready in 36 Hrs",
+        "testsInclude": [
+            {
+                "key": "13a",
+                "name": "Amylase",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "This test is a marker of pancreatic disease and is used to diagnose or monitor a problem with pancreas, including pancreatitis, an inflammation of the pancreas."
+            },
+            {
+                "key": "13b",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "13c",
+                "name": "Glucose - Fasting Blood (FBS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A glucose test is used to determine the amount of glucose in the blood. It is mainly used in screening for pre-diabetes or diabetes."
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "testName": "Anemia Profile",
+        "testDesc": "This test helps in diagnosing haemoglobin deficiency or Anemia which can cause fatigue, weakness or lack of concentration. Common causes of these symptoms are nutritional deficiency, malnutrition or ongoing blood loss from the body.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/Anemia_Magazine_Web_new.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/diagnostics/screening-packs/AnemiaHero.png",
+        "price": "2990",
+        "offerPrice": "1490",
+        "noOfTests": "30 tests",
+        "reportTime": "Report ready in 72 Hrs",
+        "testsInclude": [
+            {
+                "key": "14a",
+                "name": "Iron Screening (Ferritin,Iron,TIBC,PTS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00333.jpg",
+                "tests": "4 test",
+                "time": "Reports in 48 Hrs",
+                "desp": "Iron is an essential trace element and nutrient that is necessary to maintain life. It is an important part of haemoglobin, which carries oxygen throughout your body. Low iron levels can cause fatigue, shortness of breath, anxiety and head pain."
+            },
+            {
+                "key": "14b",
+                "name": "Complete Haemogram (CBC+ESR)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00168.jpg",
+                "tests": "25 tests",
+                "time": "Reports in 36 Hrs",
+                "desp": "A complete haemogram evaluates your overall health and detects a wide range of infections and potential diseases. It counts your Red Blood Cells, which carry oxygen, White Blood Cells, which fight off diseases, and Platelets, which help in clotting when you hurt yourself. ESR aids in detection of certain chronic infections and cancers."
+            },
+            {
+                "key": "14c",
+                "name": "Vitamin B9 (Folic Acid)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "1 test",
+                "time": "Reports in 60 Hrs",
+                "desp": "This test determines a cause of anemia or neuropathy, to evaluate nutritional status or to monitor the effectiveness of folate deficiency treatment."
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "testName": "Obesity Risk Profile",
+        "testDesc": "This pack screens for underlying medical conditions associated with obesity. Anyone with recent weight gain, metabolic issues and high BMI are recommended to take this test and review with a physician.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/Obesity_Risk_Magazine.jpg",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/Obesity_Risk_Hero.jpg",
+        "price": "1990",
+        "offerPrice": "990",
+        "noOfTests": "15 tests",
+        "reportTime": "Report ready in 60 Hrs",
+        "testsInclude": [
+            {
+                "key": "15a",
+                "name": "Glucose - Fasting Blood (FBS)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00208.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "A glucose test is used to determine the amount of glucose in the blood. It is mainly used in screening for pre-diabetes or diabetes."
+            },
+            {
+                "key": "15b",
+                "name": "Glycosylated Haemoglobin (HbA1c)",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "2 tests",
+                "time": "Reports in 42 Hrs",
+                "desp": "This test evaluates the average amount of glucose in the blood over the last 2 to 3 months. It monitors blood glucose levels for already diagnosed diabetics so that the risk of complications related to it can be assessed and prevented. It can also be used to assess predisposition to diabetes."
+            },
+            {
+                "key": "15c",
+                "name": "Insulin - Fasting",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00329.jpg",
+                "tests": "1 test",
+                "time": "Reports in 36 Hrs",
+                "desp": "Insulin is a hormone secreted from pancreas and helps the cells to utilise glucose. This test is recommended in diabetes, PCOD/ PCOS and metabolic syndromes."
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "testName": "Pregnancy Test",
+        "testDesc": "Confirm your pregnancy with this blood test. Get this test done couple of days after your missed period.",
+        "mainImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/PregnancyScreening_Magazine.png",
+        "fullImageURL": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/PregnancyScreening_Hero.png",
+        "price": "790",
+        "offerPrice": "590",
+        "noOfTests": "1 test",
+        "reportTime": "Report ready in 48 Hrs",
+        "testsInclude": [
+            {
+                "key": "16a",
+                "name": "Beta Human Chorionic Gonodotropin",
+                "url": "https://s3.ap-south-1.amazonaws.com/curefit-content/image/carefit/diagnostic-tests/CF00004.jpg",
+                "tests": "1 test",
+                "time": "Reports in 48 Hrs",
+                "desp": "This test diagnoses pregnancy and aids in the investigation of suspected ectopic pregnancy. It also is also helpful in the first trimester for screening of genetic diseases like Downs syndrome. This test also helps your doctor diagnose certain types of tumors."
+            }
+        ]
+    }
+]

@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.fitness-nav {
+    height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding-left: 30px;
+}
+
+.mind-therapy-page {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.mind-therapy-image {
+    width: 70%;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 50px;
+    /* position: absolute; */
+}
+
+.mind-therapy-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.mind-therapy-all {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.mind-therapy-link {
+    display: flex;
+}
+
+.mind-therapy-link p {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.mind-therapy-details {
+    margin-top: 20px;
+}
+
+.mind-therapy-details h2 {
+    font-size: 1.9rem;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.mind-therapy-details p {
+    font-size: 1rem;
+    font-family: 'Alegreya SC', serif;
+    color: gray;
+}
+
+.mind-therapy-details hr {
+    color: gray;
+    height: 1px;
+    width: 100%;
+}
+
+.mind-therapy-packs {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+.mind-rad-label {
+    width: 100%;
+    cursor: pointer;
+}
+
+.mind-therapy-session {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.mind-therapy-1 {
+    width: 70%;
+    color: rgb(59, 55, 55);
+}
+
+.therapy {
+    line-height: 1px;
+}
+
+.therapy-1-1 {
+    font-weight: bold;
+    color: black;
+}
+
+.therapy-4-4 {
+    font-weight: bold;
+    color: black;
+}
+
+.therapy-8-8 {
+    font-weight: bold;
+    color: black;
+}
+
+.therapy-12-12 {
+    font-weight: bold;
+    color: black;
+}
+
+.therapy-desp {
+    color: gray;
+}
+
+.mind-therapy-2 {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 5px; */
+}
+
+.mind-rad-p {
+    display: flex;
+    color: gray;
+}
+
+.mind-rad-p p {
+    transform: translateY(-65%);
+    transform: translateX(-10%);
+}
+
+.mind-rad-p i {
+    transform: translateY(20%);
+}
+
+.therapy-rad-1-1 {
+    display: flex;
+    color: black;
+}
+
+.therapy-rad-4-4 {
+    display: flex;
+    color: black;
+}
+
+.therapy-rad-8-8 {
+    display: flex;
+    color: black;
+}
+
+.therapy-rad-12-12 {
+    display: flex;
+    color: black;
+}
+
+.mind-rad-pr {
+    display: flex;
+    height: 20px;
+    color: gray;
+}
+
+.mind-rad-offerPrice {
+    display: flex;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.mind-rad-per {
+    display: flex;
+    justify-content: right;
+    font-size: 0.9rem;
+}
+
+.mind-rad-per i {
+    transform: translateY(10%);
+}
+
+.mind-rad-per p {
+    transform: translateX(-4%);
+}
+
+.mind-therapy-rad {
+    display: flex;
+    padding-top: 3%;
+    /* padding-left: 5px; */
+    align-items: flex-start;
+    justify-content: left;
+
+}
+
+input[type=radio]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(85, 4, 4);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    /* border: 2px solid white; */
+}
+
+.therapy-book-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.therapy-button {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+    text-transform: uppercase;
+    /* font-weight: 200; */
+    /* margin-left: 30px; */
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.therapy-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.therapy-button-2 {
+    color: #fff;
+    border: 3px solid rgb(85, 4, 4);
+    background-image: linear-gradient(30deg, rgb(85, 4, 4) 50%, transparent 50%);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+}
+
+.therapy-button-2:hover,
+.therapy-button-2 a:hover {
+    background-position: 100%;
+    color: black;
+}
+
+.mind-therapy-offers {
+    margin-top: 15px;
+}
+
+.mind-therapy-offers h5 {
+    margin-bottom: 18px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.therapy-offer {
+    display: flex;
+    margin-left: 15px;
+    line-height: 9px;
+}
+
+.therapy-offer-i {
+    transform: translateY(-7%);
+    padding-right: 5px;
+}
+
+.therapy-offer-text {
+    display: flex;
+    font-size: 0.9rem;
+    font-family: 'Alegreya SC', serif;
+}
+
+.therapy-offer-text span {
+    padding-left: 10px;
+    color: rgb(184, 50, 50);
+    font-weight: bold;
+}
+
+.mind-therapy-works {
+    margin-top: 13px;
+}
+
+.mind-therapy-works h5 {
+    margin-bottom: 15px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.mind-therapy-work {
+    display: flex;
+    margin-left: 7px;
+    font-family: 'Alegreya SC', serif;
+    font-size: 0.9rem;
+}
+
+.mind-therapy-work img {
+    margin-right: 5px;
+    transform: translateY(-15%);
+}

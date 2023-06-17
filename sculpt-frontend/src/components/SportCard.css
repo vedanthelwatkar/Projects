@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.sport-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sport-card-container-inner {
+    width: 90%;
+    padding: 5px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .sport-card-container .slick-prev,
+.sport-card-container .slick-next {
+    width: 50px;
+    height: 80px;
+} */
+
+.sport-card-container .slick-next,
+.sport-card-container .slick-prev {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    z-index: 99 !important;
+    box-shadow: rgba(12, 135, 235, 0.5) 0px 0px 20px 5px;
+    background-color: #fff;
+    width: 40px !important;
+    height: 40px !important;
+    top: 40%;
+}
+
+.sport-card-container .slick-prev {
+    left: 0% !important;
+}
+
+.sport-card-container .slick-next {
+    right: 0% !important;
+}
+
+.sport-card-container .slick-arrow img {
+    width: 25px !important;
+    font-size: 4px;
+}
+
+.sport-card-container .slick-next:hover,
+.sport-card-container .slick-prev:hover {
+    box-shadow: rgba(228, 12, 235, 0.5) 0px 0px 20px 5px;
+    scale: 1.1;
+}
+
+/* .sport-card-container-inner-card {
+    padding: 10px 0;
+    max-width: 264px;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    transition: all .1s ease;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+} */
+
+/* .sport-card-container-inner-card a {
+    text-decoration: none;
+}
+
+.sport-card-container-inner-card img {
+    transform: translateY(-2%);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 25px;
+} */
+
+/* .sport-card-container-inner-card:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+    border-radius: 25px;
+} */
+
+.sport-card-items {
+    margin-top: 10px;
+    max-width: 350px;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    transition: all .1s ease;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    /* background-color: rgba(127, 126, 126, 255); */
+}
+
+.sport-card-items a {
+    text-decoration: none;
+}
+
+.sport-card-items img {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.sport-card-items:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    /* box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.75); */
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.sport-inner-card-head {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: grey;
+    padding-left: 5px;
+
+}
+
+.sport-inner-card-details {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    transform: translateY(-20%);
+}
+
+.sport-card-details-title {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(86, 79, 79);
+}
+
+.sport-card-details-price {
+    display: flex;
+}
+
+.card-details-op {
+    display: flex;
+    font-size: 1rem;
+    padding-right: 5px;
+}
+
+.card-details-op i {
+    transform: translateX(10%);
+}
+
+.card-details-op p {
+    transform: translateY(-17%);
+}
+
+.card-details-p {
+    display: flex;
+    font-size: 1rem;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: gray;
+}
+
+.card-details-p i {
+    transform: translateX(20%);
+}
+
+.card-details-p p {
+    transform: translateY(-19%);
+}
+
+.card-details-off {
+    padding-left: 7px;
+    transform: translateY(-7%);
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.sport-card-container .slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* .slick-prev {
+    padding: 2px 1px;
+    margin: 2px;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 5vw;
+    border: 2px solid black;
+    z-index: 1;
+    box-shadow: rgb(35 35 35 / 40%) 0px 0px 20px 5px;
+    transform: translateX(5%);
+    top: 40%;
+    left: -3%;
+}
+
+.slick-prev:hover {
+    border: 2px solid black;
+    scale: 1.1;
+}
+
+.slick-next {
+    padding: 2px 1px;
+    margin: 2px;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 5vw;
+    border: 2px solid black;
+    z-index: 1;
+    box-shadow: rgb(35 35 35 / 40%) 0px 0px 20px 5px;
+    transform: translateX(5%);
+    top: 40%;
+    right: -3%;
+}
+
+.slick-next:hover {
+    border: 2px solid black;
+    scale: 1.1;
+} */
