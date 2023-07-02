@@ -6,18 +6,23 @@ Welcome to SCULPT, a fitness website. SCULPT offers a variety of fitness program
 
 
 
+https://github.com/OVJ23/SCULPT/assets/91137683/29a30e9a-e2a7-4c85-87b8-bbf6fc08e793
 
-![Sculpt_2](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/7e0ee969-e1d8-45c3-83d4-b216e3e773e3)
+
 
 
 
 ## Built With
 
-![REACT](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/3fabb614-df1c-4641-b80b-329b237a9496)
+![REACT2](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/cd2243c3-16c5-447b-b411-b6a7f18b4714)
 
-![Mongo](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/9e846363-4a16-4960-9822-4e8a6262cc52)
+![Mongo2](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/d1bd96a5-93b1-4814-90f0-decb528fddf6)
 
+![node2](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/1695009b-f731-4d84-a1bf-30d0f1f741ac)
 
+![express-logo2](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/b255b8e7-e63a-4622-a434-7817a5d8549d)
+
+![bootstrap-logo-vector2](https://github.com/KAUSTUBH-23/Screenshot/assets/87135513/9e51e587-c1bf-4c9c-9217-f041f4f1f4a6)
 
 ## Getting Started with project
 
@@ -27,6 +32,7 @@ Make sure you have the following software installed on your system:
 
 - Node.js (v14 or higher)
 - MongoDB (v4 or higher)
+- Express (v4 or higher)
 
 ## Installation
 
