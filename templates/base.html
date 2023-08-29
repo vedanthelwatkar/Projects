@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Vote App </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href = "{%	 static 'c1.css' %}" />
+	</head>
+	<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<center>
+		<div class = "logo-container">
+			 <img class="logo" src="{% static 'images/vote.png' %}" alt="Vote App Logo">
+			<span class="tagline">Your voice, your vote - make it count with our voting app!</span>
+		</div>
+		<div class = "nav" >
+			<input type="checkbox" id="check">
+			<label for="check">
+				<i class="fas fa-bars" id="btn"></i>
+				<i class="fas fa-times" id="cancel"></i>
+			</label>
+			<div class = "sidebar">
+				<header>Voting App</header>
+				{% if user.is_authenticated %}
+					<ul>
+						<li><a href = "{% url 'home' %}"><i class="fas fa-home"></i>Home</a></li>
+						<li><a href = "{% url 'create' %}"><i class="fas fa-poll"></i>Create Poll</a></li>
+						<li><a href = "{% url 'cp' %}"><i class="fas fa-key"></i>Change Password</a></li>
+						<li><a href = "{% url 'ulogout' %}"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+					</ul>
+				{% else %}
+					<ul>
+						<li><a href = "{% url 'uhome' %}"><i class="fas fa-eye"></i>Login</a></li>
+						<li><a href = "{% url 'signup' %}"><i class="fas fa-user"></i>Signup</a></li>
+					</ul>
+				{% endif %}
+			</div>
+		</div>
+		{% block content %}
+		{% endblock %}
+	</center>
+	</body>
+</html>

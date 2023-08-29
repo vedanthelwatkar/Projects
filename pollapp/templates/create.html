@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1> Create New Poll </h1>	
+	<form method = "POST">
+	{% csrf_token %}
+		<table>
+			{{ fm.as_table }}
+		</table>
+		<input type = "submit" name = "sub" value = "Create Poll" />
+	</form>
+	<p class="msg">{{ msg }}</p>
+{% endblock %}

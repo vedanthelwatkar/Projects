@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{%block content %}
+	<h1> Available Polls </h1>
+	{% for d in data %}
+		<div class = "link">
+			<h2> {{ d.question }} </h1>
+			<a href ="{% url "vote" d.pk %}"> Vote </a>
+			<a href ="{% url "result" d.pk %}"> View Results </a>	
+			<a href ="{% url "delete" d.pk %}"> Delete </a>	
+		</div>
+	{% endfor %}
+	<p>
+		{% if messages %}
+		<br>
+	  	<div class="alert">
+    			{% for message in messages %}
+    	  		<strong>{{ message.tags }}</strong> {{ message }}
+			{% endfor %}	
+		</div>
+		{% endif %}
+	</p>
+{% endblock %}

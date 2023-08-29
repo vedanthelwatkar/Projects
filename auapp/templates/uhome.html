@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<h1> Login Page <h1>
+	<form method = "POST">
+	{% csrf_token %}
+		<input type = "email" name = "un" placeholder = "enter email" required/>
+		<input type = "password" name = "pw" placeholder = "enter password" required/>
+		<input type = "submit" value = "Login"/>
+	</form>
+	<p class="msg">{{ msg }}</p>
+{% endblock %}

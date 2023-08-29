@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1> Poll result for "{{ data.question }}"</h1>
+	<div class="res">
+		<ul>
+			<li>1. {{ data.op1 }}: {{ data.op1c }} votes</li>
+			<li>2. {{ data.op2 }}: {{ data.op2c }} votes</li>
+			<li>3. {{ data.op3 }}: {{ data.op3c }} votes</li>
+		</ul>
+	</div>
+{% endblock %}
