@@ -1,0 +1,337 @@
+.err{color:red; font-size:15px;}
+
+.getotp { position:relative;
+    top:30px;
+    width: 300px;
+    color:lightblue;
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.result{
+  color:white;
+}
+#HomeCard {
+    width: 100%;
+    background-color: #183D3D;
+}
+
+#pdfCard {
+    background-color: #183D3D;
+    width: 100%;
+}
+
+#chat2{
+    background-color: #183D3D;
+    height: 105%;
+}
+#chat-container{
+    background-color: #2e4646;
+}
+#messageContainer {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.message-container img {
+    width: 45px;
+    height: 100%;
+}
+
+.message-container .message-content {
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message-container .user-message {
+    background-color: #e7eaf6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.message-container .bot-message {
+    background-color: #e7eaf6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+/* Improved Custom Alert Styles */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  background-color: #F8D7DA; /* Alert red background color */
+  color: #721C24; /* Dark red text color */
+  border: 1px solid #F5C6CB; /* Light red border color */
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.5;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-alert:hover {
+  background-color: #F3E2E3; /* Lighter red background color on hover */
+  border-color: #F0B9BB; /* Lighter red border color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.process {
+    margin-top: 7px;
+    background: #5C8374;
+    border-color: #5C8374;
+    color:white;
+    border-radius: 5px;
+    font-size:120%;
+}
+
+
+.query-text {
+    background-color: #FF0000; /* Change this to your desired background color */
+    color: white; /* Add this line to set the text color */
+    font-size: 15px; /* You can adjust the font size here */
+    padding: 10px; /* Add any desired padding */
+    border-radius: 5px;
+  }
+  
+  
+.process:hover {
+    background-color: lightyellow;
+    color: black;
+    border-color: #113f67;
+}
+
+.file-name {
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    font-size: 16px;
+    color: #000;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type="file"]::before {
+    content: 'Select PDF files...';
+    display: inline-block;
+    background: #5C8374;
+    color: #fff;
+    border: none;
+    padding: 8px 50px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.del {
+    background: #5C8374;
+    border-color: #5C8374;
+}
+
+.del:hover {
+    background-color: lightyellow;
+    color: black;
+    border-color: #5C8374;
+}
+
+.file-box {
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 18px;
+    background-color: rgb(253, 255, 207);
+    border-color: #5C8374;
+}
+
+h10 {
+    font-size: 120%;
+}
+
+.styled-heading {
+font-size: 130%;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: white;
+background-color: #5C8374;
+padding: 10px 20px;
+border: 2px solid #5C8374;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.styled-heading:hover {
+color:black;
+background-color: #e7eaf6;
+border-color: #e7eaf6;
+transform: scale(1.05);
+}
+
+.styled-url-heading {
+font-size: 150%;
+color: #333;
+padding: 5px 10px;
+}
+
+.styled-url-heading:hover {
+transform: scale(1.03);
+border-radius:15px;
+}
+
+
+#inputField {
+width: 100%;
+}
+
+.card-footer {
+width: 100%;
+}
+
+.card-footer .input-group {
+    width: 100%;
+}
+
+.card-footer .form-control {
+    width: 100%;
+    flex: 1;
+    
+}
+
+i{
+    margin:10px;
+}
+.styled-url-heading {
+    font-size: 150%;
+    color: #333;
+    padding: 5px 10px;
+  }
+
+  .styled-url-heading:hover {
+    transform: scale(1.03);
+    border-radius: 15px;
+  }
+
+  body {
+margin: 0;
+padding: 0;
+font-size:20px;
+}
+.reference-section {
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .reference-section.show {
+    max-height: 500px; /* Adjust the max height as needed */
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  #referenceButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mobile-margin {
+    margin-top: 10%;
+  }
+  
+  /* styles.css */
+  .login-link{
+    color:white;
+  }
+.login-link a {
+    color: blue;
+  }
+  .login-link :hover{
+    color:white;
+  }
+  /* Define a media query to override the margin for larger screens */
+  /* Media query for small mobile devices */
+@media (max-width: 360px) {
+    #HomeCard {
+      /* Adjust margin-top as needed */
+      margin-top: 10%;
+    }
+    .styled-heading {
+        font-size: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+        background-color: #f8e9b4;
+        padding: 10px 20px;
+        border: 2px solid #5C8374;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+  }
+  #card2{
+    height:110%;
+  }
+  
+  /* Media query for medium-sized mobile devices */
+  @media (min-width: 361px) and (max-width: 767px) {
+    #HomeCard {
+      /* Adjust margin-top as needed */
+      margin-top: 10%;
+    }
+    .styled-heading {
+        font-size: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+        background-color: #f8e9b4;
+        padding: 10px 20px;
+        border: 2px solid #5C8374;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+  }
+  #card2{
+    height:110%;
+  }
+  /* Media query for large mobile devices */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #HomeCard {
+      margin-top: 10%;
+    }
+    .styled-heading {
+        font-size: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+        background-color: #f8e9b4;
+        padding: 10px 20px;
+        border: 2px solid #5C8374;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+  }
+  #card2{
+    height:110%;
+  }
+  

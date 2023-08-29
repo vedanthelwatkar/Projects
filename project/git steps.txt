@@ -1,0 +1,7 @@
+git init
+git remote add origin https://github.com/project-utils0/ra-bot-e.git  
+git checkout -b backend
+git add . 
+git commit -m "commit"   
+git push 
+git push --set-upstream origin backend
