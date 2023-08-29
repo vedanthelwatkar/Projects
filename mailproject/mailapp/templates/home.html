@@ -1,0 +1,62 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href = "{%	 static 'c1.css' %}?v=1.0" />
+    <title>
+      Mail Checkr
+    </title>
+    <style>
+    body {
+    background-image: url("{% static 'background.jpg' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    </style>
+  </head>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+      <div class="tagline">
+        <div class="mail" >Mail</div>
+        <div class="checkr">Checkr</div>
+      </div>
+      <div class="container">
+        <form method="POST">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" value="Check"/>
+        </form>
+      </div>
+      <div class="mail-text">
+        Your Mail will be sent as a -
+      </div>
+      <div class="message-box">
+        <h3>{{msg}}</h3>
+      </div>
+      <h2>
+        Ham Mail - Your mail will NOT be sent as a spam mail.
+        <br><br>
+        Spam Mail - Will be sent in the Spam folder of the gmail.
+        <br><br>
+
+        Introducing "Mail Checkr": A powerful web application designed to
+        help companies ensure their email communications are delivered successfully
+        without being marked as spam. In today's digital landscape, where spam filters
+        are becoming increasingly stringent, it is crucial for businesses to verify
+        if their emails will be classified as "ham" or "spam" before sending them
+        to customers or recipients.
+        <br></br>
+        Mail Checkr utilizes advanced algorithms and comprehensive analysis to evaluate
+        the content, structure, and various characteristics of an email. It provides
+        users with valuable insights, such as a spam score assessment and detailed
+        reports on potential issues. With real-time feedback and best practices recommendations,
+        companies can optimize their email content to reduce the risk of triggering spam filters.
+      </h2>
+    </center>
+  </body>
+</html>
