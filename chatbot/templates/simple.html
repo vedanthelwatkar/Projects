@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="static/img/helpdesk.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="static/css/bootstrap-chat.min.css" />
+
+</head>
+
+<body>
+  <!-- Start your project here-->
+
+  <style>
+    #chat2 .form-control {
+      border-color: transparent;
+    }
+
+    #chat2 .form-control:focus {
+      border-color: transparent;
+      box-shadow: inset 0px 0px 0px 1px transparent;
+    }
+
+    .divider:after,
+    .divider:before {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #eee;
+    }
+
+    .speaker-icon {
+      cursor: pointer;
+    }
+
+ 
+
+    @media(max-width:767px){
+      .container{
+        max-width:100%;
+        max-height:50%;
+      }
+    }
+    
+  </style>
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-6">
+          <div class="text-center">
+          <h5 class="mb-0">Helpdesk</h5>
+          </div>
+          <div class="card" id="chat2">
+            <div class="card-header d-flex justify-content-between align-items-center p-3">
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Health Conditions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="healthConditionsDropdown">
+                  <a class="dropdown-item" onclick="updateInput('Allergies')">Allergies</a>
+                  <a class="dropdown-item" onclick="updateInput('Asthma')">Asthma</a>
+                  <a class="dropdown-item" onclick="updateInput('Daibetes')">Daibetes</a>
+                  <a class="dropdown-item" onclick="updateInput('Heart Disease')">Heart Disease</a>
+                  <a class="dropdown-item" onclick="updateInput('High Blood Pressure')">High Blood Pressure</a>
+                  <a class="dropdown-item" onclick="updateInput('Mental Health')">Mental Health</a>
+                  <a class="dropdown-item" onclick="updateInput('Obesity')">Obesity</a>
+                  <a class="dropdown-item" onclick="updateInput('Respiratory Infections')">Respiratory Infections</a>
+                  <a class="dropdown-item" onclick="updateInput('Skin')">Skin</a>
+                  <a class="dropdown-item">Other(Ask the ChatBot)</a>
+                </div>
+
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="severityDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Severity of Condition
+                </button>
+                <div class="dropdown-menu" aria-labelledby="severityDropdown">
+                  <a class="dropdown-item" onclick="updateInput('Mild', true)">Mild</a>
+                  <a class="dropdown-item" onclick="updateInput('Moderate', true)">Moderate</a>
+                  <a class="dropdown-item" onclick="updateInput('Severe', true)">Severe</a>
+                </div>
+                
+              </div>
+
+              <a href="/chat" class="btn btn-primary btn-sm" data-mdb-ripple-color="dark">ChatBot</a>
+            </div>
+
+            <div class="card-body" data-mdb-perfect-scrollbar="true" id="chat-container" style="position: relative; height: 500px; overflow-y: auto;">
+              {% for index in range(messages|length) %}
+              <div class="d-flex flex-row justify-content-start">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+                <div style="margin-top: 12px;">
+                  <p>{{ messages[index] }}</p>
+                </div>
+               
+              </div>
+
+              <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                <div>
+                  <p>
+                    <div class="result">{{ result[index] }}</div>
+                  </p>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+                <i class="fas fa-volume-up ml-2 mt-3 speaker-icon" onclick="speakMessage(JSON.parse('{{ loop.index0 }}'))"></i>
+              </div>
+
+              {% endfor %}
+            </div>
+
+            <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 3" style="width: 40px; height: 100%;">
+              <form action="/" method="post" class="d-flex align-items-center" style="flex-grow: 1;">
+                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Type your symptoms" name="text" style="flex: 1;">
+                <div class="input-group-append" style="margin:2px;">
+                  <!-- Add the following button element for the microphone -->
+                  <button type="button" class="btn btn-primary" id="micButton" onclick="toggleSpeechToText()">
+                    <i class="fas fa-microphone"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary" id="stopButton" style="display: none;" onclick="toggleSpeechToText()">
+                    Stop
+                  </button>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End your project here-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="static/js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+
+    var chatContainer = document.getElementById("chat-container");
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+
+    $(document).ready(function () {
+      $('.dropdown-toggle').dropdown();
+    });
+  </script>
+  <script>
+    function updateInput(value, isSeverity) {
+      // Get the text input element
+      var inputElement = document.getElementById('exampleFormControlInput1');
+
+      // Get the current value of the input element
+      var currentValue = inputElement.value;
+
+      // Check if severity is selected
+      if (isSeverity) {
+        // Update the input value with the selected severity followed by the current value
+        inputElement.value = value + ' ' + currentValue;
+      } else {
+        // Update the input value with the current value followed by the selected health condition
+        inputElement.value = currentValue + ' ' + value;
+      }
+    }
+  </script>
+
+  <!-- ResponsiveVoice -->
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=KYZxWdmE"></script>
+  <!-- Chatbot Script -->
+  <script>
+    function updateInput(input, append = false) {
+      const inputElement = document.getElementById('exampleFormControlInput1');
+      if (append) {
+        inputElement.value += ' ' + input;
+      } else {
+        inputElement.value = input;
+      }
+    }
+
+    function speakMessage(index) {
+      const resultElement = document.querySelectorAll('.result')[index];
+      const message = resultElement.innerText;
+      responsiveVoice.speak(message);
+    }
+  </script>
+  <!-- ------------------ -->
+  <!-- ------------------ -->
+  <!-- ------------------ -->
+  <!-- ------------------ -->
+  <!-- ------------------ -->
+  
+  <script>
+    let recognition;
+  
+    function toggleSpeechToText() {
+  const micButton = document.getElementById("micButton");
+  const stopButton = document.getElementById("stopButton");
+  const inputField = document.getElementById("exampleFormControlInput1");
+
+  if (!recognition) {
+    recognition = new webkitSpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+
+    recognition.onresult = function (event) {
+      const transcript = event.results[event.results.length - 1][0].transcript;
+      console.log("Recognized speech:", transcript);
+      inputField.value = transcript;
+      sendMessage();
+    };
+
+    recognition.onend = function () {
+      micButton.classList.remove("active");
+      stopButton.style.display = "none";
+      recognition = null; // Reset recognition when it ends
+    };
+  }
+
+  if (recognition && !recognition.active) {
+    recognition.start();
+    micButton.classList.add("active");
+    stopButton.style.display = "block";
+  } else if (recognition && recognition.active) {
+    recognition.stop();
+    micButton.classList.remove("active");
+    stopButton.style.display = "none";
+  }
+}
+
+    function sendMessage() {
+      // Send the message or perform any desired action with the recognized speech
+      const inputField = document.getElementById("exampleFormControlInput1");
+      const message = inputField.value;
+      console.log("Sending message:", message);
+      // Your code to send the message goes here
+      
+      // Example: Use ResponsiveVoice to speak the message
+      responsiveVoice.speak(message);
+    }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+
+</body>
+
+</html>

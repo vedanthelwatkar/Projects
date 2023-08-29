@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Chatbot</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="static/img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="static/css/bootstrap-chat.min.css" />
+</head>
+
+<body>
+  <!-- Start your project here-->
+
+  <style>
+    #chat2 .form-control {
+      border-color: transparent;
+    }
+
+    #chat2 .form-control:focus  {
+      border-color: transparent;
+      box-shadow: inset 0px 0px 0px 1px transparent;
+    }
+
+    .divider:after,
+    .divider:before {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #eee;
+    }
+  </style>
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-6">
+
+          <div class="card" id="chat2">
+            <div class="card-header d-flex justify-content-between align-items-center p-3">
+              <h5 class="mb-0">ChatApp</h5>
+              <a href="/" class="btn btn-primary btn-sm" data-mdb-ripple-color="dark">HelpDesk</a>
+            </div>
+
+            <div class="card-body" data-mdb-perfect-scrollbar="true" id="chat-container" style="position: relative; height: 510px; overflow-y: auto;">
+              {% for index in range(messages|length) %}
+              <div class="d-flex flex-row justify-content-start">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+                  <div style="margin-top: 12px;">
+                      <p>{{ messages[index] }}</p>
+                  </div>
+              </div>
+          
+              <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                  <div>
+                      <p>
+                          <div class="result">{{ result[index] }}</div>
+                      </p>
+                  </div>
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+                  <i class="fas fa-volume-up ml-2 mt-3 speaker-icon" onclick="speakMessage(JSON.parse('{{ loop.index0 }}'))"></i>
+                </div>
+          
+              {% endfor %}
+          </div>
+
+          <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 3" style="width: 40px; height: 100%;">
+            <form action="/chat" method="post" class="d-flex align-items-center" style="flex-grow: 1;">
+              <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Type message" name="text" style="flex: 1;">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+          
+          
+          
+          
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="static/js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <script>
+    var chatContainer = document.getElementById("chat-container");
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=KYZxWdmE"></script>
+<!-- Chatbot Script -->
+<script>
+  function updateInput(input, append = false) {
+    const inputElement = document.getElementById('exampleFormControlInput1');
+    if (append) {
+      inputElement.value += ' ' + input;
+    } else {
+      inputElement.value = input;
+    }
+  }
+
+  function speakMessage(index) {
+    const resultElement = document.querySelectorAll('.result')[index];
+    const message = resultElement.innerText;
+    responsiveVoice.speak(message);
+  }
+</script>
+
+</body>
+
+</html>
