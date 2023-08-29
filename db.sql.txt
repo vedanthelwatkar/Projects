@@ -1,0 +1,11 @@
+drop database if exists shop
+create database if not exists shop
+use shop
+
+create table if not exists clothes
+(
+product name varchar,
+price int unsigned
+);
+ 
+
