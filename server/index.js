@@ -135,7 +135,7 @@ function sendEmail(name, txt, userEmail) {
 
   let mailOptions = {
     from: 'vedantph22@gmail.com',
-    to: userEmail, // Use the user's email obtained from the request body
+    to: 'vedanthelwatkar@gmail.com', // Use the user's email obtained from the request body
     subject: 'Your OTP is ',
     text: txt,
   };
