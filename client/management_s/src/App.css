@@ -1,0 +1,49 @@
+/* styles.css */
+* {
+  font-size:113%;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  body{
+    background-color: #e0ffcd;
+  }
+.link {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 30px;
+  }
+
+h1{
+  margin-top: 20%;
+}
+
+.create-user-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+.create-user{
+  font-size: 40%;
+}
+/* Define the default table style */
+/* Define the default table style */
+.table {
+  width: 80%;
+  font-size: 90%;
+  background-color: #fdffcd;
+}
+
+
+@media (max-width: 767px)  {
+a{
+    font-size: 20px;
+  }    
+  .table {
+    font-size: 35%;
+    background-color: #fdffcd;
+  }
+}
+.MuiInputBase-root {
+  height: 70px;
+  background-color: #fdffcd;
+}
