@@ -39,14 +39,11 @@ export default function Admin(){
             return
         }
 
-        console.log("otp in check" ,otp)
-        console.log("valid otp in check", validotp)
         if (parseInt(validotp) === parseInt(otp)){
-            let url = "http://localhost:8888/create"
+            let url = "https://vms-oyzr.onrender.com/create"
             let data = {user,pass}
             axios.post(url,data)
             .then(res=>{
-                console.log(res)
                 if (res.status === 200){
                     alert("Account created Successfully")
                     nav("/admin")
@@ -56,7 +53,6 @@ export default function Admin(){
                 }
                 })
                 .catch(err=>{
-                    console.log(err)
                     alert("Error: "+ err.response.data)
                 })
             }
@@ -70,7 +66,7 @@ export default function Admin(){
     
     const validate = (event) =>{
         event.preventDefault()
-        let url = "http://localhost:8888/otp"
+        let url = "https://vms-oyzr.onrender.com/otp"
         if (!user){
             alert("Invalid Username")
             return
@@ -80,7 +76,6 @@ export default function Admin(){
         .then(res=>{
             if (res.status===200){
                 setValidOtp(res.data.otp)
-                console.log("otp in validate" , validotp)
                 alert("OTP sent")
             }
         })

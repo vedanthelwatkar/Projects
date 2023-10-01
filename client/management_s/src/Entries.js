@@ -6,11 +6,10 @@ export default function Entries(){
     const [info,setInfo] = useState([])
 
     useEffect(()=>{
-        let url = "http://localhost:8888/entries"
+        let url = "https://vms-oyzr.onrender.com/entries"
         axios.get(url)
         .then(res=>{
             setInfo(res.data)
-            console.log(res.data)
         })
         .catch(err=>{
             alert("Issue " + err)
@@ -18,19 +17,16 @@ export default function Entries(){
     },[])
 
     const delEnt=(phone)=>{
-        let url = "http://localhost:8888/del"
+        let url = "https://vms-oyzr.onrender.com/del"
         let data = {phone}
-        console.log("data",data)
         axios.post(url,data)
         .then(res=>{
-            console.log(res)
             if(res.status===200){
                 alert("SUCCESS: Record deleted");
                 window.location.reload();
             }
         })
         .catch(err=>{
-            console.log(err)
             alert("Issue " + err)
         })
 
@@ -60,7 +56,7 @@ export default function Entries(){
 			<td>	{e.time}	</td>
             <td>	{e.date}	</td>
             <td>	{e.visitee}	</td>
-			<td> <button onClick = { () => {if (window.confirm(' Are you sure you want to delete this entry? ')) delEnt(e.phone); console.log("phone"+e.phone) }}>
+			<td> <button onClick = { () => {if (window.confirm(' Are you sure you want to delete this entry? ')) delEnt(e.phone); }}>
 			Delete </button> </td>
 			</tr>
 

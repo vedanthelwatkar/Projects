@@ -24,11 +24,10 @@ export default function Admin(){
             return
         }
         
-        let url = "http://localhost:8888/check"
+        let url = "https://vms-oyzr.onrender.com/check"
         let data = {user,pass}
         axios.post(url,data)
         .then(res=>{
-            console.log(res)
             if (res.status === 200){
                 nav("/entries")
             }
@@ -37,7 +36,6 @@ export default function Admin(){
             }
         })
         .catch(err=>{
-            console.log(err)
             alert("Error: "+ err.response.data)
         })
     }

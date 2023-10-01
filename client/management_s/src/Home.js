@@ -19,7 +19,6 @@ export default function Home() {
 
   const send=(event)=>{
     event.preventDefault()
-    console.log("clicked")
     if ((name.trim().length<2) || (name==="") || (!name.match(/^[A-z ]+$/))){
         alert("Invalid Name")
         return
@@ -30,7 +29,7 @@ export default function Home() {
         return;
     }
 
-    let url = "https://visitor-management-system--magenta-cat-a1272b.netlify.app/home"
+    let url = "https://vms-oyzr.onrender.com/home"
     let data = {name,phone,time,date,visitee,office}
     axios.post(url,data)
     .then(response => {
@@ -49,7 +48,6 @@ export default function Home() {
       }
     })
     .catch(err=>{
-      console.log(err.response.data)
         alert("Error: " + err.response.data)
     })
 

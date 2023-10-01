@@ -27,15 +27,12 @@ app.post("/del", async (req, res) => {
     phone: req.body.phone,
   };
 
-  console.log("Received request to delete entry for phone:", data.phone);
 
   try {
     const exists = await coll.findOne(data);
-    console.log("Entry exists:", exists);
 
     if (exists) {
       const deletionResult = await coll.deleteOne(data);
-      console.log("Deletion Result:", deletionResult);
 
       if (deletionResult.deletedCount === 1) {
         res.status(200).send("ENTRY DELETED");
@@ -113,7 +110,6 @@ app.post("/home", async (req, res) => {
       res.status(400).send("Duplicate Entry")
     } else {
       const result = await coll.insertOne(data);
-      console.log("Inserted document with _id:", result.insertedId);
       res.send("OK");
     }
 
@@ -141,9 +137,7 @@ function sendEmail(name, txt, userEmail) {
 
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      console.log('Email error: ' + err);
     } else {
-      console.log('Email sent: ' + info.response);
     }
   });
 }
@@ -160,4 +154,4 @@ app.post('/otp', (req, res) => {
   res.status(200).json({ otp });
 });
 
-app.listen(8888,()=>console.log("server live @ 8888"))
+app.listen(8888,()=>("server live @ 8888"))
