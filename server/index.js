@@ -155,7 +155,7 @@ app.post('/otp', (req, res) => {
   const userEmail = req.body.user; // Assuming the user's email is sent in the request body
 
   // Send the OTP to the user's email
-  sendEmail('Request for OTP', `OTP: ${otp}`, userEmail);
+  sendEmail('Request for OTP', otp, userEmail);
 
   // You can also send the OTP in the response if needed
   res.status(200).json({ otp });
