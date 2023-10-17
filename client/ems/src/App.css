@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Varela Round'
+  }
+
+body{
+    background-color: #e0ffcd;
+  }
+.link{
+  position: absolute;
+  top:1%;
+  right:1%;
+  font-size:150%;
+}
+.create-user{
+  margin-left: auto;
+  font-size: 120%;
+  color:red;
+}
+.gbtn {
+  margin-right: auto;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gbtn:hover {
+  background-color: #2980b9;
+  transform: scale(1.03); 
+}
+
+.submit-btn{
+  height:140% !important;
+}
+
+.ems-btn{
+  height:180%;
+  font-size:120% !important;
+  font-weight: bold !important;
+  width:50% !important;
+}
+
+.ems-btn:hover{
+  transform: scale(1.02);
+  color:black;
+  background-color: #fcc96a !important;
+}
+
+.submit-btn:hover{
+  transform: scale(1.02);
+  color:black;
+  background-color: #fcc96a !important;
+}
+
+.linkandbtn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.err{
+  color:red;
+}
+
+.loctemp{
+  font-weight: bold;
+  font-size:110%;
+}
+.table {
+  width: 80%;
+  font-size: 90%;
+  background-color: #fdffcd;
+  
+}
+
+.chart-container {
+  font-size:120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiInputBase-root {
+  height:70px;
+  font-size: 140% !important;
+  background-color: #fdffcd;
+}
+
+@media (max-width: 767px)  {
+  .ems-btn{
+    width:100% !important;
+  }
+  }
