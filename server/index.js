@@ -81,7 +81,7 @@ app.post("/del", async (req, res) => {
   const db = client.db("EMS")
   const coll = db.collection("entries")
   const data = {
-    phone: req.body.phone,
+    id: req.body.id,
   };
 
 
