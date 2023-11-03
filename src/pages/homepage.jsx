@@ -12,10 +12,8 @@ import {
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import AllIntern from "../components/intern/allIntern";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
 import "./styles/homepage.css";
 
 const Homepage = () => {
