@@ -3,6 +3,11 @@
 .email-wrapper {
 	display: flex;
 	padding-bottom: 20px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.social:hover{
+	transform: scale(1.1);
 }
 
 .social a,
@@ -13,6 +18,7 @@
 .social-icon {
 	font-size: 15px;
 	color: var(--secondary-color);
+	
 }
 
 .social-text {
@@ -21,6 +27,7 @@
 	margin-top: -20px;
 	font-weight: 600;
 	font-size: 14px;
+	transition: transform 0.3s ease-in-out;
 }
 
 .email::before {

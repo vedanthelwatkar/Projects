@@ -1,4 +1,4 @@
-.all-projects-container {
+.all-tech-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -8,15 +8,20 @@
 	margin-right: -35px;
 }
 
-.all-projects-project {
+.all-tech-project {
 	width: calc(100% / 3);
 	box-sizing: border-box;
 	padding: 10px;
 	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+
+.all-tech-project:hover{
+	transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
-	.all-projects-project {
-		width: calc(100% / 2);
+	.all-tech-project {
+		width: calc(100% / 3);
 	}
 }

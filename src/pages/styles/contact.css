@@ -36,3 +36,11 @@
 	justify-content: flex-start;
 	align-items: center;
 }
+
+a{
+	color:rgb(72, 179, 214);
+}
+
+a:hover{
+	color:white;
+}

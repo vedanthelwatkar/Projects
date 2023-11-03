@@ -89,7 +89,14 @@
 .homepage-works {
 	flex-basis: 600px;
 }
-
+.home-title{
+	color: var(--primary-color);
+	font-family: var(--secondary-font);
+	font-size: 45px;
+	font-weight: 700;
+	width: 70%;
+	margin-top: 7%;
+}
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;

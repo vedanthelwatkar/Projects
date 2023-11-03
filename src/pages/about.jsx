@@ -59,13 +59,15 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<hr></hr><br></br>
-					<div className="title about-title">
+					<div className="about-title">
 									Technologies I Know
 								</div>
 					<div className="homepage-projects">
 							<AllTech/>
 						</div>
+						<div className="page-footer">
+						<Footer />
+					</div>
 				</div>
 			</div>
 		</React.Fragment>

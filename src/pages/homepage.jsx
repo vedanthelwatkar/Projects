@@ -155,9 +155,8 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-						<hr></hr><br></br>
 						<div className="homepage-projects">
-							<div className="title about-title">
+							<div className="home-title">
 										Professional Experience
 							</div>
 							<AllIntern />
