@@ -20,11 +20,13 @@
 	height: 100%;
 	margin: 0;
 	padding-top: 120px;
+	
 }
 
 @media (max-width: 600px) {
 	.projects-container {
 		padding-top: 60px;
+		margin-top: 10%;
 	}
 
 	.projects-project {

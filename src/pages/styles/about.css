@@ -19,6 +19,7 @@
 	height: 100%;
 	margin: 0;
 	padding-top: 120px;
+	
 }
 
 .about-main {
@@ -117,6 +118,7 @@
 @media (max-width: 600px) {
 	.about-container {
 		padding-top: 60px;
+		margin-top: 10%;
 	}
 
 	.about-image-container {
