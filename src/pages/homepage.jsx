@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
 	faGithub,
-	faStackOverflow,
+	faLinkedin,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -141,6 +141,16 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faMailBulk}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
