@@ -30,7 +30,7 @@ const INFO = {
 			description:
 				"07/10/2023 - Current",
 			logo: "MiraLogo.jpeg",
-			linkText: "View Certificate",
+			linkText: "View Internship Certificate",
 			link: "https://drive.google.com/file/d/1pCIARU_e_D0QD55B339mfxuwUyqUhMY7/view?usp=sharing",
 		},
 
@@ -60,7 +60,7 @@ const INFO = {
 			description:
 				"Python with Data Structures, Data Bases and Data Science ",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Internship Certificate",
+			linkText: "View Certificate",
 			link: "https://drive.google.com/file/d/1pCIARU_e_D0QD55B339mfxuwUyqUhMY7/view?usp=sharing",
 		},
 
