@@ -151,6 +151,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top:10%;
 }
 
 .homepage-first-area-left-side {
@@ -236,6 +237,7 @@
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
+		margin-top: 20%;
 	}
 
 	.homepage-first-area-left-side {

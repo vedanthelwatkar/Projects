@@ -5,6 +5,7 @@
 	padding-top: 25px;
 	margin-top: 50px;
 	padding-bottom: 25px;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -23,6 +24,9 @@
 .footer-credits {
 	flex-basis: 50%;
 	transition: transform 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-links {

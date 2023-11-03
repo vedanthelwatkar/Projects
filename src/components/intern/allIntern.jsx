@@ -8,9 +8,9 @@ import "./styles/allIntern.css";
 
 const AllIntern = () => {
 	return (
-		<div className="all-projects-container">
+		<div className="all-intern-container">
 			{INFO.intern.map((intern, index) => (
-				<div className="all-projects-project" key={index}>
+				<div className="all-intern-project" key={index}>
 					<Intern
 						logo={intern.logo}
 						title={intern.title}
