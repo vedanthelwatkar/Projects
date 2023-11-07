@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 :root {
-	/* ------- colors ------- */
+
+	--primary-font: Lato, sans-serif;
+	--secondary-font: Calibri, sans-serif;
+}
+
+[data-theme='dark']{
+	--body-background-color:#2a2438;
+	--title-hover:rgb(136, 88, 255);
+	--project-hover:#5c5470;
 	--primary-color: white;
 	--secondary-color: white;
 	--tertiary-color: white;
 	--quaternary-color: white;
 	--link-color: #14b8a6;
-	/* ---------------------- */
-
-	/* ------- fonts ------- */
-	--primary-font: Lato, sans-serif;
-	--secondary-font: Calibri, sans-serif;
-	/* --------------------- */
+	--img-bg : white;
 }
+
+
+[data-theme='light']{
+	--body-background-color:white;
+	--primary-color: #2a2438;
+	--project-hover:#ff6183;
+	--secondary-color: #2a2438;
+	--tertiary-color: #2a2438;
+	--quaternary-color: #2a2438;
+	--link-color: red;
+	--img-bg :white;
+}
+
+

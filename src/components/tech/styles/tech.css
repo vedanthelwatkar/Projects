@@ -13,7 +13,7 @@
 }
 
 .tech:hover {
-	background: #5c5470;
+	background: var(--project-hover);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -33,14 +33,14 @@
 
 .tech-logo img {
 	width: 150%;
-	background-color: white;
+	background-color: var(--img-bg);
 	padding: 10px;
 }
 
 .tech-title {
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
-	font-size: 16px;
+	font-size: 20px;
 	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
@@ -54,13 +54,13 @@
 	display: flex;
 	align-items: center;
 	color: var(--secondary-color);
-	font-size: 12px;
+	font-size: 15px;
 	padding-top: 20px;
 }
 
 .tech-link-icon {
 	padding-left: 5px;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .tech-link-text {
@@ -70,7 +70,7 @@
 
 @media (max-width: 600px) {
 	.tech {
-		height: 150px;
+		height: 150%;
 		display: flex;
 		justify-content: center;
 		align-items: center;

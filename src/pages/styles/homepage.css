@@ -1,5 +1,4 @@
 @import "../../data/styles.css";
-
 .homepage-social-icon{
 	transition: transform 0.5s ease-in-out;
 }
@@ -172,6 +171,11 @@
 	width: 85% !important;
 }
 
+.home-title:hover{
+	color: var(--title-hover);
+	transition: background-color 0.3s ease-in-out;
+}
+
 .homepage-subtitle {
 	width: 85% !important;
 }
@@ -258,7 +262,6 @@
 
 	.homepage-title {
 		width: 100% !important;
-		margin-top: 20px;
 		order: 2;
 	}
 

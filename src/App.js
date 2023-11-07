@@ -12,8 +12,10 @@ import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
+import DarkMode from "./components/DarkMode/DarkMode.jsx";
 
 function App() {
+	
 	useEffect(() => {
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);

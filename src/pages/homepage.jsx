@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
 	faTwitter,
 	faGithub,
@@ -10,6 +11,7 @@ import {
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/common/footer";
+import DarkMode from "../components/DarkMode/DarkMode";
 import NavBar from "../components/common/navBar";
 import AllIntern from "../components/intern/allIntern";
 import INFO from "../data/user";
@@ -35,8 +37,11 @@ const Homepage = () => {
 		a.click();
 	}
 
+
+
 	return (
 		<React.Fragment>
+			
 			<Helmet>
 				<title>{INFO.main.title}</title>
 				<meta name="description" content={currentSEO.description} />
@@ -45,9 +50,9 @@ const Homepage = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
-
+			
 			<div className="page-content">
-				<NavBar active="home" />
+				<NavBar active="home"/>
 				<div className="content-wrapper">
 					<div className="homepage-container">
 						<div className="homepage-first-area">

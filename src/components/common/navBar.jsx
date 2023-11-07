@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./styles/navBar.css";
 
+import DarkMode from "../DarkMode/DarkMode";
+
 const NavBar = (props) => {
 	const { active } = props;
 
@@ -57,6 +59,9 @@ const NavBar = (props) => {
 							>
 								<Link to="/contact">Contact</Link>
 							</li>
+							<li className="nav-item">
+                <DarkMode />
+              </li>
 						</ul>
 					</div>
 				</nav>

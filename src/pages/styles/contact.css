@@ -38,9 +38,5 @@
 }
 
 a{
-	color:rgb(72, 179, 214);
-}
-
-a:hover{
-	color:white;
+	color: var(--link-color)
 }

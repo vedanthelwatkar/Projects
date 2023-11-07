@@ -13,7 +13,7 @@
 }
 
 .project:hover {
-	background: #5c5470;
+	background: var(--project-hover);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -29,7 +29,7 @@
 }
 
 .project-container:hover{
-	transform: scale(1.03);
+	transform: scale(1);
 }
 
 .project-logo {
@@ -43,7 +43,7 @@
 .project-title {
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
-	font-size: 16px;
+	font-size: 20px;
 	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
@@ -51,19 +51,22 @@
 
 .project-description {
 	color: var(--secondary-color);
-}
+	max-height: 100px;
+	overflow-y: auto;
+	font-size:90%
+  }
 
 .project-link {
 	display: flex;
 	align-items: center;
 	color: var(--secondary-color);
-	font-size: 12px;
+	font-size: 15px;
 	padding-top: 20px;
 }
 
 .project-link-icon {
 	padding-left: 5px;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .project-link-text {
@@ -73,6 +76,9 @@
 
 @media (max-width: 600px) {
 	.project {
-		height: 300px;
+		height: 300%;
+	}
+	.project-description{
+		font-size:80%;
 	}
 }
