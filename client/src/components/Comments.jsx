@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addComment } from "../redux/videoSlice";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   max-height: ${(props) => (props.commentVisible ? "800px" : "0")};
@@ -81,6 +82,15 @@ const Button = styled.button`
   &:hover {
     color: ${({ theme }) => theme.text};
   }
+`;
+const Title = styled.h1`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text};
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const Comments = ({videoId}) => {
   const [comments,setComments] = useState([])
