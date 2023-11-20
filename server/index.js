@@ -10,13 +10,11 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
-const corsOptions = {
-  origin: "*",
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-};
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Add 'POST'
+  })
+);
 app.use(express.json());
 
 const connect = () => {
