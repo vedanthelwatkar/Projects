@@ -92,6 +92,11 @@ const Title = styled.h1`
   align-items: center;
   justify-content: center;
 `;
+const Hr = styled.hr`
+  margin: 1vh 0vh;
+  border: 0.5px solid ${({ theme }) => theme.soft};
+`;
+
 export const Comments = ({videoId}) => {
   const [comments,setComments] = useState([])
   const [comment,setComment] = useState("")
@@ -130,7 +135,6 @@ export const Comments = ({videoId}) => {
     alert("Login first")
   }
   }
-  
 
 
 
@@ -154,8 +158,8 @@ export const Comments = ({videoId}) => {
             comments.map((comment) => <Comment key={comment._id} comment={comment} />)
           ) : (
             <>
-            <Title>Loading...</Title>
-            <Link to="/" style={{ color:"red",marginTop:"2vh" }}>Home</Link>
+            <Title>No comments yet</Title>
+            <Hr/>
             </>
           )}
       </Container>
