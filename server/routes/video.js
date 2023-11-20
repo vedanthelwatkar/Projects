@@ -10,17 +10,17 @@ router.put("/:id",verifyToken,updateVideo)
 
 router.delete("/:id",verifyToken,deleteVideo)
 
-router.get("/find/:id",verifyToken,getVideo)
+router.get("/find/:id",getVideo)
 
-router.put("/view/:id",verifyToken,addView)
+router.put("/view/:id",addView)
 
-router.get("/tags",verifyToken,getByTags)
+router.get("/tags",getByTags)
 
-router.get("/search",verifyToken,search)
+router.get("/search",search)
 
-router.get("/random",verifyToken,random)
+router.get("/random",random)
 
-router.get("/trend",verifyToken,trend)
+router.get("/trend",trend)
 
 router.get("/sub",verifyToken,sub)
 

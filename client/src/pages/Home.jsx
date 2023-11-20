@@ -49,8 +49,7 @@ export const Home = ({type}) => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await axios.get("https://vtube-ycci.onrender.com/api/videos/random");
-        // const res = await axios.get(`/videos/${type}`);
+        const res = await axios.get(`/videos/${type}`);
         setVideo(res.data);
       } catch (error) {
         console.error("Error fetching videos:", error);
