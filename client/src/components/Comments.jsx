@@ -140,9 +140,14 @@ export const Comments = ({videoId}) => {
           <Input placeholder="Add a comment" onChange={e=>setComment(e.target.value)} />
           <Button onClick={handleComment}>Comment</Button>
         </NewComment>
-        {comments.map(comment=>(
-          <Comment key = {comment._id} comment={comment} />
-        ))}
+        {Array.isArray(comments) && comments.length > 0 ? (
+            comments.map((comment) => <Comment key={comment._id} comment={comment} />)
+          ) : (
+            <>
+            <Title>Loading...</Title>
+            <Link to="/" style={{ color:"red",marginTop:"2vh" }}>Home</Link>
+            </>
+          )}
       </Container>
     </>
   );
