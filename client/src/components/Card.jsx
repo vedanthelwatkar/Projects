@@ -74,9 +74,12 @@ export const Card = ({ type, video }) => {
         const res = await axios.get(`/api/users/find/${video.userId}`,{},
         {
           headers: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
-        });
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          });
         setChannel(res.data);
       } catch (error) {
         console.error("Error fetching channel data:", error);

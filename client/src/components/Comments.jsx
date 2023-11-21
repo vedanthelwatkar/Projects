@@ -115,9 +115,12 @@ export const Comments = ({videoId}) => {
         const res = await axios.get(`/api/comments/${videoId}`,{},
         {
           headers: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
-        })
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          })
         setComments(res.data)
       }catch(err){
         console.log(err)
@@ -135,9 +138,12 @@ export const Comments = ({videoId}) => {
     };
     const response = await axios.post('/api/comments', newComment,{
       headers: {
-    "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-  },
-    });
+        "Access-Control-Allow-Credentials": "true" ,
+        "Access-Control-Allow-Origin": "*" ,
+        "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+        "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        },
+      });
     dispatch(addComment(response.data));
     window.location.reload()
   }else{

@@ -153,8 +153,22 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/api/videos/find/${path}`);
-        const channelRes = await axios.get(`/api/users/find/${videoRes.data.userId}`);
+        const videoRes = await axios.get(`/api/videos/find/${path}`,{},{
+          headers: {
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          });
+        const channelRes = await axios.get(`/api/users/find/${videoRes.data.userId}`,{},{
+          headers: {
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          });
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
       } catch (err) {
@@ -171,9 +185,12 @@ export const Video = () => {
         {},
         {
           headers: {
-            "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-          },
-        }
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          }
       );
       dispatch(like(currentUser._id));
     } else {
@@ -188,9 +205,12 @@ export const Video = () => {
         {},
         {
           headers: {
-            "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-          },
-        }
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          }
       );
       dispatch(dislike(currentUser._id));
     } else {
@@ -206,20 +226,24 @@ export const Video = () => {
             {},
             {
               headers: {
-                "Access-Control-Allow-Origin":
-                  "https://vtube-ytclone.vercel.app/",
-              },
-            }
+                "Access-Control-Allow-Credentials": "true" ,
+                "Access-Control-Allow-Origin": "*" ,
+                "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+                "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+                },
+              }
           )
         : await axios.put(
             `/api/users/sub/${channel._id}`,
             {},
             {
               headers: {
-                "Access-Control-Allow-Origin":
-                  "https://vtube-ytclone.vercel.app/",
-              },
-            }
+                "Access-Control-Allow-Credentials": "true" ,
+                "Access-Control-Allow-Origin": "*" ,
+                "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+                "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+                },
+              }
           );
       dispatch(subscription(channel._id));
     } else {
