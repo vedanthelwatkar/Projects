@@ -10,7 +10,6 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
-app.use(cors())
 app.use(express.json());
 
 const connect = () => {
@@ -31,6 +30,11 @@ app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://vtube-ytclone.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  res.header('Access-Control-Allow-Credentials', true);  // Enable credentials (cookies)
+  next();
   console.error("Error:", err);
 
   const status = err.status || 500;

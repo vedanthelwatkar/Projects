@@ -153,7 +153,7 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`https://vtube-ycci.onrender.com/api/videos/find/${path}`, {
+        const videoRes = await axios.get(`/api/videos/find/${path}`, {
           header: [
             "Access-Control-Allow-Origin",
             "https://vtube-ytclone.vercel.app/",
@@ -179,7 +179,7 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`, {
+      await axios.put(`/api/users/like/${currentVideo._id}`, {
         header: [
           "Access-Control-Allow-Origin",
           "https://vtube-ytclone.vercel.app/",
@@ -193,7 +193,7 @@ export const Video = () => {
 
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`, {
+      await axios.put(`/api/users/dislike/${currentVideo._id}`, {
         header: [
           "Access-Control-Allow-Origin",
           "https://vtube-ytclone.vercel.app/",
@@ -208,13 +208,13 @@ export const Video = () => {
   const handleSubscribe = async () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
-        ? await axios.put(`https://vtube-ycci.onrender.com/api/users/unsub/${channel._id}`, {
+        ? await axios.put(`/api/users/unsub/${channel._id}`, {
             header: [
               "Access-Control-Allow-Origin",
               "https://vtube-ytclone.vercel.app/",
             ],
           })
-        : await axios.put(`https://vtube-ycci.onrender.com/api/users/sub/${channel._id}`, {
+        : await axios.put(`/api/users/sub/${channel._id}`, {
             header: [
               "Access-Control-Allow-Origin",
               "https://vtube-ytclone.vercel.app/",
