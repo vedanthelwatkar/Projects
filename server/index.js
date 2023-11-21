@@ -12,9 +12,11 @@ const app = express();
 dotenv.config();
 app.use(
   cors({
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Add 'POST'
+    origin: 'https://vtubeclone.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   })
 );
+
 app.use(express.json());
 
 const connect = () => {
