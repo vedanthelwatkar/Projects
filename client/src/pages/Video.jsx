@@ -180,9 +180,9 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
+      console.log("currentuser above",currentUser)
       await axios.put(
-        `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,
-        {},
+        `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -192,6 +192,8 @@ export const Video = () => {
             },
           }
       );
+      console.log("currentuser below",currentUser)
+      console.log(currentUser._id)
       dispatch(like(currentUser._id));
     } else {
       alert("Login first");
@@ -202,7 +204,7 @@ export const Video = () => {
     if (currentVideo && currentUser) {
       await axios.put(
         `https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`,
-        {},
+        { userId: currentUser._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -223,7 +225,7 @@ export const Video = () => {
       currentUser.subscribedUsers.includes(channel._id)
         ? await axios.put(
             `https://vtube-ycci.onrender.com/api/users/unsub/${channel._id}`,
-            {},
+            { userId: currentUser._id },
             {
               headers: {
                 "Access-Control-Allow-Credentials": "true" ,
@@ -235,7 +237,7 @@ export const Video = () => {
           )
         : await axios.put(
             `https://vtube-ycci.onrender.com/api/users/sub/${channel._id}`,
-            {},
+            { userId: currentUser._id },
             {
               headers: {
                 "Access-Control-Allow-Credentials": "true" ,
@@ -309,7 +311,7 @@ export const Video = () => {
           </Subscribe>
         </Channel>
         <Hr />
-        {currentUser && <Comments videoId={currentVideo._id} />}
+        <Comments videoId={currentVideo._id} />
       </Content>
       <Recommendation tags={currentVideo.tags} />
     </Container>

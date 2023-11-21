@@ -9,7 +9,16 @@ const Container = styled.div`
   flex-wrap: wrap;
   gap: 1vh;
 `;
-
+const Title = styled.h1`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text};
+  margin: 1px;
+  padding-top:3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 export const Search = () => {
   const [videos, setVideos] = useState([]);
   const query = useLocation().search;
@@ -17,7 +26,7 @@ export const Search = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       const res = await axios.get(
-        `https://vtube-ycci.onrender.com/api/videos/search${query}`,{},
+        `https://vtube-ycci.onrender.com/api/videos/search${query}`,
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -34,9 +43,13 @@ export const Search = () => {
 
   return (
     <Container>
-      {videos.map((video) => (
-        <Card key={video._id} video={video} />
-      ))}
+      {videos.length > 0 ? (
+    videos.map((video) => (
+      <Card key={video._id} video={video} />
+    ))
+  ) : (
+    <Title>There is nothing to show in this category.</Title>
+  )}
     </Container>
   );
 };

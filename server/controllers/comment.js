@@ -3,10 +3,15 @@ import Comment from "../models/Comment.js";
 import Video from "../models/Video.js";
 
 export const addComment = async (req, res, next) => {
-  const newComment = new Comment({ ...req.body, userId: req.user.id });
+  const { desc, videoId, userId } = req.body;
   try {
+    const newComment = new Comment({
+      desc,
+      videoId,
+      userId,
+    });
     const savedComment = await newComment.save();
-    res.status(200).json(savedComment);
+    res.status(201).json(savedComment);
   } catch (err) {
     next(err);
   }

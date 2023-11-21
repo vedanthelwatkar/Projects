@@ -152,7 +152,6 @@ export const Navbar = ({ menuVisible }) => {
     }
   };
   const [open,setOpen] = useState(false)
-  
 
   return (
     <>

@@ -207,15 +207,40 @@ export const Menu = ({
       });
   };
   
+  const handleSearch = (query) => {
+    const hardcodedQueries = {
+      Music: "music",
+      Sports: "sports",
+      Gaming: "gaming",
+      Movies: "movies",
+      News: "news",
+      Live: "live",
+    };
+    const hardcodedQuery = hardcodedQueries[query] || "";
+
+    nav(`/search?q=${encodeURIComponent(hardcodedQuery)}`);
+    setMenuVisible(false);
+  };
+
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
+    const body = document.querySelector("body");
+    body.setAttribute('data-theme', darkMode ? 'light' : 'dark');
+  };
   
-  
+  const toggleMenuClose = () => {
+      if (window.innerWidth <= 768) {
+        setMenuVisible(!menuVisible);
+  }
+}
+
   return (
     <>
       <Toggle>
         <MenuOutlinedIcon style={toggleStyle} onClick={toggleMenu} />
       </Toggle>
       <Container menuVisible={menuVisible}>
-        <Wrapper onClick={toggleMenu}>
+        <Wrapper onClick={toggleMenuClose}>
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
             <Logo>
               <Img src={VTube} />
@@ -235,13 +260,13 @@ export const Menu = ({
               Subscriptions
             </Item>
           <Hr />
+          <Item onClick={handleDarkMode}>
+            <SettingsBrightnessOutlinedIcon style={iconStyle} />
+            {darkMode ? "Light" : "Dark"} Mode
+          </Item>
           <Item>
             <VideoLibraryOutlinedIcon style={iconStyle} />
             Library
-          </Item>
-          <Item>
-            <HistoryOutlinedIcon style={iconStyle} />
-            History
           </Item>
           <Hr />
           {!currentUser && <><Login>
@@ -255,27 +280,27 @@ export const Menu = ({
           </Login>
           <Hr /></>}
           <Title>BEST OF VTUBE</Title>
-          <Item>
+          <Item onClick={() => handleSearch("Music")}>
             <LibraryMusicOutlinedIcon style={iconStyle} />
             Music
           </Item>
-          <Item>
+          <Item onClick={() => handleSearch("Sports")}>
             <SportsBasketballOutlinedIcon style={iconStyle} />
             Sports
           </Item>
-          <Item>
+          <Item onClick={() => handleSearch("Gaming")}>
             <SportsEsportsOutlinedIcon style={iconStyle} />
             Gaming
           </Item>
-          <Item>
+          <Item onClick={() => handleSearch("Movies")}>
             <MovieOutlinedIcon style={iconStyle} />
             Movies
           </Item>
-          <Item>
+          <Item onClick={() => handleSearch("News")}>
             <ArticleOutlinedIcon style={iconStyle} />
             News
           </Item>
-          <Item>
+          <Item onClick={() => handleSearch("Live")}>
             <LiveTvOutlinedIcon style={iconStyle} />
             Live
           </Item>
@@ -292,10 +317,6 @@ export const Menu = ({
           <Item>
             <HelpOutlineOutlinedIcon style={iconStyle} />
             Help
-          </Item>
-          <Item onClick={() => setDarkMode(!darkMode)}>
-            <SettingsBrightnessOutlinedIcon style={iconStyle} />
-            {darkMode ? "Light" : "Dark"} Mode
           </Item>
         </Wrapper>
       </Container>

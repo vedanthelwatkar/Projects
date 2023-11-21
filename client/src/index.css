@@ -2,9 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+* [data-theme='dark']{
   background-color: #181818;
 }
-
+* [data-theme='light']{
+  background-color: #f9f9f9;
+}
 .yt-iframe {
   width: 100%;
   height: 70vh;

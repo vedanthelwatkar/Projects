@@ -132,10 +132,11 @@ export const Comments = ({videoId}) => {
   const handleComment = async () =>{
     setComment("")
     if (currentVideo && currentUser){
-    const newComment = {
-      desc: comment,
-      videoId: currentVideo._id,
-    };
+      const newComment = {
+        desc: comment,
+        videoId: currentVideo._id,
+        userId: currentUser._id,
+      };
     const response = await axios.post('https://vtube-ycci.onrender.com/api/comments', newComment,{
       headers: {
         "Access-Control-Allow-Credentials": "true" ,
@@ -164,11 +165,11 @@ export const Comments = ({videoId}) => {
         </Toggle>
       </ToggleContainer>
       <Container commentVisible={commentVisible}>
-        <NewComment>
+      {currentUser && <NewComment>
           <Avatar src={currentUser.img} />
           <Input placeholder="Add a comment" onChange={e=>setComment(e.target.value)} />
           <Button onClick={handleComment}>Comment</Button>
-        </NewComment>
+        </NewComment>}
         {Array.isArray(comments) && comments.length > 0 ? (
             comments.map((comment) => <Comment key={comment._id} comment={comment} />)
           ) : (

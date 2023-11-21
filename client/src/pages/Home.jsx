@@ -37,6 +37,7 @@ const Title = styled.h1`
   font-weight: 500;
   color: ${({ theme }) => theme.text};
   margin: 1px;
+  padding-top: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
