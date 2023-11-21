@@ -9,6 +9,7 @@ import {
 import app from "../firebase";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Container = styled.div`
   width: 100%;
@@ -164,11 +165,12 @@ export const Upload = ({ setOpen }) => {
   const handleTags = (e) => {
     setTags(e.target.value.split(","));
   };
-  
+  const { currentUser } = useSelector((state) => state.user);
   const handleUpload = async (e) => {
     e.preventDefault()
     if(imgPerc===100 && videoPerc===100){
-    const res = await axios.post("https://vtube-ycci.onrender.com/api/videos",{...inputs,tags},
+      const { userId: currentUserId } = currentUser;
+    const res = await axios.post("http://localhost:8000/api/videos",{...inputs,tags,userId: currentUser._id},
     {
       headers: {
         "Access-Control-Allow-Credentials": "true" ,
@@ -182,6 +184,8 @@ export const Upload = ({ setOpen }) => {
     }else{
       alert("Wait before Uploading")
     }}
+
+
   return (
     <Container>
       <Wrapper ref={wrapperRef}>
