@@ -169,7 +169,6 @@ export const Upload = ({ setOpen }) => {
   const handleUpload = async (e) => {
     e.preventDefault()
     if(imgPerc===100 && videoPerc===100){
-      const { userId: currentUserId } = currentUser;
     const res = await axios.post("http://localhost:8000/api/videos",{...inputs,tags,userId: currentUser._id},
     {
       headers: {
