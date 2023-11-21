@@ -10,13 +10,8 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
-const corsOptions ={
-       origin:'*', 
-       credentials:true, //access-control-allow-credentials:true
-        optionSuccessStatus:200,
- }
-
-app.use(cors(corsOptions)) 
+app.use(cors())
+console.log('CORS middleware applied');
 app.use(express.json());
 
 const connect = () => {
