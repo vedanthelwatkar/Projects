@@ -10,12 +10,7 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
-app.use(
-  cors({
-    origin: 'https://vtubeclone.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  })
-);
+app.use(cors())
 
 app.use(express.json());
 
