@@ -9,7 +9,21 @@ import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
+
+// Use cors middleware for more concise setup
+app.use(
+  cors({
+    origin: "https://vtube-ytclone.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS,CONNECT,TRACE",
+    allowedHeaders: "Content-Type, Authorization, X-Content-Type-Options, Accept, X-Requested-With, Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    credentials: true,
+    exposedHeaders: ["Access-Control-Allow-Private-Network"],
+    maxAge: 7200,
+  })
+);
+
 dotenv.config();
+console.log('CORS middleware applied');
 app.use(express.json());
 
 const connect = () => {
@@ -30,10 +44,6 @@ app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://vtube-ytclone.vercel.app');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
   console.error("Error:", err);
 
   const status = err.status || 500;
