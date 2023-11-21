@@ -48,7 +48,7 @@ export const Home = ({ type }) => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/videos/${type}`,
+          `/api/videos/${type}`,
           {
             headers: {
               "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
