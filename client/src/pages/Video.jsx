@@ -153,21 +153,8 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/api/videos/find/${path}`, {},{
-          headers: {
-            "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-          },
-        });
-        const channelRes = await axios.get(
-          `/users/find/${videoRes.data.userId}`,
-          {},
-          {
-            headers: {
-              "Access-Control-Allow-Origin":
-                "https://vtube-ytclone.vercel.app/",
-            },
-          }
-        );
+        const videoRes = await axios.get(`/api/videos/find/${path}`);
+        const channelRes = await axios.get(`/api/users/find/${videoRes.data.userId}`);
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
       } catch (err) {
