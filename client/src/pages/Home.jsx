@@ -48,7 +48,7 @@ export const Home = ({ type }) => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `/api/videos/${type}`,{},
+          `https://vtube-ycci.onrender.com/api/videos/${type}`,{},
           {
             headers: {
               "Access-Control-Allow-Credentials": "true" ,

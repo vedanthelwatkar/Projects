@@ -17,7 +17,7 @@ export const Search = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       const res = await axios.get(
-        `/api/videos/search${query}`,{},
+        `https://vtube-ycci.onrender.com/api/videos/search${query}`,{},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,

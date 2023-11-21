@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Comment } from "./Comment";
-import IconButton from "@mui/material/IconButton"; // Import IconButton from Material-UI
+import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -112,7 +112,7 @@ export const Comments = ({videoId}) => {
   useEffect(()=>{
     const fetchComments = async () => {
       try{
-        const res = await axios.get(`/api/comments/${videoId}`,{},
+        const res = await axios.get(`https://vtube-ycci.onrender.com/api/comments/${videoId}`,{},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -136,7 +136,7 @@ export const Comments = ({videoId}) => {
       desc: comment,
       videoId: currentVideo._id,
     };
-    const response = await axios.post('/api/comments', newComment,{
+    const response = await axios.post('https://vtube-ycci.onrender.com/api/comments', newComment,{
       headers: {
         "Access-Control-Allow-Credentials": "true" ,
         "Access-Control-Allow-Origin": "*" ,

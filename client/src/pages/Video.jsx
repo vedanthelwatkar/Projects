@@ -153,7 +153,7 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/api/videos/find/${path}`,{},{
+        const videoRes = await axios.get(`https://vtube-ycci.onrender.com/api/videos/find/${path}`,{},{
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
             "Access-Control-Allow-Origin": "*" ,
@@ -161,7 +161,7 @@ export const Video = () => {
             "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
           });
-        const channelRes = await axios.get(`/api/users/find/${videoRes.data.userId}`,{},{
+        const channelRes = await axios.get(`https://vtube-ycci.onrender.com/api/users/find/${videoRes.data.userId}`,{},{
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
             "Access-Control-Allow-Origin": "*" ,
@@ -181,7 +181,7 @@ export const Video = () => {
   const handleLike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `/api/users/like/${currentVideo._id}`,
+        `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,
         {},
         {
           headers: {
@@ -201,7 +201,7 @@ export const Video = () => {
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `/api/users/dislike/${currentVideo._id}`,
+        `https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`,
         {},
         {
           headers: {
@@ -222,7 +222,7 @@ export const Video = () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
         ? await axios.put(
-            `/api/users/unsub/${channel._id}`,
+            `https://vtube-ycci.onrender.com/api/users/unsub/${channel._id}`,
             {},
             {
               headers: {
@@ -234,7 +234,7 @@ export const Video = () => {
               }
           )
         : await axios.put(
-            `/api/users/sub/${channel._id}`,
+            `https://vtube-ycci.onrender.com/api/users/sub/${channel._id}`,
             {},
             {
               headers: {

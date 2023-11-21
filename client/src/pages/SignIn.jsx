@@ -113,7 +113,7 @@ export const SignIn = () => {
     }
     try {
       const res = await axios.post(
-        "/auth/signin",
+        "https://vtube-ycci.onrender.com/api/auth/signin",
         { name, password },
         {
           headers: {
