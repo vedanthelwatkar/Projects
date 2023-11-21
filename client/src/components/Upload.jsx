@@ -169,7 +169,7 @@ export const Upload = ({ setOpen }) => {
   const handleUpload = async (e) => {
     e.preventDefault()
     if(imgPerc===100 && videoPerc===100){
-    const res = await axios.post("http://localhost:8000/api/videos",{...inputs,tags,userId: currentUser._id},
+    const res = await axios.post("https://vtube-ycci.onrender.com/api/videos",{...inputs,tags,userId: currentUser._id},
     {
       headers: {
         "Access-Control-Allow-Credentials": "true" ,
