@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { loginFailure, loginSuccess } from "../redux/userSlice";
 import { auth, provider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
-import GoogleButton from 'react-google-button'
+import GoogleButton from "react-google-button";
 
 const Container = styled.div`
   display: flex;
@@ -70,12 +70,12 @@ const More = styled.div`
   margin-top: 10px;
   color: ${({ theme }) => theme.textSoft};
 
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  `;
+`;
 
 const Img = styled.img`
   height: 5vh;
@@ -98,7 +98,7 @@ export const SignIn = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -106,34 +106,54 @@ export const SignIn = () => {
       alert("Please enter a valid name.");
       return;
     }
-  
+
     if (!password || password.trim() === "") {
       alert("Please enter a valid password.");
       return;
     }
     try {
-      const res = await axios.post("https://vtube-ycci.onrender.com/auth/signin", { name, password });
+      const res = await axios.post(
+        "https://vtube-ycci.onrender.com/auth/signin",
+        { name, password },
+        {
+          header: [
+            "Access-Control-Allow-Origin",
+            "https://vtube-ytclone.vercel.app/",
+          ],
+        }
+      );
       dispatch(loginSuccess(res.data));
       nav("/");
     } catch (err) {
       dispatch(loginFailure());
     }
-  }
+  };
   const signInWithGoogle = async () => {
     signInWithPopup(auth, provider)
-    .then((result) => {
-      axios.post("https://vtube-ycci.onrender.com/auth/google",{
-        name:result.user.displayName,
-        email:result.user.email,
-        img:result.user.photoURL,
-      }).then((res)=>{
-        dispatch(loginSuccess(res.data))
-        nav("/")
+      .then((result) => {
+        axios
+          .post(
+            "https://vtube-ycci.onrender.com/api/auth/google",
+            {
+              name: result.user.displayName,
+              email: result.user.email,
+              img: result.user.photoURL,
+            },
+            {
+              header: [
+                "Access-Control-Allow-Origin",
+                "https://vtube-ytclone.vercel.app/",
+              ],
+            }
+          )
+          .then((res) => {
+            dispatch(loginSuccess(res.data));
+            nav("/");
+          });
       })
-    })
-    .catch((err)=>{
-      dispatch(loginFailure())
-    })
+      .catch((err) => {
+        dispatch(loginFailure());
+      });
   };
 
   return (
@@ -159,10 +179,12 @@ export const SignIn = () => {
           />
           <Button onClick={handleLogin}>Sign in</Button>
           <Title>or</Title>
-          <GoogleButton onClick={signInWithGoogle}/>
+          <GoogleButton onClick={signInWithGoogle} />
         </Wrapper>
         <More>
-        <Link to="/signup" style={{ color: "#ff1717" }}>Create account</Link>
+          <Link to="/signup" style={{ color: "#ff1717" }}>
+            Create account
+          </Link>
         </More>
       </Container>
     </>

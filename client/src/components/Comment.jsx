@@ -42,7 +42,13 @@ export const Comment = ({comment}) => {
   useEffect(()=>{
     const fetchComment = async ()=>{
       const res = await axios.get(
-        `/users/find/${comment.userId}`
+        `https://vtube-ycci.onrender.com/api/users/find/${comment.userId}`,
+        {
+          header: [
+            "Access-Control-Allow-Origin",
+            "https://vtube-ytclone.vercel.app/",
+          ],
+        }
       );
       setChannel(res.data)
     }

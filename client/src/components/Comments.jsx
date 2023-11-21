@@ -112,7 +112,13 @@ export const Comments = ({videoId}) => {
   useEffect(()=>{
     const fetchComments = async () => {
       try{
-        const res = await axios.get(`/comments/${videoId}`)
+        const res = await axios.get(`https://vtube-ycci.onrender.com/api/comments/${videoId}`,
+        {
+          header: [
+            "Access-Control-Allow-Origin",
+            "https://vtube-ytclone.vercel.app/",
+          ],
+        })
         setComments(res.data)
       }catch(err){
         console.log(err)
@@ -128,7 +134,7 @@ export const Comments = ({videoId}) => {
       desc: comment,
       videoId: currentVideo._id,
     };
-    const response = await axios.post('/comments', newComment);
+    const response = await axios.post('https://vtube-ycci.onrender.com/api/comments', newComment);
     dispatch(addComment(response.data));
     window.location.reload()
   }else{

@@ -85,7 +85,6 @@ const Hr = styled.hr`
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
-
 const Channel = styled.div`
   display: flex;
   justify-content: space-between;
@@ -122,7 +121,7 @@ const Description = styled.p`
 `;
 const Subscribe = styled.button`
   background-color: ${({ theme, isSubscribed }) =>
-    isSubscribed ? 'grey' : 'red'};
+    isSubscribed ? "grey" : "red"};
   font-weight: 500;
   color: white;
   border: none;
@@ -137,10 +136,10 @@ const Subscribe = styled.button`
   }
 `;
 const VideoFrame = styled.video`
-  max-height:72vh;
-  width:100%;  
-  object-fit:cover;
-`
+  max-height: 72vh;
+  width: 100%;
+  object-fit: cover;
+`;
 
 export const Video = () => {
   const { currentUser } = useSelector((state) => state.user);
@@ -154,9 +153,20 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/videos/find/${path}`);
+        const videoRes = await axios.get(`https://vtube-ycci.onrender.com/api/videos/find/${path}`, {
+          header: [
+            "Access-Control-Allow-Origin",
+            "https://vtube-ytclone.vercel.app/",
+          ],
+        });
         const channelRes = await axios.get(
-          `/users/find/${videoRes.data.userId}`
+          `/users/find/${videoRes.data.userId}`,
+          {
+            header: [
+              "Access-Control-Allow-Origin",
+              "https://vtube-ytclone.vercel.app/",
+            ],
+          }
         );
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
@@ -169,96 +179,114 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`/users/like/${currentVideo._id}`);
+      await axios.put(`https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`, {
+        header: [
+          "Access-Control-Allow-Origin",
+          "https://vtube-ytclone.vercel.app/",
+        ],
+      });
       dispatch(like(currentUser._id));
-    }
-    else{
-      alert("Login first")
+    } else {
+      alert("Login first");
     }
   };
 
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`/users/dislike/${currentVideo._id}`);
+      await axios.put(`https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`, {
+        header: [
+          "Access-Control-Allow-Origin",
+          "https://vtube-ytclone.vercel.app/",
+        ],
+      });
       dispatch(dislike(currentUser._id));
-    }
-    else{
-      alert("Login first")
+    } else {
+      alert("Login first");
     }
   };
 
   const handleSubscribe = async () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
-        ? await axios.put(`/users/unsub/${channel._id}`)
-        : await axios.put(`/users/sub/${channel._id}`);
+        ? await axios.put(`https://vtube-ycci.onrender.com/api/users/unsub/${channel._id}`, {
+            header: [
+              "Access-Control-Allow-Origin",
+              "https://vtube-ytclone.vercel.app/",
+            ],
+          })
+        : await axios.put(`https://vtube-ycci.onrender.com/api/users/sub/${channel._id}`, {
+            header: [
+              "Access-Control-Allow-Origin",
+              "https://vtube-ytclone.vercel.app/",
+            ],
+          });
       dispatch(subscription(channel._id));
-    }
-    else{
-      alert("Login first")
+    } else {
+      alert("Login first");
     }
   };
   return (
     <Container>
-  <Content>
-    <VideoWrapper>
-      <VideoFrame src={currentVideo.videoUrl} controls />
-    </VideoWrapper>
-    <Title>{currentVideo.title}</Title>
-    <Details>
-      <Info>
-        {currentVideo.veiws} views • {format(currentVideo.createdAt)}
-      </Info>
-      <Buttons>
-        <Button onClick={handleLike} disabled={!currentUser}>
-          {currentUser && currentVideo.likes?.includes(currentUser._id) ? (
-            <ThumbUp />
-          ) : (
-            <ThumbUpOutlined />
-          )}
-          {currentVideo?.likes?.length}
-        </Button>
-        <Button onClick={handleDislike} disabled={!currentUser}>
-          {currentUser && currentVideo.dislikes?.includes(currentUser._id) ? (
-            <ThumbDown />
-          ) : (
-            <ThumbDownOffAltOutlined />
-          )}{" "}
-          Dislike
-        </Button>
-        <Button disabled={!currentUser}>
-          <ReplyOutlined /> Share
-        </Button>
-        <Button disabled={!currentUser}>
-          <AddTaskOutlined /> Save
-        </Button>
-      </Buttons>
-    </Details>
-    <Hr />
-    <Channel>
-      <ChannelInfo>
-        <Image src={channel.img} />
-        <ChannelDetail>
-          <ChannelName>{channel.name}</ChannelName>
-          <ChannelCounter>{channel.subscribers} subscribers</ChannelCounter>
-          <Description>{currentVideo?.desc}</Description>
-        </ChannelDetail>
-      </ChannelInfo>
-      <Subscribe
-        onClick={handleSubscribe}
-        isSubscribed={
-          currentUser && currentUser.subscribedUsers?.includes(channel._id)
-        }
-      >
-        {currentUser && currentUser.subscribedUsers?.includes(channel._id)
-          ? "SUBSCRIBED"
-          : "SUBSCRIBE"}
-      </Subscribe>
-    </Channel>
-    <Hr />
-    {currentUser && <Comments videoId={currentVideo._id} />}
-  </Content>
-  <Recommendation tags={currentVideo.tags} />
-</Container>
+      <Content>
+        <VideoWrapper>
+          <VideoFrame src={currentVideo.videoUrl} controls />
+        </VideoWrapper>
+        <Title>{currentVideo.title}</Title>
+        <Details>
+          <Info>
+            {currentVideo.veiws} views • {format(currentVideo.createdAt)}
+          </Info>
+          <Buttons>
+            <Button onClick={handleLike} disabled={!currentUser}>
+              {currentUser && currentVideo.likes?.includes(currentUser._id) ? (
+                <ThumbUp />
+              ) : (
+                <ThumbUpOutlined />
+              )}
+              {currentVideo?.likes?.length}
+            </Button>
+            <Button onClick={handleDislike} disabled={!currentUser}>
+              {currentUser &&
+              currentVideo.dislikes?.includes(currentUser._id) ? (
+                <ThumbDown />
+              ) : (
+                <ThumbDownOffAltOutlined />
+              )}{" "}
+              Dislike
+            </Button>
+            <Button disabled={!currentUser}>
+              <ReplyOutlined /> Share
+            </Button>
+            <Button disabled={!currentUser}>
+              <AddTaskOutlined /> Save
+            </Button>
+          </Buttons>
+        </Details>
+        <Hr />
+        <Channel>
+          <ChannelInfo>
+            <Image src={channel.img} />
+            <ChannelDetail>
+              <ChannelName>{channel.name}</ChannelName>
+              <ChannelCounter>{channel.subscribers} subscribers</ChannelCounter>
+              <Description>{currentVideo?.desc}</Description>
+            </ChannelDetail>
+          </ChannelInfo>
+          <Subscribe
+            onClick={handleSubscribe}
+            isSubscribed={
+              currentUser && currentUser.subscribedUsers?.includes(channel._id)
+            }
+          >
+            {currentUser && currentUser.subscribedUsers?.includes(channel._id)
+              ? "SUBSCRIBED"
+              : "SUBSCRIBE"}
+          </Subscribe>
+        </Channel>
+        <Hr />
+        {currentUser && <Comments videoId={currentVideo._id} />}
+      </Content>
+      <Recommendation tags={currentVideo.tags} />
+    </Container>
   );
 };

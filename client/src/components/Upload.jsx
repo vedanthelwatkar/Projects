@@ -168,7 +168,13 @@ export const Upload = ({ setOpen }) => {
   const handleUpload = async (e) => {
     e.preventDefault()
     if(imgPerc===100 && videoPerc===100){
-    const res = await axios.post("/videos",{...inputs,tags})
+    const res = await axios.post("https://vtube-ycci.onrender.com/api/videos",{...inputs,tags},
+    {
+      header: [
+        "Access-Control-Allow-Origin",
+        "https://vtube-ytclone.vercel.app/",
+      ],
+    })
     setOpen(false)
     res.status===200 && nav(`/video/${res.data._id}`)
     }else{

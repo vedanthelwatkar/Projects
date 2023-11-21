@@ -16,15 +16,25 @@ export const Search = () => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const res = await axios.get(`/videos/search${query}`);
+      const res = await axios.get(
+        `https://vtube-ycci.onrender.com/api/videos/search${query}`,
+        {
+          header: [
+            "Access-Control-Allow-Origin",
+            "https://vtube-ytclone.vercel.app/",
+          ],
+        }
+      );
       setVideos(res.data);
     };
     fetchVideos();
   }, [query]);
 
-  return <Container>
-    {videos.map(video=>(
-      <Card key={video._id} video={video}/>
-    ))}
-  </Container>;
+  return (
+    <Container>
+      {videos.map((video) => (
+        <Card key={video._id} video={video} />
+      ))}
+    </Container>
+  );
 };
