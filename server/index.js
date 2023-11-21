@@ -10,14 +10,6 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
-const corsOptions = {
-  origin: '*',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  optionsSuccessStatus: 204,
-};
-
-app.use(cors(corsOptions))
-console.log('CORS middleware applied');
 app.use(express.json());
 
 const connect = () => {
@@ -42,7 +34,6 @@ app.use((err, req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   res.setHeader('Access-Control-Allow-Credentials', true);
-  next();
   console.error("Error:", err);
 
   const status = err.status || 500;
