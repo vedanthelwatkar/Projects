@@ -38,6 +38,11 @@ app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://vtube-ytclone.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  next();
   console.error("Error:", err);
 
   const status = err.status || 500;
