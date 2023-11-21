@@ -112,12 +112,7 @@ export const SignIn = () => {
       return;
     }
     try {
-      const res = await axios.post("https://vtube-ycci.onrender.com/api/auth/signin", { name, password },{
-        headers:{
-          'Content-Type': 'application/json',
-        }
-      });
-      nav('/')
+      const res = await axios.post("/auth/signin", { name, password });
       dispatch(loginSuccess(res.data));
     } catch (err) {
       dispatch(loginFailure());
@@ -128,7 +123,7 @@ export const SignIn = () => {
   const signInWithGoogle = async () => {
     signInWithPopup(auth, provider)
     .then((result) => {
-      axios.post("https://vtube-ycci.onrender.com/api/auth/google",{
+      axios.post("/auth/google",{
         name:result.user.displayName,
         email:result.user.email,
         img:result.user.photoURL,

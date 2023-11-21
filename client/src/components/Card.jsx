@@ -71,7 +71,7 @@ export const Card = ({ type, video }) => {
   useEffect(() => {
     const fetchChannel = async () => {
       try {
-        const res = await axios.get(`https://vtube-ycci.onrender.com/api/users/find/${video.userId}`);
+        const res = await axios.get(`/users/find/${video.userId}`);
         setChannel(res.data);
       } catch (error) {
         console.error("Error fetching channel data:", error);

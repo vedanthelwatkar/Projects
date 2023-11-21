@@ -15,7 +15,7 @@ export const Recommendation = ({tags}) => {
 
     useEffect(()=>{
         const fetchVideos = async () => {
-            const res = await axios.get(`https://vtube-ycci.onrender.com/api/videos/tags?tags=${tags}`)
+            const res = await axios.get(`/videos/tags?tags=${tags}`)
             setVideos(res.data)
         }
         fetchVideos()

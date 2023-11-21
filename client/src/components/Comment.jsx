@@ -42,7 +42,7 @@ export const Comment = ({comment}) => {
   useEffect(()=>{
     const fetchComment = async ()=>{
       const res = await axios.get(
-        `https://vtube-ycci.onrender.com/api/users/find/${comment.userId}`
+        `/users/find/${comment.userId}`
       );
       setChannel(res.data)
     }
