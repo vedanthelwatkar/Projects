@@ -48,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://vtube-ycci.onrender.com/api/"
+  "proxy": "https://vtube-ycci.onrender.com/api/"
 }

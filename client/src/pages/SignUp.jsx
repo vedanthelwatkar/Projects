@@ -117,7 +117,7 @@ export const SignUp = () => {
       return;
     }
     try {
-      const res = await axios.post("/auth/signup", { name, email, password });
+      const res = await axios.post("https://vtube-ycci.onrender.com/api/auth/signup", { name, email, password });
       dispatch(loginSuccess(res.data))
       nav("/signin")
     } catch (err) {

@@ -154,7 +154,7 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/videos/find/${path}`);
+        const videoRes = await axios.get(`https://vtube-ycci.onrender.com/api/videos/find/${path}`);
         const channelRes = await axios.get(
           `/users/find/${videoRes.data.userId}`
         );
@@ -169,7 +169,7 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`/users/like/${currentVideo._id}`);
+      await axios.put(`https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`);
       dispatch(like(currentUser._id));
     }
     else{
@@ -179,7 +179,7 @@ export const Video = () => {
 
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`/users/dislike/${currentVideo._id}`);
+      await axios.put(`https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`);
       dispatch(dislike(currentUser._id));
     }
     else{
@@ -190,8 +190,8 @@ export const Video = () => {
   const handleSubscribe = async () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
-        ? await axios.put(`/users/unsub/${channel._id}`)
-        : await axios.put(`/users/sub/${channel._id}`);
+        ? await axios.put(`https://vtube-ycci.onrender.com/api/users/unsub/${channel._id}`)
+        : await axios.put(`https://vtube-ycci.onrender.com/api/users/sub/${channel._id}`);
       dispatch(subscription(channel._id));
     }
     else{

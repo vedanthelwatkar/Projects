@@ -25,7 +25,7 @@ export const signin = async (req, res, next) => {
       )
       .status(200)
       .json(others);
-      console.log("signedin")
+      console.log("signedin") 
   } catch (err) {
     next(err);
     console.log("not")
