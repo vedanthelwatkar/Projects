@@ -32,11 +32,12 @@ app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use((err, req, res, next) => {
-  res.type('application/javascript');
-  next();
+  console.error("Error:", err);
+
   const status = err.status || 500;
   const message = err.message || "Something went wrong";
-  return res.status(status).json({
+
+  res.status(status).json({
     success: false,
     status,
     message,
