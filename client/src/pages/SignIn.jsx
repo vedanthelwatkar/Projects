@@ -117,6 +117,7 @@ export const SignIn = () => {
           'Content-Type': 'application/json',
         }
       });
+      nav('/')
       dispatch(loginSuccess(res.data));
     } catch (err) {
       dispatch(loginFailure());
