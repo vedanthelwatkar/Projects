@@ -154,18 +154,16 @@ export const Video = () => {
     const fetchData = async () => {
       try {
         const videoRes = await axios.get(`/api/videos/find/${path}`, {
-          header: [
-            "Access-Control-Allow-Origin",
-            "https://vtube-ytclone.vercel.app/",
-          ],
+          header: {
+        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+      },
         });
         const channelRes = await axios.get(
-          `/users/find/${videoRes.data.userId}`,
+          `/api/users/find/${videoRes.data.userId}`,
           {
-            header: [
-              "Access-Control-Allow-Origin",
-              "https://vtube-ytclone.vercel.app/",
-            ],
+            header: {
+        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+      },
           }
         );
         setChannel(channelRes.data);
@@ -182,7 +180,7 @@ export const Video = () => {
       await axios.put(`/api/users/like/${currentVideo._id}`, {
         header: [
           "Access-Control-Allow-Origin",
-          "https://vtube-ytclone.vercel.app/",
+          "https://vtube-ycci.onrender.com",
         ],
       });
       dispatch(like(currentUser._id));
@@ -196,7 +194,7 @@ export const Video = () => {
       await axios.put(`/api/users/dislike/${currentVideo._id}`, {
         header: [
           "Access-Control-Allow-Origin",
-          "https://vtube-ytclone.vercel.app/",
+          "https://vtube-ycci.onrender.com",
         ],
       });
       dispatch(dislike(currentUser._id));
@@ -209,16 +207,14 @@ export const Video = () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
         ? await axios.put(`/api/users/unsub/${channel._id}`, {
-            header: [
-              "Access-Control-Allow-Origin",
-              "https://vtube-ytclone.vercel.app/",
-            ],
+            header: {
+        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+      },
           })
         : await axios.put(`/api/users/sub/${channel._id}`, {
-            header: [
-              "Access-Control-Allow-Origin",
-              "https://vtube-ytclone.vercel.app/",
-            ],
+            header: {
+        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+      },
           });
       dispatch(subscription(channel._id));
     } else {

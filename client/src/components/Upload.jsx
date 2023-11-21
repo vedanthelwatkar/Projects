@@ -172,7 +172,7 @@ export const Upload = ({ setOpen }) => {
     {
       header: [
         "Access-Control-Allow-Origin",
-        "https://vtube-ytclone.vercel.app/",
+        "https://vtube-ycci.onrender.com",
       ],
     })
     setOpen(false)
