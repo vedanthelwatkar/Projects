@@ -15,7 +15,7 @@ export const Recommendation = ({tags}) => {
 
     useEffect(()=>{
         const fetchVideos = async () => {
-          const res = await axios.get(`/api/videos/tags?tags=${tags}`,
+          const res = await axios.get(`/api/videos/tags?tags=${tags}`,{},
           {
               headers: {
         "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",

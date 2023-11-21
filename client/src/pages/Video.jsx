@@ -153,17 +153,19 @@ export const Video = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/api/videos/find/${path}`, {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
+        const videoRes = await axios.get(`/api/videos/find/${path}`, {},{
+          headers: {
+            "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
+          },
         });
         const channelRes = await axios.get(
           `/users/find/${videoRes.data.userId}`,
+          {},
           {
-            header: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
+            headers: {
+              "Access-Control-Allow-Origin":
+                "https://vtube-ytclone.vercel.app/",
+            },
           }
         );
         setChannel(channelRes.data);
@@ -177,11 +179,15 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`/api/users/like/${currentVideo._id}`, {
-        headers: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
-      });
+      await axios.put(
+        `/api/users/like/${currentVideo._id}`,
+        {},
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
+          },
+        }
+      );
       dispatch(like(currentUser._id));
     } else {
       alert("Login first");
@@ -190,11 +196,15 @@ export const Video = () => {
 
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`/api/users/dislike/${currentVideo._id}`, {
-        headers: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
-      });
+      await axios.put(
+        `/api/users/dislike/${currentVideo._id}`,
+        {},
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
+          },
+        }
+      );
       dispatch(dislike(currentUser._id));
     } else {
       alert("Login first");
@@ -204,16 +214,26 @@ export const Video = () => {
   const handleSubscribe = async () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
-        ? await axios.put(`/api/users/unsub/${channel._id}`, {
-            headers: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
-          })
-        : await axios.put(`/api/users/sub/${channel._id}`, {
-            headers: {
-        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
-      },
-          });
+        ? await axios.put(
+            `/api/users/unsub/${channel._id}`,
+            {},
+            {
+              headers: {
+                "Access-Control-Allow-Origin":
+                  "https://vtube-ytclone.vercel.app/",
+              },
+            }
+          )
+        : await axios.put(
+            `/api/users/sub/${channel._id}`,
+            {},
+            {
+              headers: {
+                "Access-Control-Allow-Origin":
+                  "https://vtube-ytclone.vercel.app/",
+              },
+            }
+          );
       dispatch(subscription(channel._id));
     } else {
       alert("Login first");
@@ -228,7 +248,7 @@ export const Video = () => {
         <Title>{currentVideo.title}</Title>
         <Details>
           <Info>
-            {currentVideo.veiws} views • {format(currentVideo.createdAt)}
+            {currentVideo.views} views • {format(currentVideo.createdAt)}
           </Info>
           <Buttons>
             <Button onClick={handleLike} disabled={!currentUser}>
