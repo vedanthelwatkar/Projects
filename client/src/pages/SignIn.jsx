@@ -112,13 +112,13 @@ export const SignIn = () => {
       return;
     }
     try {
-      const res = await axios.post("/api/auth/signin", { name, password });
+      const res = await axios.post("/auth/signin", { name, password });
       dispatch(loginSuccess(res.data));
       nav("/");
     } catch (err) {
       dispatch(loginFailure());
     }
-    
+  }
   const signInWithGoogle = async () => {
     signInWithPopup(auth, provider)
     .then((result) => {
@@ -135,8 +135,6 @@ export const SignIn = () => {
       dispatch(loginFailure())
     })
   };
-}
-
 
   return (
     <>
