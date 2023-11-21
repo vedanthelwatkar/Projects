@@ -156,7 +156,7 @@ export const Video = () => {
       try {
         const videoRes = await axios.get(`https://vtube-ycci.onrender.com/api/videos/find/${path}`);
         const channelRes = await axios.get(
-          `/users/find/${videoRes.data.userId}`
+          `https://vtube-ycci.onrender.com/api/users/find/${videoRes.data.userId}`
         );
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
