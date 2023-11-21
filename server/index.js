@@ -31,6 +31,8 @@ app.use("/api/videos", videoRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 
+app.options('*', cors());
+
 app.use((err, req, res, next) => {
   console.error("Error:", err);
 
