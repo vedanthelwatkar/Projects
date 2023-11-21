@@ -7,11 +7,13 @@ import commentRoutes from "./routes/comment.js";
 import videoRoutes from "./routes/video.js";
 import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
-import { createProxyMiddleware } from "http-proxy-middleware";
 
 const app = express();
 dotenv.config();
-app.use(cors())
+app.use(cors({
+  origin: 'https://vtubeclone.vercel.app',
+  credentials: true,
+}));
 app.use(express.json());
 
 const connect = () => {

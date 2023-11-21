@@ -169,7 +169,9 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`);
+      await axios.put(`https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`, null, {
+        withCredentials: true,
+      });
       dispatch(like(currentUser._id));
     }
     else{
@@ -179,7 +181,9 @@ export const Video = () => {
 
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(`https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`);
+      await axios.put(`https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`, null, {
+        withCredentials: true,
+      });
       dispatch(dislike(currentUser._id));
     }
     else{
