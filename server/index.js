@@ -13,6 +13,7 @@ const app = express();
 dotenv.config();
 app.use(cors())
 app.use('/api', createProxyMiddleware({ 
+    target:"https://vtube-ycci.onrender.com",
     changeOrigin: true, 
     //secure: false,
     onProxyRes: function (proxyRes, req, res) {
