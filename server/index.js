@@ -13,7 +13,7 @@ const app = express();
 dotenv.config();
 app.use(cors())
 app.use('/api', createProxyMiddleware({ 
-    target: 'https://vtubeclone.vercel.app/',
+    target: 'https://vtube-io1m.onrender.com/',
     changeOrigin: true, 
     //secure: false,
     onProxyRes: function (proxyRes, req, res) {
