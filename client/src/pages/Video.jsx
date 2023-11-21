@@ -261,7 +261,7 @@ export const Video = () => {
         <Title>{currentVideo.title}</Title>
         <Details>
           <Info>
-            {currentVideo.views} views • {format(currentVideo.createdAt)}
+            {currentVideo.veiws} veiws • {format(currentVideo.createdAt)}
           </Info>
           <Buttons>
             <Button onClick={handleLike} disabled={!currentUser}>
