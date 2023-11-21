@@ -11,7 +11,9 @@ import cookieParser from "cookie-parser";
 const app = express();
 dotenv.config();
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin: "*"
+}));
 const connect = () => {
   mongoose
     .connect(process.env.MONGO)
