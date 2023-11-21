@@ -44,8 +44,8 @@ export const Comment = ({comment}) => {
       const res = await axios.get(
         `/api/users/find/${comment.userId}`,
         {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+          headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
         }
       );

@@ -114,8 +114,8 @@ export const Comments = ({videoId}) => {
       try{
         const res = await axios.get(`/api/comments/${videoId}`,
         {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+          headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
         })
         setComments(res.data)

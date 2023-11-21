@@ -19,8 +19,8 @@ export const Search = () => {
       const res = await axios.get(
         `/api/videos/search${query}`,
         {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+          headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
         }
       );

@@ -17,8 +17,8 @@ export const Recommendation = ({tags}) => {
         const fetchVideos = async () => {
             const res = await axios.get(`/api/videos/tags?tags=${tags}`,
             {
-              header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+              headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
             })
             setVideos(res.data)

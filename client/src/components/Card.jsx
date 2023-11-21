@@ -73,8 +73,8 @@ export const Card = ({ type, video }) => {
       try {
         const res = await axios.get(`/api/users/find/${video.userId}`,
         {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+          headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
         });
         setChannel(res.data);

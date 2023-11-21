@@ -50,10 +50,9 @@ export const Home = ({ type }) => {
         const res = await axios.get(
           `/api/videos/${type}`,
           {
-            header: [
-              "Access-Control-Allow-Origin",
-              "https://vtube-ycci.onrender.com",
-            ],
+            headers: {
+              "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
+            },
           }
         );
         setVideo(res.data);

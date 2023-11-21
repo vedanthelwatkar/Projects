@@ -116,8 +116,8 @@ export const SignIn = () => {
         "/auth/signin",
         { name, password },
         {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+          headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
         }
       );
@@ -139,8 +139,8 @@ export const SignIn = () => {
               img: result.user.photoURL,
             },
             {
-              header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+              headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
             }
           )

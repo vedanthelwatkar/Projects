@@ -154,15 +154,15 @@ export const Video = () => {
     const fetchData = async () => {
       try {
         const videoRes = await axios.get(`/api/videos/find/${path}`, {
-          header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+          headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
         });
         const channelRes = await axios.get(
           `/api/users/find/${videoRes.data.userId}`,
           {
-            header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+            headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
           }
         );
@@ -207,13 +207,13 @@ export const Video = () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
         ? await axios.put(`/api/users/unsub/${channel._id}`, {
-            header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+            headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
           })
         : await axios.put(`/api/users/sub/${channel._id}`, {
-            header: {
-        "Access-Control-Allow-Origin": "https://vtube-ycci.onrender.com",
+            headers: {
+        "Access-Control-Allow-Origin": "https://vtube-ytclone.vercel.app/",
       },
           });
       dispatch(subscription(channel._id));
