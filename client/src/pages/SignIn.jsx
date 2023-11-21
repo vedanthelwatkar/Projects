@@ -132,7 +132,7 @@ export const SignIn = () => {
       .then((result) => {
         axios
           .post(
-            "/api/auth/google",
+            "https://vtube-ycci.onrender.com/api/auth/google",
             {
               name: result.user.displayName,
               email: result.user.email,
