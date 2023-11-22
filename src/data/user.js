@@ -155,9 +155,16 @@ const INFO = {
 	],
 	projects: [
 		{
+			title:"Vtube-Youtube Clone",
+			description:"Developed a feature-rich YouTube clone using the MERN stack (MongoDB, Express.js, React, Node.js), incorporating Redux for seamless state management, JWT for secure authentication, and Cookies for enhanced user experiences. Key features include secure user authentication, video upload/streaming, real-time updates with Redux, and a responsive design for optimal user engagement.",
+			logo:"https://icons.iconarchive.com/icons/dakirby309/simply-styled/128/YouTube-icon.png",
+			linkText:"View Project",
+			link:"https://vtube-ytclone.vercel.app/"
+		},
+		{
 			title: "DocGPT",
 			description:
-				"I led the development of a web app that fuses Django and React for efficient query handling and PDF processing. I achieved user authentication with JWT tokens, utilized Firebase for data storage, and seamlessly integrated ChatGPT LLM for enhanced interactions. This project showcases my full-stack skills and innovative tech integration.",
+				"I led the development of a web app that fuses Django and React for efficient query handling and PDF processing. I achieved user authentication with JWT tokens, utilized Firebase for data storage, and seamlessly integrated ChatGPT LLM for enhanced interactions. This project showcases my full-stack skills and innovative tech integration.",	
 			logo: "https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/128/Chat-icon.png",
 			linkText: "View Project",
 			link: "https://docgpt-c4f84.web.app/",
@@ -197,15 +204,7 @@ const INFO = {
 			logo: "https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/128/logout-icon.png",
 			linkText: "View Project",
 			link: "https://visitorms-3d090.web.app/",
-		},
-		{
-			title: "Employee Management System",
-			description:
-				"The Employee Management System I developed is a comprehensive tool for efficient HR management. It allows administrators to add, delete, view, and update employee information effortlessly. Additionally, the system offers data visualization through charts, highlighting the top 5 performing employees. ",
-			logo: "https://img.icons8.com/ios/50/commercial-development-management.png",
-			linkText: "View Project",
-			link: "https://employee-ms-7e076.web.app/",
-		},
+		}
 	],
 };
 
