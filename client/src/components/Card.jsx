@@ -112,9 +112,7 @@ export const Card = ({ type, video }) => {
       <Container type={type}>
         <Image type={type}src={video.imgUrl} onClick={incViews}/>
         <Display type={type}>
-          <ChannelImage type={type}
-            src={channel.img}
-          />
+        <ChannelImage type={type} src={channel.img || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
           <Texts>
             <Title>{video.title}</Title>
             <ChannelName>{channel.name}</ChannelName>

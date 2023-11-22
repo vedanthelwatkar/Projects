@@ -34,7 +34,6 @@ const Social = styled.div`
 
     a {
         color:${({ theme }) => theme.text};
-        text-decoration: none;
     }
 `;
 
