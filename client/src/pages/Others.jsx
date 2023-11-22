@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { useDispatch } from 'react-redux';
 
 const Container = styled.div`
     display: flex;
@@ -36,7 +37,18 @@ const Social = styled.div`
         color:${({ theme }) => theme.text};
     }
 `;
-
+const Button = styled.button`
+  border-radius: 3px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: ${({ theme }) => theme.soft};
+  color: ${({ theme }) => theme.textSoft};
+  &:hover {
+    color: ${({ theme }) => theme.text};
+  }
+`;
 const SocialIcon = styled.div`
     font-size: 15px;
     color: var(--secondary-color);
@@ -84,7 +96,15 @@ export const Others = () => {
         linkedin: "https://www.linkedin.com/in/vedant-helwatkar-8b8a9a265",
         instagram: "https://www.instagram.com/vedannnntt/",
     };
-
+    const dispatch = useDispatch();
+    const handleLogout = () => {
+      const shouldLogout = window.confirm("Are you sure you want to logout?");
+  
+      if (shouldLogout) {
+        dispatch(logout());
+        nav("/")
+      }
+    };
     return (
         <Container>
             <Info>Try again after a few days!</Info>
@@ -128,6 +148,9 @@ export const Others = () => {
                     </Social>
                 </Socials>
             </Details>
+            <Button onClick={handleLogout}>
+                Logout
+            </Button>
         </Container>
     );
 };
