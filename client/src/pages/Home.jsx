@@ -76,7 +76,7 @@ export const Home = ({ type }) => {
 
     const intervalId = setInterval(() => {
       setLoadingTextIndex((prevIndex) => (prevIndex + 1) % loadingTexts.length);
-    }, 2000);
+    }, 5000);
     fetchVideos();
     return () => clearInterval(intervalId);
   }, [type,loadingTexts.length]);

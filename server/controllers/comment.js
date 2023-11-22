@@ -19,14 +19,9 @@ export const addComment = async (req, res, next) => {
 
 export const deleteComment = async (req, res, next) => {
   try {
-    const comment = await Comment.findbyId(res.params.id);
-    const video = await Video.findById(res.params.id);
-    if (req.user.id === comment.userId || req.user.id === video.userId) {
-      await Comment.findByIdAndDelete(req.params.id);
+      const result = await Comment.findByIdAndDelete(req.params.id);
       res.status(200).json("Comment Deleted");
-    } else {
-      return next(createError(403, "You can delete only your comment"));
-    }
+      console.log("deleted",result)
   } catch (err) {
     next(err);
   }
