@@ -94,7 +94,7 @@ export const Card = ({ type, video }) => {
   const { currentVideo } = useSelector((state) => state.video);
   const incViews = async () => {
     await axios.put(
-      `http://localhost:8000/api/videos/view/${currentVideo._id}`,
+      `https://vtube-ycci.onrender.com/api/videos/view/${currentVideo._id}`,
       {
         headers: {
           "Access-Control-Allow-Credentials": "true" ,

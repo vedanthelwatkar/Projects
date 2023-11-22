@@ -63,7 +63,7 @@ export const Comment = ({comment}) => {
     const shouldDelete = window.confirm("Are you sure you want to Delete?");
     if (shouldDelete) {
       await axios.delete(
-        `http://localhost:8000/api/comments/${comment._id}`,
+        `https://vtube-ycci.onrender.com/api/comments/${comment._id}`,
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
