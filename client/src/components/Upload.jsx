@@ -121,10 +121,8 @@ export const Upload = ({ setOpen }) => {
           : setVideoPerc(Math.round(progress));
         switch (snapshot.state) {
           case "paused":
-            console.log("Upload is paused");
             break;
           case "running":
-            console.log("Upload is running");
             break;
           default:
             break;
@@ -167,23 +165,28 @@ export const Upload = ({ setOpen }) => {
   };
   const { currentUser } = useSelector((state) => state.user);
   const handleUpload = async (e) => {
-    e.preventDefault()
-    if(imgPerc===100 && videoPerc===100){
-    const res = await axios.post("https://vtube-ycci.onrender.com/api/videos",{...inputs,tags,userId: currentUser._id},
-    {
-      headers: {
-        "Access-Control-Allow-Credentials": "true" ,
-        "Access-Control-Allow-Origin": "*" ,
-        "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-        "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-        },
-      })
-    setOpen(false)
-    res.status===200 && nav(`/video/${res.data._id}`)
-    }else{
-      alert("Wait before Uploading")
-    }}
-
+      if (!inputs.title || !inputs.desc || !inputs.imgUrl || !inputs.videoUrl) {
+        alert("Fill all the details");
+        return
+      }
+      e.preventDefault()
+      if(imgPerc===100 && videoPerc===100){
+        const res = await axios.post("https://vtube-ycci.onrender.com/api/videos",{...inputs,tags,userId: currentUser._id},
+        {
+          headers: {
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        })
+        setOpen(false)
+        res.status===200 && nav(`/video/${res.data._id}`)
+      }else{
+        alert("Wait before Uploading")
+      }
+    }
+      
 
   return (
     <Container>

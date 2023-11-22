@@ -165,7 +165,7 @@ export const Comments = ({videoId}) => {
       </ToggleContainer>
       <Container commentVisible={commentVisible}>
       {currentUser && <NewComment>
-          <Avatar src={currentUser.img} />
+          <Avatar src={currentUser.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
           <Input placeholder="Add a comment" onChange={e=>setComment(e.target.value)} />
           <Button onClick={handleComment}>Comment</Button>
         </NewComment>}

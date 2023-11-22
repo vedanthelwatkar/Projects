@@ -82,7 +82,7 @@ export const Comment = ({comment}) => {
   return (
     <Container>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-      <Avatar src={channel.img} />
+      <Avatar src={channel.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
       <Details>
         <Name>
           {channel.name}<Date>{format(channel.createdAt)}</Date>

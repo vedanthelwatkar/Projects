@@ -166,7 +166,7 @@ export const Navbar = ({ menuVisible }) => {
         {currentUser ? (
           <UserDropdown>
             <VideoCallOutlined style={{cursor:"pointer"}} onClick={()=>setOpen(true)} />
-            <Avatar src={currentUser.img} onClick={toggleDropdown} />
+            <Avatar src={currentUser.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} onClick={toggleDropdown} />
             <Dropdown>
               <span>{currentUser.name}</span>
               <DropdownContent>

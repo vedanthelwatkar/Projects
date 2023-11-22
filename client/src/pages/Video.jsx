@@ -243,6 +243,7 @@ export const Video = () => {
                 },
               }
           );
+          window.location.reload()
       dispatch(subscription(channel._id));
     } else {
       alert("Login first");
@@ -308,7 +309,7 @@ export const Video = () => {
         <Hr />
         <Channel>
           <ChannelInfo>
-            <Image src={channel.img} />
+            <Image src={channel.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
             <ChannelDetail>
               <ChannelName>{channel.name}</ChannelName>
               <ChannelCounter>{channel.subscribers} subscribers</ChannelCounter>
