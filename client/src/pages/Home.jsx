@@ -47,9 +47,6 @@ const Title = styled.h1`
 
 export const Home = ({ type }) => {
   const [videos, setVideo] = useState([]);
-  const [loadingTextIndex, setLoadingTextIndex] = useState(0);
-
-  const loadingTexts = ['fetching data from server...', 'unpacking data...','please wait...'];
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -92,7 +89,8 @@ export const Home = ({ type }) => {
           videos.map((video) => <Card key={video._id} video={video}/>)
         ) : (
           <>
-            {loadingData()}
+            <Title>Apologies for the delay! Our free-deployed site may take up to 30 seconds to load after a period of inactivity. Thank you for your patience and understanding. 🙏</Title>
+            <Title>loading...</Title>
           </>
         )}
       </Container>
