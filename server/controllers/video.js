@@ -36,23 +36,26 @@ export const updateVideo = async (req, res, next) => {
 export const deleteVideo = async (req, res, next) => {
   try {
     const video = await Video.findById(req.params.id);
+    console.log(video)
     if (!video) return next(createError(404, "Video not found"));
-    if (req.user.id === video.userId) {
-      await Video.findByIdAndDelete(req.params.id);
-      res.status(200).json("Video deleted");
-    } else {
-      next(createError(403, "You can delete only your video"));
-    }
+    const send = await Video.findByIdAndDelete(req.params.id);
+    console.log(send)
+    res.status(200).json("Video deleted");
   } catch (err) {
     next(err);
   }
 };
 
-export const getVideo = async (req, res, next) => {
+export const getVideos = async (req, res, next) => {
   try {
-    const video = await Video.findById(req.params.id);
-    if (!video) return next(createError(404, "Video not found"));
-    res.status(200).json(video);
+    const userId = req.params.id;
+    const videos = await Video.find({ userId: userId });
+
+    if (!videos || videos.length === 0) {
+      return next(createError(404, "Videos not found for the user"));
+    }
+
+    res.status(200).json(videos);
   } catch (err) {
     next(err);
   }
@@ -60,68 +63,66 @@ export const getVideo = async (req, res, next) => {
 
 export const addView = async (req, res, next) => {
   try {
-      await Video.findByIdAndUpdate(req.params.id,{
-        $inc:{veiws:1},
-      });
-      res.status(200).json("veiws increased");
-    } catch (err) {
-      next(err);
-    }
-  };
+    await Video.findByIdAndUpdate(req.params.id, {
+      $inc: { veiws: 1 },
+    });
+    res.status(200).json("veiws increased");
+  } catch (err) {
+    next(err);
+  }
+};
 
 export const getByTags = async (req, res, next) => {
-    const tags = req.query.tags.split(",")
+  const tags = req.query.tags.split(",");
   try {
-    const videos = await Video.find({tags:{$in:tags}}).limit(20);
+    const videos = await Video.find({ tags: { $in: tags } }).limit(20);
     res.status(200).json(videos);
   } catch (err) {
     next(err);
   }
 };
 export const search = async (req, res, next) => {
-    const query  = req.query.q
-    try {
-      const videos = await Video.find({
-        title:{$regex:query,$options:"i"},
+  const query = req.query.q;
+  try {
+    const videos = await Video.find({
+      title: { $regex: query, $options: "i" },
     }).limit(40);
-      res.status(200).json(videos);
-    } catch (err) {
-      next(err);
-    }
-  };
+    res.status(200).json(videos);
+  } catch (err) {
+    next(err);
+  }
+};
 
 export const random = async (req, res, next) => {
-    try {
-      const videos = await Video.aggregate([{$sample:{size:40}}]);
-      res.status(200).json(videos);
-    } catch (err) {
-      next(err);
-    }
-  };
+  try {
+    const videos = await Video.aggregate([{ $sample: { size: 40 } }]);
+    res.status(200).json(videos);
+  } catch (err) {
+    next(err);
+  }
+};
 
 export const trend = async (req, res, next) => {
-    try {
-      const videos = await Video.find().sort({veiws:-1})
-      res.status(200).json(videos);
-    } catch (err) {
-      next(err);
-    }
-  };
-  
+  try {
+    const videos = await Video.find().sort({ veiws: -1 });
+    res.status(200).json(videos);
+  } catch (err) {
+    next(err);
+  }
+};
+
 export const sub = async (req, res, next) => {
-    try {
-      const user = await User.findById(req.user.id)
-      const subscribedChannels = user.subscribedUsers
+  try {
+    const user = await User.findById(req.user.id);
+    const subscribedChannels = user.subscribedUsers;
 
-      const list = await Promise.all(
-        subscribedChannels.map((channelId)=>{
-            return Video.find({userId:channelId})
-        })
-      )
-      res.status(200).json(list.flat().sort((a,b)=>b.createdAt - a.createdAt))
-    } catch (err) {
-      next(err);
-    }
-  };
-
-  
+    const list = await Promise.all(
+      subscribedChannels.map((channelId) => {
+        return Video.find({ userId: channelId });
+      })
+    );
+    res.status(200).json(list.flat().sort((a, b) => b.createdAt - a.createdAt));
+  } catch (err) {
+    next(err);
+  }
+};

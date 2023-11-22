@@ -236,6 +236,10 @@ export const Menu = ({
     nav("/others")
   }
 
+  const handleLibrary = async () => {
+    nav("/library")
+  };
+
   return (
     <>
       <Toggle>
@@ -266,7 +270,7 @@ export const Menu = ({
             <SettingsBrightnessOutlinedIcon style={iconStyle} />
             {darkMode ? "Light" : "Dark"} Mode
           </Item>
-          <Item>
+          <Item onClick={handleLibrary}>
             <VideoLibraryOutlinedIcon style={iconStyle} />
             Library
           </Item>

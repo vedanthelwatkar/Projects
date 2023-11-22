@@ -153,14 +153,19 @@ export const Navbar = ({ menuVisible }) => {
   };
   const [open,setOpen] = useState(false)
 
+  const handleSearch = (e) => {
+    nav(`/search?q=${q}`)
+    setQ("")
+  }
+
   return (
     <>
     <Container>
       <Wrapper>
         <Search menuVisible={menuVisible}>
-          <Input placeholder="Search" onChange={e=>setQ(e.target.value)} />
+          <Input placeholder="Search" value = {q} onChange={e=>setQ(e.target.value)} />
           <Hr></Hr>
-          <SearchOutlined style={{ cursor: "pointer" }} onClick={()=>nav(`/search?q=${q}`)}/>
+          <SearchOutlined style={{ cursor: "pointer" }} onClick={handleSearch}/>
         </Search>
 
         {currentUser ? (

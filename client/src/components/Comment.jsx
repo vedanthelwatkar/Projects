@@ -93,7 +93,7 @@ export const Comment = ({comment}) => {
       </Details>
       </div>
       {currentUser && currentUser._id === comment.userId.toString() && (
-        <Delete onClick={handleDelete} />
+        <Delete onClick={handleDelete} style={{cursor:"pointer"}} />
       )}
     </Container>
   );

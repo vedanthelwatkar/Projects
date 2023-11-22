@@ -1,5 +1,6 @@
 import {
   AddTaskOutlined,
+  Delete,
   FileCopyOutlined,
   ThumbDown,
   ThumbDownOffAltOutlined,
@@ -9,7 +10,7 @@ import {
 import styled from "styled-components";
 import { Comments } from "../components/Comments";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { dislike, fetchSuccess, like } from "../redux/videoSlice";
@@ -140,9 +141,15 @@ const VideoFrame = styled.video`
   object-fit: cover;
 `;
 
+const TitleandDel = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
 export const Video = () => {
   const { currentUser } = useSelector((state) => state.user);
   const { currentVideo } = useSelector((state) => state.video);
+  const nav = useNavigate()
   const dispatch = useDispatch();
 
   const path = useLocation().pathname.split("/")[2];
@@ -179,8 +186,8 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.put(
-        `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
+      await axios.delete(
+        `https://vtube-ycci.onrender.com/api/videos/${currentVideo._id}`,
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -269,13 +276,39 @@ export const Video = () => {
     alert("Link copied to clipboard!");
   };
   
+  const handleDelete = async () => {
+    const shouldDelete = window.confirm("Are you sure you want to Delete?");
+    if (shouldDelete) {
+      await axios.delete(
+        `https://vtube-ycci.onrender.com/api/videos/${currentVideo._id}`,
+        {
+          headers: {
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          }
+      );
+      alert("Video deleted")
+      nav("/")
+    }else{
+      console.log("video not deleted")
+    }
+    }
+
   return (
     <Container>
       <Content>
         <VideoWrapper>
           <VideoFrame src={currentVideo.videoUrl} controls download="video.mp4" />
         </VideoWrapper>
+        <TitleandDel>
         <Title>{currentVideo.title}</Title>
+        {currentUser && currentUser._id === currentVideo.userId.toString() && (
+        <Delete onClick={handleDelete} style={{cursor:"pointer",marginTop:"10px"}} />
+      )}
+        </TitleandDel>
         <Details>
           <Info>
             {currentVideo.veiws} veiws • {format(currentVideo.createdAt)}
@@ -304,6 +337,7 @@ export const Video = () => {
             <Button disabled={!currentUser} onClick={() => handleSave(currentVideo.videoUrl)}>
               <AddTaskOutlined /> Save
             </Button>
+            
           </Buttons>
         </Details>
         <Hr />
