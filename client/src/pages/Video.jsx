@@ -135,6 +135,13 @@ const Subscribe = styled.button`
     transform: scale(1.1);
   }
 `;
+
+const DeleteWrapper = styled.div`
+  cursor: pointer;
+  margin-top: 20px;
+  color:${({ theme }) => theme.text};
+`
+
 const VideoFrame = styled.video`
   max-height: 72vh;
   width: 100%;
@@ -278,6 +285,7 @@ export const Video = () => {
   
   const handleDelete = async () => {
     const shouldDelete = window.confirm("Are you sure you want to Delete?");
+    try{
     if (shouldDelete) {
       await axios.delete(
         `https://vtube-ycci.onrender.com/api/videos/${currentVideo._id}`,
@@ -294,6 +302,8 @@ export const Video = () => {
       nav("/")
     }else{
       console.log("video not deleted")
+    }}catch{
+      alert("Video not found")
     }
     }
 
@@ -305,9 +315,12 @@ export const Video = () => {
         </VideoWrapper>
         <TitleandDel>
         <Title>{currentVideo.title}</Title>
+        <DeleteWrapper>
+
         {currentUser && currentUser._id === currentVideo.userId.toString() && (
-        <Delete onClick={handleDelete} style={{cursor:"pointer",marginTop:"10px"}} />
-      )}
+          <Delete onClick={handleDelete}/>
+          )}
+          </DeleteWrapper>
         </TitleandDel>
         <Details>
           <Info>
