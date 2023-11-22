@@ -47,9 +47,6 @@ const Title = styled.h1`
 
 export const Home = ({ type }) => {
   const [videos, setVideo] = useState([]);
-  const [loadingTextIndex, setLoadingTextIndex] = useState(0);
-
-  const loadingTexts = ['fetching data from server...', 'unpacking data...','please wait...'];
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -73,17 +70,8 @@ export const Home = ({ type }) => {
         console.error('Error fetching videos:', error);
       }
     };
+})
 
-    const intervalId = setInterval(() => {
-      setLoadingTextIndex((prevIndex) => (prevIndex + 1) % loadingTexts.length);
-    }, 5000);
-    fetchVideos();
-    return () => clearInterval(intervalId);
-  }, [type,loadingTexts.length]);
-
-  const loadingData = () => (
-    <Title>{loadingTexts[loadingTextIndex]}</Title>
-  );
     
 
 
@@ -100,12 +88,7 @@ export const Home = ({ type }) => {
         {Array.isArray(videos) && videos.length > 0 ? (
           videos.map((video) => <Card key={video._id} video={video}/>)
         ) : (
-          <>
-            {loadingData()}
-            <Link to="/" style={{ color: "red", marginTop: "2vh" }}>
-              Home
-            </Link>
-          </>
+            <Title>"Apologies for the delay! Our free-deployed site may take up to 30 seconds to load after a period of inactivity. Thank you for your patience and understanding. 🙏"</Title>
         )}
       </Container>
     </>
