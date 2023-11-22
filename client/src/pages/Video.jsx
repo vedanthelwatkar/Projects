@@ -1,6 +1,6 @@
 import {
   AddTaskOutlined,
-  ReplyOutlined,
+  FileCopyOutlined,
   ThumbDown,
   ThumbDownOffAltOutlined,
   ThumbUp,
@@ -16,7 +16,6 @@ import { dislike, fetchSuccess, like } from "../redux/videoSlice";
 import { format } from "timeago.js";
 import { subscription } from "../redux/userSlice";
 import { Recommendation } from "../components/Recommendation";
-
 const Container = styled.div`
   display: flex;
   gap: 24px;
@@ -180,7 +179,6 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      console.log("currentuser above",currentUser)
       await axios.put(
         `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
         {
@@ -192,8 +190,6 @@ export const Video = () => {
             },
           }
       );
-      console.log("currentuser below",currentUser)
-      console.log(currentUser._id)
       dispatch(like(currentUser._id));
     } else {
       alert("Login first");
@@ -252,11 +248,31 @@ export const Video = () => {
       alert("Login first");
     }
   };
+
+  const handleSave = (videoUrl) => {
+    const link = document.createElement("a");
+    link.href = videoUrl;
+    link.download = "video.mp4";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const handleCopyLink = () => {
+    const videoUrl = currentVideo.videoUrl;
+    const textarea = document.createElement("textarea");
+    textarea.value = videoUrl;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("Link copied to clipboard!");
+  };
+  
   return (
     <Container>
       <Content>
         <VideoWrapper>
-          <VideoFrame src={currentVideo.videoUrl} controls />
+          <VideoFrame src={currentVideo.videoUrl} controls download="video.mp4" />
         </VideoWrapper>
         <Title>{currentVideo.title}</Title>
         <Details>
@@ -281,10 +297,10 @@ export const Video = () => {
               )}{" "}
               Dislike
             </Button>
-            <Button disabled={!currentUser}>
-              <ReplyOutlined /> Share
+            <Button onClick={handleCopyLink}>
+              <FileCopyOutlined /> Copy Link
             </Button>
-            <Button disabled={!currentUser}>
+            <Button disabled={!currentUser} onClick={() => handleSave(currentVideo.videoUrl)}>
               <AddTaskOutlined /> Save
             </Button>
           </Buttons>

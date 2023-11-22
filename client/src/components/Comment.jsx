@@ -1,11 +1,13 @@
+import { Delete } from "@mui/icons-material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 import { format } from "timeago.js";
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin: 30px 0px;
 `;
 const Avatar = styled.img`
@@ -38,7 +40,7 @@ const Date = styled.span`
 const Text = styled.span``;
 export const Comment = ({comment}) => {
   const [channel,setChannel] = useState([])
-
+  const { currentUser } = useSelector((state) => state.user);
   useEffect(()=>{
     const fetchComment = async ()=>{
       const res = await axios.get(
@@ -55,10 +57,31 @@ export const Comment = ({comment}) => {
       setChannel(res.data)
     }
     fetchComment()
-  },[comment.userId])
+  },[comment.userId,currentUser])
+
+  const handleDelete = async () => {
+    const shouldDelete = window.confirm("Are you sure you want to Delete?");
+    if (shouldDelete) {
+      await axios.delete(
+        `http://localhost:8000/api/comments/${comment._id}`,
+        {
+          headers: {
+            "Access-Control-Allow-Credentials": "true" ,
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          }
+      );
+      window.location.reload()
+    }else{
+      console.log("comment not deleted")
+    }
+    }
 
   return (
     <Container>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
       <Avatar src={channel.img} />
       <Details>
         <Name>
@@ -68,6 +91,10 @@ export const Comment = ({comment}) => {
         {comment.desc}
         </Text>
       </Details>
+      </div>
+      {currentUser && currentUser._id === comment.userId.toString() && (
+        <Delete onClick={handleDelete} />
+      )}
     </Container>
   );
 };

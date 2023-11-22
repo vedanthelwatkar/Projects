@@ -9,6 +9,7 @@ import { Video } from "./pages/Video";
 import { SignIn } from "./pages/SignIn";
 import { SignUp } from "./pages/SignUp";
 import { Search } from "./pages/Search";
+import { Others } from "./pages/Others";
 
 
 const Container = styled.div`
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/">
                   <Route index element={<Home type="random"/>} />
                   <Route path="trends" element={<Home type="trend" />} />
+                  <Route path="others" element={<Others />} />
                   <Route path="subscriptions" element={<Home type="sub"/>} />
                   <Route path="search" element={<Search/>} />
                   <Route path="signin" element={<SignIn />} />

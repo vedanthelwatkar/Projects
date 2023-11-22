@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {format} from "timeago.js"
@@ -90,11 +91,26 @@ export const Card = ({ type, video }) => {
       fetchChannel();
     }
   }, [video.userId]);
-  
+  const { currentVideo } = useSelector((state) => state.video);
+  const incViews = async () => {
+    await axios.put(
+      `http://localhost:8000/api/videos/view/${currentVideo._id}`,
+      {
+        headers: {
+          "Access-Control-Allow-Credentials": "true" ,
+          "Access-Control-Allow-Origin": "*" ,
+          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        }
+    );
+  }
+
+
   return (
     <Link to={`/video/${video._id}`} style={{ textDecoration: "none" }}>
       <Container type={type}>
-        <Image type={type}src={video.imgUrl}/>
+        <Image type={type}src={video.imgUrl} onClick={incViews}/>
         <Display type={type}>
           <ChannelImage type={type}
             src={channel.img}

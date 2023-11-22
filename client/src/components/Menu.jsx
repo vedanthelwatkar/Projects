@@ -4,7 +4,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
-import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
 import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
 import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
 import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOutlined";
@@ -17,9 +16,8 @@ import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const iconStyle = {
   fontSize: "4vh",
@@ -234,6 +232,10 @@ export const Menu = ({
   }
 }
 
+  const handleOthers = () => {
+    nav("/others")
+  }
+
   return (
     <>
       <Toggle>
@@ -306,8 +308,8 @@ export const Menu = ({
           </Item>
           <Hr />
 
-          <Item>
-            <SettingsoutlinedIcon style={iconStyle} />
+          <Item onClick={handleOthers}>
+            <SettingsoutlinedIcon style={iconStyle}/>
             Settings
           </Item>
           <Item>

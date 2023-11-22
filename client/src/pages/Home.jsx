@@ -39,34 +39,54 @@ const Title = styled.h1`
   margin: 1px;
   padding-top: 3vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
+
+
 export const Home = ({ type }) => {
   const [videos, setVideo] = useState([]);
+  const [loadingTextIndex, setLoadingTextIndex] = useState(0);
+
+  const loadingTexts = ['fetching data from server...', 'unpacking data...','please wait...'];
 
   useEffect(() => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/videos/${type}`,{},
+          `https://vtube-ycci.onrender.com/api/videos/${type}`,
+          {},
           {
             headers: {
-              "Access-Control-Allow-Credentials": "true" ,
-              "Access-Control-Allow-Origin": "*" ,
-              "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-              "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-              },
-            }
+              'Access-Control-Allow-Credentials': 'true',
+              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Methods':
+                'GET,OPTIONS,PATCH,DELETE,POST,PUT',
+              'Access-Control-Allow-Headers':
+                'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+            },
+          }
         );
         setVideo(res.data);
       } catch (error) {
-        console.error("Error fetching videos:", error);
+        console.error('Error fetching videos:', error);
       }
     };
 
+    const intervalId = setInterval(() => {
+      setLoadingTextIndex((prevIndex) => (prevIndex + 1) % loadingTexts.length);
+    }, 2000);
     fetchVideos();
-  }, [type]);
+    return () => clearInterval(intervalId);
+  }, [type,loadingTexts.length]);
+
+  const loadingData = () => (
+    <Title>{loadingTexts[loadingTextIndex]}</Title>
+  );
+    
+
+
 
   return (
     <>
@@ -78,10 +98,10 @@ export const Home = ({ type }) => {
       </Link>
       <Container>
         {Array.isArray(videos) && videos.length > 0 ? (
-          videos.map((video) => <Card key={video._id} video={video} />)
+          videos.map((video) => <Card key={video._id} video={video}/>)
         ) : (
           <>
-            <Title>Loading...</Title>
+            {loadingData()}
             <Link to="/" style={{ color: "red", marginTop: "2vh" }}>
               Home
             </Link>

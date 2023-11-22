@@ -6,7 +6,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { addComment } from "../redux/videoSlice";
-import { Link } from "react-router-dom";
 
 const Container = styled.div`
   max-height: ${(props) => (props.commentVisible ? "800px" : "0")};
@@ -178,6 +177,7 @@ export const Comments = ({videoId}) => {
             <Hr/>
             </>
           )}
+          
       </Container>
     </>
   );
