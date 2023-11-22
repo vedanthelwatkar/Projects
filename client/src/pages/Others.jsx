@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from 'react-redux';
+import { logout } from '../redux/userSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
     display: flex;
@@ -39,8 +42,10 @@ const Social = styled.div`
 `;
 const Button = styled.button`
   border-radius: 3px;
+  margin-top: 5vh;
   border: none;
-  padding: 10px 20px;
+  font-size: 2vh;
+  padding: 15px 30px;
   font-weight: 500;
   cursor: pointer;
   background-color: ${({ theme }) => theme.soft};
@@ -63,31 +68,6 @@ const SocialText = styled.div`
     transition: transform 0.3s ease-in-out;
 `;
 
-const EmailWrapper = styled.div`
-    display: flex;
-    padding-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-
-    a {
-        text-decoration: none;
-    }
-`;
-
-const Email = styled.div`
-    &::before {
-        content: "";
-        display: block;
-        padding-top: 20px;
-        border-top: 3px solid #f4f4f5;
-        margin-top: 20px;
-    }
-
-    padding-top: 20px;
-`;
 
 export const Others = () => {
     const socials = {
@@ -95,8 +75,10 @@ export const Others = () => {
         github: "https://github.com/vedanthelwatkar/Projects",
         linkedin: "https://www.linkedin.com/in/vedant-helwatkar-8b8a9a265",
         instagram: "https://www.instagram.com/vedannnntt/",
+        mail:"mailto:vedanthelwatkar@gmail.com"
     };
     const dispatch = useDispatch();
+    const nav = useNavigate()
     const handleLogout = () => {
       const shouldLogout = window.confirm("Are you sure you want to logout?");
   
@@ -144,6 +126,14 @@ export const Others = () => {
                                 <FontAwesomeIcon icon={faInstagram} className="social-icon" />
                             </SocialIcon>
                             <SocialText>Follow on Instagram</SocialText>
+                        </a>
+                    </Social>
+                    <Social>
+                        <a href={socials.mail} target="_blank" rel="noreferrer">
+                            <SocialIcon>
+                                <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
+                            </SocialIcon>
+                            <SocialText>Contact via mail</SocialText>
                         </a>
                     </Social>
                 </Socials>
