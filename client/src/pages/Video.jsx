@@ -222,7 +222,7 @@ export const Video = () => {
   const handleLike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `http://localhost:8000/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
+        `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
