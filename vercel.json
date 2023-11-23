@@ -1,12 +1,6 @@
 {
     "builds": [{
-        "src": ".",
-        "functions": [
-            {
-                "name": "api",
-                "handler": "index.createServer",
-                "runtime": "nodejs16"
-            }
-        ]
+      "src": "."
     }]
-}
+  }
+  
