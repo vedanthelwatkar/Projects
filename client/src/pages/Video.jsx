@@ -390,10 +390,10 @@ export const Video = () => {
         <Hr />
         <Channel>
           <ChannelInfo>
-            <Image src={channel.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
+            <Image src={channel && channel.img ? channel.img : 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
             <ChannelDetail>
-              <ChannelName>{channel.name}</ChannelName>
-              <ChannelCounter>{channel.subscribers} subscribers</ChannelCounter>
+              <ChannelName>{channel && channel.name ? channel.name :  "Unknown User" }</ChannelName>
+              <ChannelCounter>{channel && channel.subscribers ? channel.subscribers : "Unknown"} subscribers</ChannelCounter>
             </ChannelDetail>
           </ChannelInfo>
           <Subscribe

@@ -16,6 +16,7 @@ const Userschema = new mongoose.Schema(
     },
     img: {
       type: String,
+      default:"https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png",
     },
     subscribers: {
       type: Number,

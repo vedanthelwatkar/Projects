@@ -82,10 +82,10 @@ export const Comment = ({comment}) => {
   return (
     <Container>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-      <Avatar src={channel.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
+      <Avatar src={channel && channel.img ? channel.img : 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
       <Details>
         <Name>
-          {channel.name}<Date>{format(channel.createdAt)}</Date>
+          {channel && channel.name ? channel.name :  "Unknown User" }<Date>{channel && channel.createdAt ? format(channel.createdAt) : "Unknown"}</Date>
         </Name>
         <Text>
         {comment.desc}
