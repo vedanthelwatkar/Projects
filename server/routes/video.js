@@ -1,5 +1,5 @@
 import express from "express";
-import { addVideo, addView, deleteVideo, getByTags, getVideo, getVideos, random, search, sub, trend, updateVideo } from "../controllers/video.js";
+import { addVideo, addView, deleteVideo, getBySelect, getByTags, getVideo, getVideos, random, search, sub, trend, updateVideo } from "../controllers/video.js";
 import { verifyToken } from "../verifyToken.js";
 
 const router = express.Router();
@@ -17,6 +17,8 @@ router.get("/user/find/:id",getVideos)
 router.put("/view/:id",addView)
 
 router.get("/tags",getByTags)
+
+router.get("/select",getBySelect)
 
 router.get("/search",search)
 

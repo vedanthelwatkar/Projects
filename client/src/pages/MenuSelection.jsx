@@ -8,6 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1vh;
+  padding-left: 10px;
 `;
 const Title = styled.h1`
   font-size: 16px;
@@ -19,15 +20,15 @@ const Title = styled.h1`
   align-items: center;
   justify-content: center;
 `;
-export const Search = () => {
+export const MenuSelection = () => {
   const [videos, setVideos] = useState([]);
   const query = useLocation().search;
+  const newq = query.split("?")
 
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/videos/search${query}`,
+        const res = await axios.get(`https://vtube-ycci.onrender.com/api/videos/select${query}`,
           {
             headers: {
               "Access-Control-Allow-Credentials": "true",

@@ -206,16 +206,15 @@ export const Menu = ({
   
   const handleSearch = (query) => {
     const hardcodedQueries = {
-      Music: "music",
-      Sports: "sports",
-      Gaming: "gaming",
-      Movies: "movies",
-      News: "news",
+      Music: ["Music","music"],
+      Sports: ["Sports","sports"],
+      Gaming: ["Gaming","gaming"],
+      Movies: ["Movie","Movies","movies"],
+      News: ["News","news"],
     };
     const hardcodedQuery = hardcodedQueries[query] || "";
+    nav(`/select?q=${encodeURIComponent(hardcodedQuery)}`)
 
-    nav(`/search?q=${encodeURIComponent(hardcodedQuery)}`);
-    setMenuVisible(false);
   };
 
   const handleDarkMode = () => {

@@ -36,10 +36,8 @@ export const updateVideo = async (req, res, next) => {
 export const deleteVideo = async (req, res, next) => {
   try {
     const video = await Video.findById(req.params.id);
-    console.log(video)
     if (!video) return next(createError(404, "Video not found"));
     const send = await Video.findByIdAndDelete(req.params.id);
-    console.log(send)
     res.status(200).json("Video deleted");
   } catch (err) {
     next(err);
@@ -91,6 +89,17 @@ export const getByTags = async (req, res, next) => {
     next(err);
   }
 };
+
+export const getBySelect = async (req, res, next) => {
+  const tags = req.query.q.split(",");
+  try {
+    const videos = await Video.find({ tags: { $in: tags } }).limit(20);
+    res.status(200).json(videos);
+  } catch (err) {
+    next(err);
+  }
+};
+
 export const search = async (req, res, next) => {
   const query = req.query.q;
   try {

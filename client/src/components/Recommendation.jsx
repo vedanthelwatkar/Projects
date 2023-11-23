@@ -29,7 +29,7 @@ export const Recommendation = ({tags}) => {
         fetchVideos()
     },[tags])
     useEffect(() => {
-      if (videos.length === 0) {
+      if (videos.length < 2) {
         const fetchRandomVideo = async () => {
           try {
             const res = await axios.get('https://vtube-ycci.onrender.com/api/videos/random', {
