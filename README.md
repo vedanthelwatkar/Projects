@@ -1,0 +1,1 @@
+Introducing DocGPT, a handy document analysis app that shows off my skills in creating user-friendly software. With secure authentication using JWT, the frontend built with React ensures an easy and smooth experience. Meanwhile, the backend powered by Django efficiently handles PDFs. The output produced is checked once more with ChatGPT AI integration in this app.
