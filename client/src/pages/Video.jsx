@@ -54,7 +54,7 @@ const Info = styled.span`
   @media (max-width: 768px) {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
   }
 `;
 const Buttons = styled.div`
@@ -92,9 +92,13 @@ const Channel = styled.div`
 const ChannelInfo = styled.div`
   display: flex;
   gap: 1vw;
+
+  @media (max-width:768px){
+    color:${({ theme }) => theme.text};
+  }
 `;
 const Image = styled.img`
-  width: 4vw;
+  width: 3.25vw;
   height: 7vh;
   border-radius: 50%;
   @media (max-width: 768px) {
@@ -109,6 +113,10 @@ const ChannelDetail = styled.div`
 `;
 const ChannelName = styled.span`
   font-weight: 500;
+
+  @media (max-width:768px){
+    margin-top: 1vh;
+  }
 `;
 const ChannelCounter = styled.span`
   margin-top: 5px;
@@ -118,6 +126,11 @@ const ChannelCounter = styled.span`
 `;
 const Description = styled.p`
   font-size: 14px;
+  color: ${({ theme }) => theme.text};
+  @media (max-width:768px){
+    margin-bottom: 2vh;
+    margin-top: 0;
+  }
 `;
 const Subscribe = styled.button`
   background-color: ${({ theme, isSubscribed }) =>
@@ -133,6 +146,9 @@ const Subscribe = styled.button`
 
   &:hover {
     transform: scale(1.1);
+  }
+  @media (max-width:768px){
+    margin-top: 1vh;
   }
 `;
 
@@ -153,6 +169,18 @@ const TitleandDel = styled.div`
   justify-content: space-between;
 `
 
+const Text = styled.span`
+  font-size: 1.6vh;
+  color:${({ theme }) => theme.textSoft};
+  margin-top: 3vh;
+  @media (max-width:768px){
+    margin-top: 1vh;
+  }
+`
+const TitleandDesc = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 export const Video = () => {
   const { currentUser } = useSelector((state) => state.user);
   const { currentVideo } = useSelector((state) => state.video);
@@ -193,8 +221,8 @@ export const Video = () => {
 
   const handleLike = async () => {
     if (currentVideo && currentUser) {
-      await axios.delete(
-        `https://vtube-ycci.onrender.com/api/videos/${currentVideo._id}`,
+      await axios.put(
+        `http://localhost:8000/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -323,9 +351,15 @@ export const Video = () => {
           </DeleteWrapper>
         </TitleandDel>
         <Details>
+          <TitleandDesc>
           <Info>
             {currentVideo.veiws} veiws • {format(currentVideo.createdAt)}
           </Info>
+          <Text>
+          Description:-
+          </Text>
+          <Description>{currentVideo?.desc}</Description>  
+          </TitleandDesc>
           <Buttons>
             <Button onClick={handleLike} disabled={!currentUser}>
               {currentUser && currentVideo.likes?.includes(currentUser._id) ? (
@@ -360,7 +394,6 @@ export const Video = () => {
             <ChannelDetail>
               <ChannelName>{channel.name}</ChannelName>
               <ChannelCounter>{channel.subscribers} subscribers</ChannelCounter>
-              <Description>{currentVideo?.desc}</Description>
             </ChannelDetail>
           </ChannelInfo>
           <Subscribe

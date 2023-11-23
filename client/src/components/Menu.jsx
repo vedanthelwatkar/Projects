@@ -9,7 +9,6 @@ import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined
 import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOutlined";
 import MovieOutlinedIcon from "@mui/icons-material/MovieOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
-import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import SettingsoutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
@@ -212,7 +211,6 @@ export const Menu = ({
       Gaming: "gaming",
       Movies: "movies",
       News: "news",
-      Live: "live",
     };
     const hardcodedQuery = hardcodedQueries[query] || "";
 
@@ -305,10 +303,6 @@ export const Menu = ({
           <Item onClick={() => handleSearch("News")}>
             <ArticleOutlinedIcon style={iconStyle} />
             News
-          </Item>
-          <Item onClick={() => handleSearch("Live")}>
-            <LiveTvOutlinedIcon style={iconStyle} />
-            Live
           </Item>
           <Hr />
 
