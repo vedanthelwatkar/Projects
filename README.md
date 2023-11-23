@@ -19,7 +19,9 @@ Check out the live deployment [here](https://vtube-ytclone.vercel.app/) and expe
 ## Video Demo
 
 Watch the video demo to get a quick overview of the platform's interface and functionalities.
+
 https://github.com/vedanthelwatkar/Projects/assets/138309208/f3290e20-7e74-48b5-8e8e-e8ede1ad95cf
+
 
 
 
