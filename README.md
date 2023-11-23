@@ -18,8 +18,8 @@ Check out the live deployment [here](https://vtube-ytclone.vercel.app/) and expe
 
 ## Video Demo
 
-Watch the video demo [here] to get a quick overview of the platform's interface and functionalities.
-[![Demo CountPages alpha](https://drive.google.com/file/d/1QrPuEU7RsJ3eSiSin02LEtNzmhmWCcZL/view?usp=sharing)
+Watch the video demo to get a quick overview of the platform's interface and functionalities.
+<video src='[your URL here](https://drive.google.com/file/d/1QrPuEU7RsJ3eSiSin02LEtNzmhmWCcZL/view?usp=sharing)' width=180/>
 
 ## Getting Started
 
