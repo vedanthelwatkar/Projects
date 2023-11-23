@@ -15,9 +15,11 @@ Welcome to the YouTube Clone project! 🎥 This platform, developed using the ME
 
 Check out the live deployment [here](https://vtube-ytclone.vercel.app/) and experience the YouTube Clone firsthand!
 
+
 ## Video Demo
 
-Watch the video demo [here](https://drive.google.com/file/d/1QrPuEU7RsJ3eSiSin02LEtNzmhmWCcZL/view?usp=sharing) to get a quick overview of the platform's interface and functionalities.
+Watch the video demo [here] to get a quick overview of the platform's interface and functionalities.
+[![Demo CountPages alpha](https://drive.google.com/file/d/1QrPuEU7RsJ3eSiSin02LEtNzmhmWCcZL/view?usp=sharing)
 
 ## Getting Started
 
