@@ -89,8 +89,9 @@ export const Home = ({ type }) => {
           videos.map((video) => <Card key={video._id} video={video}/>)
         ) : (
           <>
-            <Title>Apologies for the delay! Our free-deployed site may take up to 30 seconds to load after a period of inactivity. Thank you for your patience and understanding. 🙏</Title>
-            <Title>loading...</Title>
+             <div class="loading-container">
+              <div class="loading-icon"></div>
+            </div>
           </>
         )}
       </Container>
