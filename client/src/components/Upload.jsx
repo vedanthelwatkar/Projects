@@ -171,7 +171,7 @@ export const Upload = ({ setOpen }) => {
       }
       e.preventDefault()
       if(imgPerc===100 && videoPerc===100){
-        const res = await axios.post("https://gleaming-pumps-frog.cyclic.app/api/videos",{...inputs,tags,userId: currentUser._id},
+        const res = await axios.post("https://vtube-ycci.onrender.com/api/videos",{...inputs,tags,userId: currentUser._id},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,

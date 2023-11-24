@@ -27,7 +27,7 @@ export const Search = () => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `https://gleaming-pumps-frog.cyclic.app/api/videos/search${query}`,
+          `https://vtube-ycci.onrender.com/api/videos/search${query}`,
           {
             headers: {
               "Access-Control-Allow-Credentials": "true",

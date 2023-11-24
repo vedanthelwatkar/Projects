@@ -117,7 +117,7 @@ export const SignUp = () => {
       return;
     }
     try {
-      const res = await axios.post("https://gleaming-pumps-frog.cyclic.app/api/auth/signup", { name, email, password },{
+      const res = await axios.post("https://vtube-ycci.onrender.com/api/auth/signup", { name, email, password },{
         headers: {
           "Access-Control-Allow-Credentials": "true" ,
           "Access-Control-Allow-Origin": "*" ,
