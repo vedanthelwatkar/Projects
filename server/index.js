@@ -7,7 +7,7 @@ import commentRoutes from "./routes/comment.js";
 import videoRoutes from "./routes/video.js";
 import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
-
+console.log("READY")
 const app = express();
 dotenv.config();
 app.use(express.json());
