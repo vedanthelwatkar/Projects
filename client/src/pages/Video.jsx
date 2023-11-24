@@ -190,7 +190,7 @@ export const Video = () => {
   const path = useLocation().pathname.split("/")[2];
 
   const [channel, setChannel] = useState({});
-
+  console.log("Redux State:", useSelector((state) => state.video));
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -213,7 +213,7 @@ export const Video = () => {
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
         console.log("Fetched Video Data:", videoRes.data);
-        console.log("Redux State:", useSelector((state) => state.video));
+        
       } catch (err) {
         console.log(err);
       }
