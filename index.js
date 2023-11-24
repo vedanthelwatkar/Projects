@@ -30,7 +30,6 @@ app.use("/api/users", userRoutes);
 app.use("/api/videos", videoRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/check","CHECKING")
 
 app.use((err, req, res, next) => {
   console.error("Error:", err);
