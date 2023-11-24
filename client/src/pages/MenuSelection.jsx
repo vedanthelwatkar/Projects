@@ -23,7 +23,6 @@ const Title = styled.h1`
 export const MenuSelection = () => {
   const [videos, setVideos] = useState([]);
   const query = useLocation().search;
-  const newq = query.split("?")
 
   useEffect(() => {
     const fetchVideos = async () => {
