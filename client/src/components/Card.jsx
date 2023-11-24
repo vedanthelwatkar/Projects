@@ -106,9 +106,6 @@ export const Card = ({ type, video }) => {
     );
   }
   
-  if (!currentVideo) {
-    return <div>Loading...</div>;
-  }
 
 
   return (
