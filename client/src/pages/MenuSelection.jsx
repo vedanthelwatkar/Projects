@@ -27,7 +27,7 @@ export const MenuSelection = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await axios.get(`https://vtube-ycci.onrender.com/api/videos/select${query}`,
+        const res = await axios.get(`https://gleaming-pumps-frog.cyclic.app/api/videos/select${query}`,
           {
             headers: {
               "Access-Control-Allow-Credentials": "true",

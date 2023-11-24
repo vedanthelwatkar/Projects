@@ -72,7 +72,7 @@ export const Card = ({ type, video }) => {
   useEffect(() => {
     const fetchChannel = async () => {
       try {
-        const res = await axios.get(`https://vtube-ycci.onrender.com/api/users/find/${video.userId}`,{},
+        const res = await axios.get(`https://gleaming-pumps-frog.cyclic.app/api/users/find/${video.userId}`,{},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -94,7 +94,7 @@ export const Card = ({ type, video }) => {
   const { currentVideo } = useSelector((state) => state.video);
   const incViews = async () => {
     await axios.put(
-      `https://vtube-ycci.onrender.com/api/videos/view/${currentVideo._id}`,
+      `https://gleaming-pumps-frog.cyclic.app/api/videos/view/${currentVideo._id}`,
       {
         headers: {
           "Access-Control-Allow-Credentials": "true" ,

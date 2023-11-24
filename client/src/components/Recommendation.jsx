@@ -15,7 +15,7 @@ export const Recommendation = ({tags}) => {
 
     useEffect(()=>{
         const fetchVideos = async () => {
-          const res = await axios.get(`https://vtube-ycci.onrender.com/api/videos/tags?tags=${tags}`,{},
+          const res = await axios.get(`https://gleaming-pumps-frog.cyclic.app/api/videos/tags?tags=${tags}`,{},
           {
             headers: {
               "Access-Control-Allow-Credentials": "true" ,
@@ -34,7 +34,7 @@ export const Recommendation = ({tags}) => {
         const fetchVideos = async () => {
         try {
           const res = await axios.get(
-            `https://vtube-ycci.onrender.com/api/videos/random`,
+            `https://gleaming-pumps-frog.cyclic.app/api/videos/random`,
             {},
             {
               headers: {

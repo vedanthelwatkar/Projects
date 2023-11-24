@@ -52,7 +52,7 @@ export const Home = ({ type }) => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/videos/${type}`,
+          `https://gleaming-pumps-frog.cyclic.app/api/videos/${type}`,
           {},
           {
             headers: {

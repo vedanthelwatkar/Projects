@@ -111,7 +111,7 @@ export const Comments = ({videoId}) => {
   useEffect(()=>{
     const fetchComments = async () => {
       try{
-        const res = await axios.get(`https://vtube-ycci.onrender.com/api/comments/${videoId}`,{},
+        const res = await axios.get(`https://gleaming-pumps-frog.cyclic.app/api/comments/${videoId}`,{},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -136,7 +136,7 @@ export const Comments = ({videoId}) => {
         videoId: currentVideo._id,
         userId: currentUser._id,
       };
-    const response = await axios.post('https://vtube-ycci.onrender.com/api/comments', newComment,{
+    const response = await axios.post('https://gleaming-pumps-frog.cyclic.app/api/comments', newComment,{
       headers: {
         "Access-Control-Allow-Credentials": "true" ,
         "Access-Control-Allow-Origin": "*" ,
