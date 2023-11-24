@@ -69,16 +69,16 @@ export const getVideos = async (req, res, next) => {
   }
 };
 
-export const addView = async (req, res, next) => {
-  try {
-    await Video.findByIdAndUpdate(req.params.id, {
-      $inc: { views: 1 },
-    });
-    res.status(200).json("veiws increased");
-  } catch (err) {
-    next(err);
-  }
-};
+// export const addView = async (req, res, next) => {
+//   try {
+//     await Video.findByIdAndUpdate(req.params.id, {
+//       $inc: { views: 1 },
+//     });
+//     res.status(200).json("veiws increased");
+//   } catch (err) {
+//     next(err);
+//   }
+// };
 
 export const getByTags = async (req, res, next) => {
   const tags = req.query.tags.split(",");
