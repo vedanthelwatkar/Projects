@@ -212,6 +212,8 @@ export const Video = () => {
           });
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
+        console.log("Fetched Video Data:", videoRes.data);
+        console.log("Redux State:", useSelector((state) => state.video));
       } catch (err) {
         console.log(err);
       }
