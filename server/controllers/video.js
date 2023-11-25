@@ -74,7 +74,7 @@ export const addView = async (req, res, next) => {
     await Video.findByIdAndUpdate(req.params.id, {
       $inc: { views: 1 },
     });
-    res.status(200).json("veiws increased");
+    res.status(200).json("views increased");
   } catch (err) {
     next(err);
   }
@@ -123,7 +123,7 @@ export const random = async (req, res, next) => {
 
 export const trend = async (req, res, next) => {
   try {
-    const videos = await Video.find().sort({ veiws: -1 });
+    const videos = await Video.find().sort({ views: -1 });
     res.status(200).json(videos);
   } catch (err) {
     next(err);

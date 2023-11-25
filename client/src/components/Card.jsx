@@ -133,7 +133,7 @@ export const Card = ({ type, video }) => {
             <Title>{video.title}</Title>
             <ChannelName>{channel.name}</ChannelName>
             <Info>
-              {video.veiws} veiws • {format(video.createdAt)}
+              {video.views} views • {format(video.createdAt)}
             </Info>
           </Texts>
         </Display>

@@ -352,7 +352,7 @@ export const Video = () => {
     <Details>
       <TitleandDesc>
         <Info>
-          {currentVideo?.veiws} views • {format(currentVideo?.createdAt)}
+          {currentVideo?.views} views • {format(currentVideo?.createdAt)}
         </Info>
         <Text>
           Description:-
