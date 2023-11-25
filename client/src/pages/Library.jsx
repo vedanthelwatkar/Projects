@@ -34,7 +34,7 @@ export const Library = () => {
         const handleLibrary = async () => {
             if (currentUser) {
               const response = await axios.get(
-                `https://vtube-ycci.onrender.com/api/videos/user/find/${currentUser._id}`,
+                `https://vtubebackend.onrender.com/api/videos/user/find/${currentUser._id}`,
                 {
                   headers: {
                     "Access-Control-Allow-Credentials": "true" ,

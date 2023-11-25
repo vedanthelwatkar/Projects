@@ -77,7 +77,7 @@ export const Card = ({ type, video }) => {
     const fetchChannel = async () => {
       try {
         const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/users/find/${video.userId}`,
+          `https://vtubebackend.onrender.com/api/users/find/${video.userId}`,
           {},
           {
             headers: {
@@ -105,7 +105,7 @@ export const Card = ({ type, video }) => {
     console.log(currentVideo);
     dispatch(fetchStart());
     await axios.put(
-      `https://vtube-ycci.onrender.com/api/videos/view/${currentVideo._id}`,
+      `https://vtubebackend.onrender.com/api/videos/view/${currentVideo._id}`,
       {
         headers: {
           "Access-Control-Allow-Credentials": "true",

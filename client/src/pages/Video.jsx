@@ -194,7 +194,7 @@ export const Video = () => {
     const fetchData = async () => {
       try {
         console.log(path)
-        const videoRes = await axios.get(`https://vtube-ycci.onrender.com/api/videos/find/${path}`,{},{
+        const videoRes = await axios.get(`https://vtubebackend.onrender.com/api/videos/find/${path}`,{},{
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
             "Access-Control-Allow-Origin": "*" ,
@@ -203,7 +203,7 @@ export const Video = () => {
             },
           });
           console.log(videoRes)
-        const channelRes = await axios.get(`https://vtube-ycci.onrender.com/api/users/find/${videoRes.data.userId}`,{},{
+        const channelRes = await axios.get(`https://vtubebackend.onrender.com/api/users/find/${videoRes.data.userId}`,{},{
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
             "Access-Control-Allow-Origin": "*" ,
@@ -225,7 +225,7 @@ export const Video = () => {
   const handleLike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `https://vtube-ycci.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
+        `https://vtubebackend.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -244,7 +244,7 @@ export const Video = () => {
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `https://vtube-ycci.onrender.com/api/users/dislike/${currentVideo._id}`,
+        `https://vtubebackend.onrender.com/api/users/dislike/${currentVideo._id}`,
         { userId: currentUser._id },
         {
           headers: {
@@ -265,7 +265,7 @@ export const Video = () => {
     if (currentUser && channel) {
       currentUser.subscribedUsers.includes(channel._id)
         ? await axios.put(
-            `https://vtube-ycci.onrender.com/api/users/unsub/${channel._id}`,
+            `https://vtubebackend.onrender.com/api/users/unsub/${channel._id}`,
             { userId: currentUser._id },
             {
               headers: {
@@ -277,7 +277,7 @@ export const Video = () => {
               }
           )
         : await axios.put(
-            `https://vtube-ycci.onrender.com/api/users/sub/${channel._id}`,
+            `https://vtubebackend.onrender.com/api/users/sub/${channel._id}`,
             { userId: currentUser._id },
             {
               headers: {
@@ -319,7 +319,7 @@ export const Video = () => {
     try{
     if (shouldDelete) {
       await axios.delete(
-        `https://vtube-ycci.onrender.com/api/videos/${currentVideo._id}`,
+        `https://vtubebackend.onrender.com/api/videos/${currentVideo._id}`,
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,

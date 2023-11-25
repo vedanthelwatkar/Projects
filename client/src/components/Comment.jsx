@@ -44,7 +44,7 @@ export const Comment = ({comment}) => {
   useEffect(()=>{
     const fetchComment = async ()=>{
       const res = await axios.get(
-        `https://vtube-ycci.onrender.com/api/users/find/${comment.userId}`,{},
+        `https://vtubebackend.onrender.com/api/users/find/${comment.userId}`,{},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -63,7 +63,7 @@ export const Comment = ({comment}) => {
     const shouldDelete = window.confirm("Are you sure you want to Delete?");
     if (shouldDelete) {
       await axios.delete(
-        `https://vtube-ycci.onrender.com/api/comments/${comment._id}`,
+        `https://vtubebackend.onrender.com/api/comments/${comment._id}`,
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,

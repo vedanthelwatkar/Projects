@@ -27,7 +27,7 @@ export const Search = () => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/videos/search${query}`,
+          `https://vtubebackend.onrender.com/api/videos/search${query}`,
           {
             headers: {
               "Access-Control-Allow-Credentials": "true",

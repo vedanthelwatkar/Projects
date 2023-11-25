@@ -113,7 +113,7 @@ export const SignIn = () => {
     }
     try {
       const res = await axios.post(
-        "https://vtube-ycci.onrender.com/api/auth/signin",
+        "https://vtubebackend.onrender.com/api/auth/signin",
         { name, password },
         {
           headers: {
@@ -135,7 +135,7 @@ export const SignIn = () => {
       .then((result) => {
         axios
           .post(
-            "https://vtube-ycci.onrender.com/api/auth/google",
+            "https://vtubebackend.onrender.com/api/auth/google",
             {
               name: result.user.displayName,
               email: result.user.email,

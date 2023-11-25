@@ -52,7 +52,7 @@ export const Home = ({ type }) => {
     const fetchVideos = async () => {
       try {
         const res = await axios.get(
-          `https://vtube-ycci.onrender.com/api/videos/${type}`,
+          `https://vtubebackend.onrender.com/api/videos/${type}`,
           {},
           {
             headers: {
