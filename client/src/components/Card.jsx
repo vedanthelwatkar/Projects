@@ -1,33 +1,35 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import {format} from "timeago.js"
+import { format } from "timeago.js";
+import { useParams } from "react-router-dom";
+import { fetchStart } from "../redux/videoSlice";
 
 const Container = styled.div`
   width: 23vw;
-  margin-bottom: ${(props) => props.type === "sm" ? "10px": "45px"};
+  margin-bottom: ${(props) => (props.type === "sm" ? "10px" : "45px")};
   cursor: pointer;
   display: ${(props) => props.type === "sm" && "flex"};
-  gap: ${(props) => props.type === "sm" ? "10px" : "0px"};
+  gap: ${(props) => (props.type === "sm" ? "10px" : "0px")};
 
-  @media (max-width:768px){
-    display:flex;
+  @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
     margin-bottom: 45px;
-    width:90vw;
+    width: 90vw;
   }
 `;
 
 const Image = styled.img`
-  width: ${(props) => props.type === "sm" ? "70%" : "100%"};
-  height: ${(props) => props.type === "sm" ? "120px" : "202px"};
+  width: ${(props) => (props.type === "sm" ? "70%" : "100%")};
+  height: ${(props) => (props.type === "sm" ? "120px" : "202px")};
   background-color: #999;
   border-radius: 5px;
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     height: 25vh;
-    width:100%;
+    width: 100%;
   }
 `;
 
@@ -35,7 +37,7 @@ const Display = styled.div`
   display: flex;
   gap: 20px;
   margin-top: ${(props) => props.type !== "sm" && "16px"};
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     margin-top: 16px;
   }
 `;
@@ -45,8 +47,8 @@ const ChannelImage = styled.img`
   border-radius: 50%;
   background-color: #999;
   display: ${(props) => props.type === "sm" && "none"};
-  @media (max-width:768px){
-    display:flex;
+  @media (max-width: 768px) {
+    display: flex;
   }
 `;
 const Texts = styled.div``;
@@ -68,56 +70,72 @@ const Info = styled.div`
 
 export const Card = ({ type, video }) => {
   const [channel, setChannel] = useState({});
+  const dispatch = useDispatch();
+  const { currentVideo } = useSelector((state) => state.video);
 
   useEffect(() => {
     const fetchChannel = async () => {
       try {
-        const res = await axios.get(`https://vtube-ycci.onrender.com/api/users/find/${video.userId}`,{},
-        {
-          headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        const res = await axios.get(
+          `https://vtube-ycci.onrender.com/api/users/find/${video.userId}`,
+          {},
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers":
+                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
-          });
+          }
+        );
         setChannel(res.data);
       } catch (error) {
         console.error("Error fetching channel data:", error);
       }
     };
-  
+
     if (video.userId) {
       fetchChannel();
     }
   }, [video.userId]);
-  const { currentVideo } = useSelector((state) => state.video);
+
   const incViews = async () => {
+    console.log(currentVideo);
+    dispatch(fetchStart());
     await axios.put(
       `https://vtube-ycci.onrender.com/api/videos/view/${currentVideo._id}`,
       {
         headers: {
-          "Access-Control-Allow-Credentials": "true" ,
-          "Access-Control-Allow-Origin": "*" ,
-          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-          },
-        }
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":
+            "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        },
+      }
     );
-  }
-  
-
+  };
 
   return (
     <Link to={`/video/${video._id}`} style={{ textDecoration: "none" }}>
       <Container type={type}>
-        <Image type={type}src={video.imgUrl} onClick={incViews}/>
+        <Image type={type} src={video.imgUrl} onClick={incViews} />
         <Display type={type}>
-        <ChannelImage type={type} src={channel.img || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
+          <ChannelImage
+            type={type}
+            src={
+              channel.img ||
+              "https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png"
+            }
+          />
           <Texts>
             <Title>{video.title}</Title>
             <ChannelName>{channel.name}</ChannelName>
-            <Info>{video.veiws} veiws • {format(video.createdAt)}</Info>
+            <Info>
+              {video.veiws} veiws • {format(video.createdAt)}
+            </Info>
           </Texts>
         </Display>
       </Container>
