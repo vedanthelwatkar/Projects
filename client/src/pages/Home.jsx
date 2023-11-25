@@ -92,6 +92,7 @@ export const Home = ({ type }) => {
              <div class="loading-container">
               <div class="loading-icon"></div>
             </div>
+            <Title>Welcome to VTube! Please note that as we are using free hosting sources, there might be a brief 30-40 second delay in loading after periods of inactivity. We appreciate your patience and assure you that we're working to enhance your browsing experience. Thank you for understanding!</Title>
           </>
         )}
       </Container>
