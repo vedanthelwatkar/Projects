@@ -191,10 +191,11 @@ export const Video = () => {
 
   const [channel, setChannel] = useState({});
   useEffect(() => {
+    console.log("Current Video:", currentVideo);
     const fetchData = async () => {
       try {
         console.log(path)
-        const videoRes = await axios.get(`https://vtubebackend.onrender.com/api/videos/find/${path}`,{},{
+        const videoRes = await axios.get(`https://vtubebackend.onrender.com/api/videos/find/${path}`,{
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
             "Access-Control-Allow-Origin": "*" ,
@@ -203,7 +204,7 @@ export const Video = () => {
             },
           });
           console.log(videoRes)
-        const channelRes = await axios.get(`https://vtubebackend.onrender.com/api/users/find/${videoRes.data.userId}`,{},{
+        const channelRes = await axios.get(`https://vtubebackend.onrender.com/api/users/find/${videoRes.data.userId}`,{
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
             "Access-Control-Allow-Origin": "*" ,
@@ -211,6 +212,7 @@ export const Video = () => {
             "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
           });
+          console.log(channelRes)
         setChannel(channelRes.data);
         dispatch(fetchSuccess(videoRes.data));
         console.log("Fetched Video Data:", videoRes.data);
