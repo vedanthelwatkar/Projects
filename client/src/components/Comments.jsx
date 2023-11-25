@@ -139,7 +139,7 @@ export const Comments = ({videoId}) => {
       };
   
       try {
-        const response = await axios.post('http://localhost:8000/api/comments', newComment, {
+        const response = await axios.post('https://vtubebackend.onrender.com/api/comments', newComment, {
           headers: {
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Origin": "*",
