@@ -101,27 +101,27 @@ export const Card = ({ type, video }) => {
     }
   }, [video.userId]);
 
-  // const incViews = async () => {
-  //   console.log(currentVideo);
-  //   const check = dispatch(fetchStart());
-  //   await axios.put(
-  //     `https://vtubebackend.onrender.com/api/videos/view/${currentVideo._id}`,
-  //     {
-  //       headers: {
-  //         "Access-Control-Allow-Credentials": "true",
-  //         "Access-Control-Allow-Origin": "*",
-  //         "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-  //         "Access-Control-Allow-Headers":
-  //           "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-  //       },
-  //     }
-  //   );
-  // };
+  const incViews = async () => {
+    console.log(currentVideo);
+    const check = dispatch(fetchStart());
+    await axios.put(
+      `https://vtubebackend.onrender.com/api/videos/view/${currentVideo._id}`,
+      {
+        headers: {
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":
+            "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        },
+      }
+    );
+  };
 
   return (
     <Link to={`/video/${video._id}`} style={{ textDecoration: "none" }}>
       <Container type={type}>
-        <Image type={type} src={video.imgUrl}/>
+        <Image type={type} src={video.imgUrl} onClick={incViews} />
         <Display type={type}>
           <ChannelImage
             type={type}
