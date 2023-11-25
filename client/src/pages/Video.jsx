@@ -216,7 +216,7 @@ export const Video = () => {
         console.log("Fetched Video Data:", videoRes.data);
         
       } catch (err) {
-        console.log(err);
+        console.error('Error fetching data:', err);
       }
     };
     fetchData();
