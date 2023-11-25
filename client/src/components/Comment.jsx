@@ -1,9 +1,10 @@
 import { Delete } from "@mui/icons-material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { format } from "timeago.js";
+import { deleteComment } from "../redux/videoSlice";
 
 const Container = styled.div`
   display: flex;
@@ -38,9 +39,10 @@ const Date = styled.span`
   margin-left: 5px;
 `;
 const Text = styled.span``;
-export const Comment = ({comment}) => {
+export const Comment = ({comment,setComments}) => {
   const [channel,setChannel] = useState([])
   const { currentUser } = useSelector((state) => state.user);
+  const dispatch = useDispatch()
   useEffect(()=>{
     const fetchComment = async ()=>{
       const res = await axios.get(
@@ -62,18 +64,23 @@ export const Comment = ({comment}) => {
   const handleDelete = async () => {
     const shouldDelete = window.confirm("Are you sure you want to Delete?");
     if (shouldDelete) {
-      await axios.delete(
-        `https://vtubebackend.onrender.com/api/comments/${comment._id}`,
-        {
-          headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+      try {
+        await axios.delete(
+          `https://vtubebackend.onrender.com/api/comments/${comment._id}`,
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
           }
-      );
-      window.location.reload()
+        );
+        dispatch(deleteComment(comment._id));
+        setComments((prevComments) => prevComments.filter((c) => c._id !== comment._id));
+      } catch (error) {
+        console.error("Error deleting comment:", error);
+      }
     }else{
       console.log("comment not deleted")
     }

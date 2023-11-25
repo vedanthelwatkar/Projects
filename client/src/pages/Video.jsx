@@ -185,11 +185,11 @@ export const Video = () => {
   const { currentUser } = useSelector((state) => state.user);
   const { currentVideo } = useSelector((state) => state.video);
   const nav = useNavigate()
+  const [channel, setChannel] = useState({});
   const dispatch = useDispatch();
-
   const path = useLocation().pathname.split("/")[2];
 
-  const [channel, setChannel] = useState({});
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -259,8 +259,12 @@ export const Video = () => {
 
   const handleSubscribe = async () => {
     if (currentUser && channel) {
-      currentUser.subscribedUsers.includes(channel._id)
-        ? await axios.put(
+      try {
+        const isSubscribed = currentUser.subscribedUsers.includes(channel._id);
+        const updatedChannel = { ...channel };
+  
+        if (isSubscribed) {
+          await axios.put(
             `https://vtubebackend.onrender.com/api/users/unsub/${channel._id}`,
             { userId: currentUser._id },
             {
@@ -270,9 +274,11 @@ export const Video = () => {
                 "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
                 "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
                 },
-              }
-          )
-        : await axios.put(
+            }
+          );
+          updatedChannel.subscribers -= 1;
+        } else {
+          await axios.put(
             `https://vtubebackend.onrender.com/api/users/sub/${channel._id}`,
             { userId: currentUser._id },
             {
@@ -282,14 +288,21 @@ export const Video = () => {
                 "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
                 "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
                 },
-              }
+            }
           );
-          window.location.reload()
-      dispatch(subscription(channel._id));
+          updatedChannel.subscribers += 1;
+        }
+  
+        dispatch(subscription(channel._id));
+        setChannel(updatedChannel);
+      } catch (error) {
+        console.error("Error updating subscription:", error);
+      }
     } else {
       alert("Login first");
     }
   };
+  
 
   const handleSave = (videoUrl) => {
     const link = document.createElement("a");

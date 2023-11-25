@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { Comment } from "./Comment";
 import IconButton from "@mui/material/IconButton";
@@ -103,15 +103,17 @@ export const Comments = ({videoId}) => {
   const {currentUser}=useSelector((state)=>state.user)
   const {currentVideo}=useSelector((state)=>state.video)
   const dispatch = useDispatch()
+  const setIp = useRef()
 
   const toggleComment = () => {
     setCommentVisible(!commentVisible);
   };
 
+
   useEffect(()=>{
     const fetchComments = async () => {
       try{
-        const res = await axios.get(`https://vtubebackend.onrender.com/api/comments/${videoId}`,{},
+        const res = await axios.get(`https://vtubebackend.onrender.com/api/comments/${currentVideo._id}`,{},
         {
           headers: {
             "Access-Control-Allow-Credentials": "true" ,
@@ -126,30 +128,38 @@ export const Comments = ({videoId}) => {
       }
     }
     fetchComments()
-  },[videoId])
+  },[currentVideo._id])
 
-  const handleComment = async () =>{
-    setComment("")
-    if (currentVideo && currentUser){
+  const handleComment = async () => {
+    if (currentVideo && currentUser) {
       const newComment = {
         desc: comment,
         videoId: currentVideo._id,
         userId: currentUser._id,
       };
-    const response = await axios.post('https://vtubebackend.onrender.com/api/comments', newComment,{
-      headers: {
-        "Access-Control-Allow-Credentials": "true" ,
-        "Access-Control-Allow-Origin": "*" ,
-        "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-        "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-        },
-      });
-    dispatch(addComment(response.data));
-    window.location.reload()
-  }else{
-    alert("Login first")
-  }
-  }
+  
+      try {
+        const response = await axios.post('http://localhost:8000/api/comments', newComment, {
+          headers: {
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        });
+  
+        dispatch(addComment(response.data));
+        setComments((prevComments) => [response.data, ...prevComments]);
+        setIp.current.value = "";
+  
+      } catch (error) {
+        console.error("Error adding comment:", error);
+      }
+    } else {
+      alert("Login first");
+    }
+  };
+  
 
 
 
@@ -166,11 +176,11 @@ export const Comments = ({videoId}) => {
       <Container commentVisible={commentVisible}>
       {currentUser && <NewComment>
           <Avatar src={currentUser.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
-          <Input placeholder="Add a comment" onChange={e=>setComment(e.target.value)} />
+          <Input placeholder="Add a comment" ref={setIp} onChange={e=>setComment(e.target.value)} />
           <Button onClick={handleComment}>Comment</Button>
         </NewComment>}
         {Array.isArray(comments) && comments.length > 0 ? (
-            comments.map((comment) => <Comment key={comment._id} comment={comment} />)
+            comments.map((comment) => <Comment key={comment._id} comment={comment} setComments={setComments} />)
           ) : (
             <>
             <Title>No comments yet</Title>

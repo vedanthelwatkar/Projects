@@ -70,7 +70,6 @@ const Info = styled.div`
 
 export const Card = ({ type, video }) => {
   const [channel, setChannel] = useState({});
-  const dispatch = useDispatch();
   const { currentVideo } = useSelector((state) => state.video);
 
   useEffect(() => {
@@ -114,7 +113,10 @@ export const Card = ({ type, video }) => {
         },
       }
     );
-    console.log("view added")
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
