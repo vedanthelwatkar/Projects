@@ -102,8 +102,6 @@ export const Card = ({ type, video }) => {
   }, [video.userId]);
 
   const incViews = async () => {
-    console.log(currentVideo);
-    const check = dispatch(fetchStart());
     await axios.put(
       `https://vtubebackend.onrender.com/api/videos/view/${currentVideo._id}`,
       {
@@ -116,6 +114,7 @@ export const Card = ({ type, video }) => {
         },
       }
     );
+    console.log("view added")
   };
 
   return (
