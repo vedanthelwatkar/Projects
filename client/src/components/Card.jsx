@@ -103,7 +103,7 @@ export const Card = ({ type, video }) => {
 
   const incViews = async () => {
     console.log(currentVideo);
-    dispatch(fetchStart());
+    const check = dispatch(fetchStart());
     await axios.put(
       `https://vtubebackend.onrender.com/api/videos/view/${currentVideo._id}`,
       {
@@ -121,7 +121,7 @@ export const Card = ({ type, video }) => {
   return (
     <Link to={`/video/${video._id}`} style={{ textDecoration: "none" }}>
       <Container type={type}>
-        <Image type={type} src={video.imgUrl} onClick={incViews} />
+        <Image type={type} src={video.imgUrl}/>
         <Display type={type}>
           <ChannelImage
             type={type}
