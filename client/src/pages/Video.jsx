@@ -403,7 +403,7 @@ export const Video = () => {
         <Image src={channel && channel.img ? channel.img : 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
         <ChannelDetail>
           <ChannelName>{channel && channel.name ? channel.name :  "Unknown User" }</ChannelName>
-          <ChannelCounter>{channel && channel.subscribers ? channel.subscribers : "Unknown"} subscribers</ChannelCounter>
+          <ChannelCounter>{channel && channel.subscribers !== undefined ? channel.subscribers : "Unknown"}  subscribers</ChannelCounter>
         </ChannelDetail>
       </ChannelInfo>
       <Subscribe
