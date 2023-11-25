@@ -10,7 +10,7 @@
 .all-intern-project {
 	width: calc(100% / 3);
 	box-sizing: border-box;
-	padding: 10px;
+	padding: 20px;
 	overflow: hidden;
 }
 

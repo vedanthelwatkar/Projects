@@ -10,7 +10,7 @@ const Tech = (props) => {
 			<div className="tech">
 					<div className="tech-container">
 						<div className="tech-logo">
-							<img src={logo} alt="logo" />
+							<img src={logo} alt="logo" className="centered-image"/>
 						</div>
 						<div className="tech-title">{title}</div>
 					</div>

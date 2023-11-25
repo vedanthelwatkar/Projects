@@ -9,7 +9,7 @@
 }
 
 .all-tech-project {
-	width: calc(100% / 3);
+	width: calc(100% / 4);
 	box-sizing: border-box;
 	padding: 10px;
 	overflow: hidden;

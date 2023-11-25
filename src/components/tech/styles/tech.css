@@ -24,17 +24,22 @@
 }
 
 .tech-container {
-	padding: 30px;
+	padding-top: 30px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.tech-logo {
-	width: 30px;
-}
+.centered-image {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	background: white;
+  }
 
-.tech-logo img {
-	width: 150%;
-	background-color: var(--img-bg);
-	padding: 10px;
+img{
+	padding:10px
 }
 
 .tech-title {
