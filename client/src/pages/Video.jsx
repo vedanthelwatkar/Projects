@@ -343,80 +343,77 @@ export const Video = () => {
 
   return (
     <Container>
-      <Content>
-        <VideoWrapper>
-          <VideoFrame src={currentVideo.videoUrl} controls download="video.mp4" />
-        </VideoWrapper>
-        <TitleandDel>
-        <Title>{currentVideo.title}</Title>
-        <DeleteWrapper>
-
-        {currentUser && currentUser._id === currentVideo.userId.toString() && (
+  <Content>
+    <VideoWrapper>
+      <VideoFrame src={currentVideo?.videoUrl} controls download="video.mp4" />
+    </VideoWrapper>
+    <TitleandDel>
+      <Title>{currentVideo?.title}</Title>
+      <DeleteWrapper>
+        {currentUser && currentVideo && currentUser._id === currentVideo.userId?.toString() && (
           <Delete onClick={handleDelete}/>
-          )}
-          </DeleteWrapper>
-        </TitleandDel>
-        <Details>
-          <TitleandDesc>
-          <Info>
-            {currentVideo.veiws} veiws • {format(currentVideo.createdAt)}
-          </Info>
-          <Text>
+        )}
+      </DeleteWrapper>
+    </TitleandDel>
+    <Details>
+      <TitleandDesc>
+        <Info>
+          {currentVideo?.veiws} views • {format(currentVideo?.createdAt)}
+        </Info>
+        <Text>
           Description:-
-          </Text>
-          <Description>{currentVideo?.desc}</Description>  
-          </TitleandDesc>
-          <Buttons>
-            <Button onClick={handleLike} disabled={!currentUser}>
-              {currentUser && currentVideo.likes?.includes(currentUser._id) ? (
-                <ThumbUp />
-              ) : (
-                <ThumbUpOutlined />
-              )}
-              {currentVideo?.likes?.length}
-            </Button>
-            <Button onClick={handleDislike} disabled={!currentUser}>
-              {currentUser &&
-              currentVideo.dislikes?.includes(currentUser._id) ? (
-                <ThumbDown />
-              ) : (
-                <ThumbDownOffAltOutlined />
-              )}{" "}
-              Dislike
-            </Button>
-            <Button onClick={handleCopyLink}>
-              <FileCopyOutlined /> Copy Link
-            </Button>
-            <Button disabled={!currentUser} onClick={() => handleSave(currentVideo.videoUrl)}>
-              <AddTaskOutlined /> Save
-            </Button>
-            
-          </Buttons>
-        </Details>
-        <Hr />
-        <Channel>
-          <ChannelInfo>
-            <Image src={channel && channel.img ? channel.img : 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
-            <ChannelDetail>
-              <ChannelName>{channel && channel.name ? channel.name :  "Unknown User" }</ChannelName>
-              <ChannelCounter>{channel && channel.subscribers ? channel.subscribers : "Unknown"} subscribers</ChannelCounter>
-            </ChannelDetail>
-          </ChannelInfo>
-          <Subscribe
-            onClick={handleSubscribe}
-            isSubscribed={
-              currentUser && currentUser.subscribedUsers?.includes(channel._id)
-            }
-          >
-            {currentUser && currentUser.subscribedUsers?.includes(channel._id)
-              ? "SUBSCRIBED"
-              : "SUBSCRIBE"}
-          </Subscribe>
-        </Channel>
-        <Hr />
-        <Comments videoId={currentVideo._id} />
-      </Content>
-      <Recommendation tags={currentVideo.tags} />
-    </Container>
+        </Text>
+        <Description>{currentVideo?.desc}</Description>  
+      </TitleandDesc>
+      <Buttons>
+        <Button onClick={handleLike} disabled={!currentUser}>
+          {currentUser && currentVideo && currentVideo.likes?.includes(currentUser._id) ? (
+            <ThumbUp />
+          ) : (
+            <ThumbUpOutlined />
+          )}
+          {currentVideo?.likes?.length}
+        </Button>
+        <Button onClick={handleDislike} disabled={!currentUser}>
+          {currentUser && currentVideo && currentVideo.dislikes?.includes(currentUser._id) ? (
+            <ThumbDown />
+          ) : (
+            <ThumbDownOffAltOutlined />
+          )}{" "}
+          Dislike
+        </Button>
+        <Button onClick={handleCopyLink}>
+          <FileCopyOutlined /> Copy Link
+        </Button>
+        <Button disabled={!currentUser} onClick={() => handleSave(currentVideo?.videoUrl)}>
+          <AddTaskOutlined /> Save
+        </Button>
+      </Buttons>
+    </Details>
+    <Hr />
+    <Channel>
+      <ChannelInfo>
+        <Image src={channel && channel.img ? channel.img : 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
+        <ChannelDetail>
+          <ChannelName>{channel && channel.name ? channel.name :  "Unknown User" }</ChannelName>
+          <ChannelCounter>{channel && channel.subscribers ? channel.subscribers : "Unknown"} subscribers</ChannelCounter>
+        </ChannelDetail>
+      </ChannelInfo>
+      <Subscribe
+        onClick={handleSubscribe}
+        isSubscribed={
+          currentUser && currentUser.subscribedUsers?.includes(channel?._id)
+        }
+      >
+        {currentUser && currentUser.subscribedUsers?.includes(channel?._id)
+          ? "SUBSCRIBED"
+          : "SUBSCRIBE"}
+      </Subscribe>
+    </Channel>
+    <Hr />
+    <Comments videoId={currentVideo?._id} />
+  </Content>
+  <Recommendation tags={currentVideo?.tags} />
+</Container>
   );
 };
