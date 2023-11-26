@@ -53,6 +53,12 @@ export const Home = ({ type }) => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
+        setProgress(10);
+        await new Promise((resolve) => setTimeout(resolve, 3000));
+        const intervalId = setInterval(() => {
+          setProgress((prevProgress) => prevProgress + 5);
+        }, 5000);
+  
         const res = await axios.get(
           `https://vtubebackend.onrender.com/api/videos/${type}`,
           {
@@ -66,14 +72,18 @@ export const Home = ({ type }) => {
             },
           }
         );
-        setVideo(res.data);
+  
+        clearInterval(intervalId);
         setProgress(100);
+        setVideo(res.data);
       } catch (error) {
         console.error("Error fetching videos:", error);
       }
     };
+  
     fetchVideos();
   }, [type]);
+  
 
   return (
     <>
