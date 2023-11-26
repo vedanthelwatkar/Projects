@@ -26,23 +26,21 @@ const INFO = {
 
 	intern: [
 		{
-			title: "Mira Advanced Engineering",
-			description:
-				"07/10/2023 - Current",
-			logo: "MiraLogo.jpeg",
-			linkText: "View Internship Certificate",
-			link: "https://drive.google.com/file/d/1pCIARU_e_D0QD55B339mfxuwUyqUhMY7/view?usp=sharing",
-		},
-
-		{
 			title: "Ranjana Enterprises",
 			description:
-				"04/07/2023 - 05/09/2023",
+				"05/09/2023 - 04/11/2023",
 			logo: "RanjanaLogo.jpeg",
 			linkText: "View Internship Certificate",
-			link: "https://drive.google.com/file/d/1kUsWwXHxY6BRzCKh9czG8A1aF4GaYqfw/view?usp=sharing",
+			link: "https://drive.google.com/file/d/1qQNi-tByvAU6NOKKHvreVrxkrOAPOzqI/view?usp=sharing",
 		},
-
+		{
+			title: "Mira Advanced Engineering",
+			description:
+				"02/08/2023 - 02/09/2023",
+			logo: "MiraLogo.jpeg",
+			linkText: "View Internship Certificate",
+			link: "https://drive.google.com/file/d/1rCONPFKWTW244nj-ANGmYtsQPLL18EDZ/view?usp=sharing",
+		},
 		{
 			title: "Trivia Software's",
 			description:
