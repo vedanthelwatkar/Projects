@@ -8,8 +8,9 @@ import LoadingBar from "react-top-loading-bar";
 
 const Container = styled.div`
   display: flex;
-  justify-content:space-evenly;
   flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2vw;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
