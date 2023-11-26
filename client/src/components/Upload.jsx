@@ -10,6 +10,7 @@ import app from "../firebase";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import LoadingBar from "react-top-loading-bar";
 
 const Container = styled.div`
   width: 100%;
@@ -98,6 +99,8 @@ export const Upload = ({ setOpen }) => {
   const [inputs, setInputs] = useState({});
   const [tags, setTags] = useState([]);
   const nav = useNavigate()
+  const { currentUser } = useSelector((state) => state.user);
+  const [progress,setProgress] = useState(10)
 
   const handleChange = (e) => {
     setInputs((prev) => {
@@ -163,7 +166,7 @@ export const Upload = ({ setOpen }) => {
   const handleTags = (e) => {
     setTags(e.target.value.split(","));
   };
-  const { currentUser } = useSelector((state) => state.user);
+
   const handleUpload = async (e) => {
       if (!inputs.title || !inputs.desc || !inputs.imgUrl || !inputs.videoUrl) {
         alert("Fill all the details");
@@ -182,6 +185,7 @@ export const Upload = ({ setOpen }) => {
         })
         setOpen(false)
         res.status===200 && nav(`/video/${res.data._id}`)
+        setProgress(100)
       }else{
         alert("Wait before Uploading")
       }
@@ -189,6 +193,14 @@ export const Upload = ({ setOpen }) => {
       
 
   return (
+    <>
+    <div>
+        <LoadingBar
+          color="#f11946"
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
+        />
+      </div>
     <Container>
       <Wrapper ref={wrapperRef}>
         <Close onClick={() => setOpen(false)}>X</Close>
@@ -196,44 +208,45 @@ export const Upload = ({ setOpen }) => {
         <Label>Video</Label>
         {videoPerc > 0 ? (
           "Uploading:" + videoPerc + "%"
-        ) : (
-          <Input
+          ) : (
+            <Input
             type="file"
             accept="video/*"
             onChange={(e) => setVideo(e.target.files[0])}
-          />
-        )}
+            />
+            )}
         <Input
           type="text"
           placeholder="Title"
           name="title"
           onChange={handleChange}
-        />
+          />
         <Desc
           type="text"
           placeholder="Description"
           rows={8}
           name="desc"
           onChange={handleChange}
-        />
+          />
         <Input
           type="text"
           placeholder="Tags    *seperate tags with commas*"
           onChange={handleTags}
-        />
+          />
         <Label>Image</Label>
         {imgPerc > 0 ? (
           "Uploading:" + imgPerc + "%"
-        ) : (
+          ) : (
           <Input
             type="file"
             accept="image/*"
             placeholder="Thumbnail"
             onChange={(e) => setImg(e.target.files[0])}
-          />
-        )}
+            />
+            )}
         <Button onClick={handleUpload}>Upload</Button>
       </Wrapper>
     </Container>
+            </>
   );
 };

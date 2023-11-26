@@ -127,6 +127,7 @@ export const SignIn = () => {
       dispatch(loginSuccess(res.data));
       nav("/");
     } catch (err) {
+      alert("Login Failed")
       dispatch(loginFailure());
     }
   };
@@ -157,6 +158,7 @@ export const SignIn = () => {
           });
       })
       .catch((err) => {
+        alert("Login Failed")
         dispatch(loginFailure());
       });
   };

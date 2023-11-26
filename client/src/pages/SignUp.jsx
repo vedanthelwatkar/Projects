@@ -128,7 +128,8 @@ export const SignUp = () => {
       dispatch(loginSuccess(res.data))
       nav("/signin")
     } catch (err) {
-        dispatch(loginFailure());
+      alert("Signup Failed")
+      dispatch(loginFailure());
       console.log(err);
     }
   };

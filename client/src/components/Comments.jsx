@@ -96,39 +96,43 @@ const Hr = styled.hr`
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
-export const Comments = ({videoId}) => {
-  const [comments,setComments] = useState([])
-  const [comment,setComment] = useState("")
+export const Comments = ({ videoId }) => {
+  const [comments, setComments] = useState([]);
+  const [comment, setComment] = useState("");
   const [commentVisible, setCommentVisible] = useState(true);
-  const {currentUser}=useSelector((state)=>state.user)
-  const {currentVideo}=useSelector((state)=>state.video)
-  const dispatch = useDispatch()
-  const setIp = useRef()
+  const { currentUser } = useSelector((state) => state.user);
+  const { currentVideo } = useSelector((state) => state.video);
+  const dispatch = useDispatch();
+  const setIp = useRef();
 
   const toggleComment = () => {
     setCommentVisible(!commentVisible);
   };
 
-
-  useEffect(()=>{
+  useEffect(() => {
     const fetchComments = async () => {
-      try{
-        const res = await axios.get(`https://vtubebackend.onrender.com/api/comments/${currentVideo._id}`,{},
-        {
-          headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+      try {
+        const res = await axios.get(
+          `https://vtubebackend.onrender.com/api/comments/${currentVideo._id}`,
+          {},
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers":
+                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
-          })
-        setComments(res.data)
-      }catch(err){
-        console.log(err)
+          }
+        );
+        setComments(res.data);
+      } catch (err) {
+        console.log(err);
       }
-    }
-    fetchComments()
-  },[currentVideo._id])
+    };
+    fetchComments();
+  }, [currentVideo._id]);
 
   const handleComment = async () => {
     if (currentVideo && currentUser) {
@@ -137,21 +141,26 @@ export const Comments = ({videoId}) => {
         videoId: currentVideo._id,
         userId: currentUser._id,
       };
-  
+
       try {
-        const response = await axios.post('https://vtubebackend.onrender.com/api/comments', newComment, {
-          headers: {
-            "Access-Control-Allow-Credentials": "true",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-          },
-        });
-  
+        const response = await axios.post(
+          "https://vtubebackend.onrender.com/api/comments",
+          newComment,
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers":
+                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            },
+          }
+        );
+
         dispatch(addComment(response.data));
         setComments((prevComments) => [response.data, ...prevComments]);
         setIp.current.value = "";
-  
       } catch (error) {
         console.error("Error adding comment:", error);
       }
@@ -159,9 +168,6 @@ export const Comments = ({videoId}) => {
       alert("Login first");
     }
   };
-  
-
-
 
   return (
     <>
@@ -174,20 +180,36 @@ export const Comments = ({videoId}) => {
         </Toggle>
       </ToggleContainer>
       <Container commentVisible={commentVisible}>
-      {currentUser && <NewComment>
-          <Avatar src={currentUser.img  || 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
-          <Input placeholder="Add a comment" ref={setIp} onChange={e=>setComment(e.target.value)} />
-          <Button onClick={handleComment}>Comment</Button>
-        </NewComment>}
+        {currentUser && (
+          <NewComment>
+            <Avatar
+              src={
+                currentUser.img ||
+                "https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png"
+              }
+            />
+            <Input
+              placeholder="Add a comment"
+              ref={setIp}
+              onChange={(e) => setComment(e.target.value)}
+            />
+            <Button onClick={handleComment}>Comment</Button>
+          </NewComment>
+        )}
         {Array.isArray(comments) && comments.length > 0 ? (
-            comments.map((comment) => <Comment key={comment._id} comment={comment} setComments={setComments} />)
-          ) : (
-            <>
+          comments.map((comment) => (
+            <Comment
+              key={comment._id}
+              comment={comment}
+              setComments={setComments}
+            />
+          ))
+        ) : (
+          <>
             <Title>No comments yet</Title>
-            <Hr/>
-            </>
-          )}
-          
+            <Hr />
+          </>
+        )}
       </Container>
     </>
   );

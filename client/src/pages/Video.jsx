@@ -17,6 +17,8 @@ import { dislike, fetchSuccess, like } from "../redux/videoSlice";
 import { format } from "timeago.js";
 import { subscription } from "../redux/userSlice";
 import { Recommendation } from "../components/Recommendation";
+import LoadingBar from "react-top-loading-bar";
+
 const Container = styled.div`
   display: flex;
   gap: 24px;
@@ -93,8 +95,8 @@ const ChannelInfo = styled.div`
   display: flex;
   gap: 1vw;
 
-  @media (max-width:768px){
-    color:${({ theme }) => theme.text};
+  @media (max-width: 768px) {
+    color: ${({ theme }) => theme.text};
   }
 `;
 const Image = styled.img`
@@ -114,7 +116,7 @@ const ChannelDetail = styled.div`
 const ChannelName = styled.span`
   font-weight: 500;
 
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     margin-top: 1vh;
   }
 `;
@@ -127,7 +129,7 @@ const ChannelCounter = styled.span`
 const Description = styled.p`
   font-size: 14px;
   color: ${({ theme }) => theme.text};
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     margin-bottom: 2vh;
     margin-top: 0;
   }
@@ -147,7 +149,7 @@ const Subscribe = styled.button`
   &:hover {
     transform: scale(1.1);
   }
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     margin-top: 1vh;
   }
 `;
@@ -155,8 +157,8 @@ const Subscribe = styled.button`
 const DeleteWrapper = styled.div`
   cursor: pointer;
   margin-top: 20px;
-  color:${({ theme }) => theme.text};
-`
+  color: ${({ theme }) => theme.text};
+`;
 
 const VideoFrame = styled.video`
   max-height: 72vh;
@@ -167,52 +169,63 @@ const VideoFrame = styled.video`
 const TitleandDel = styled.div`
   display: flex;
   justify-content: space-between;
-`
+`;
 
 const Text = styled.span`
   font-size: 1.6vh;
-  color:${({ theme }) => theme.textSoft};
+  color: ${({ theme }) => theme.textSoft};
   margin-top: 3vh;
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     margin-top: 1vh;
   }
-`
+`;
 const TitleandDesc = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 export const Video = () => {
   const { currentUser } = useSelector((state) => state.user);
   const { currentVideo } = useSelector((state) => state.video);
-  const nav = useNavigate()
+  const nav = useNavigate();
   const [channel, setChannel] = useState({});
   const dispatch = useDispatch();
   const path = useLocation().pathname.split("/")[2];
+  const [progress, setProgress] = useState(10);
 
-  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`https://vtubebackend.onrender.com/api/videos/find/${path}`,{
-          headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        const videoRes = await axios.get(
+          `https://vtubebackend.onrender.com/api/videos/find/${path}`,
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers":
+                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
-          });
-        const channelRes = await axios.get(`https://vtubebackend.onrender.com/api/users/find/${videoRes.data.userId}`,{
-          headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          }
+        );
+        const channelRes = await axios.get(
+          `https://vtubebackend.onrender.com/api/users/find/${videoRes.data.userId}`,
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers":
+                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
-          });
+          }
+        );
         setChannel(channelRes.data);
-        dispatch(fetchSuccess(videoRes.data));    
+        dispatch(fetchSuccess(videoRes.data));
+        setProgress(100);
       } catch (err) {
-        console.error('Error fetching data:', err);
+        console.error("Error fetching data:", err);
       }
     };
     fetchData();
@@ -221,15 +234,17 @@ export const Video = () => {
   const handleLike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `https://vtubebackend.onrender.com/api/users/like/${currentVideo._id}`,{ userId: currentUser._id },
+        `https://vtubebackend.onrender.com/api/users/like/${currentVideo._id}`,
+        { userId: currentUser._id },
         {
           headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-            },
-          }
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        }
       );
       dispatch(like(currentUser._id));
     } else {
@@ -244,12 +259,13 @@ export const Video = () => {
         { userId: currentUser._id },
         {
           headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-            },
-          }
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        }
       );
       dispatch(dislike(currentUser._id));
     } else {
@@ -262,18 +278,20 @@ export const Video = () => {
       try {
         const isSubscribed = currentUser.subscribedUsers.includes(channel._id);
         const updatedChannel = { ...channel };
-  
+
         if (isSubscribed) {
           await axios.put(
             `https://vtubebackend.onrender.com/api/users/unsub/${channel._id}`,
             { userId: currentUser._id },
             {
               headers: {
-                "Access-Control-Allow-Credentials": "true" ,
-                "Access-Control-Allow-Origin": "*" ,
-                "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-                "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-                },
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods":
+                  "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+                "Access-Control-Allow-Headers":
+                  "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+              },
             }
           );
           updatedChannel.subscribers -= 1;
@@ -283,16 +301,18 @@ export const Video = () => {
             { userId: currentUser._id },
             {
               headers: {
-                "Access-Control-Allow-Credentials": "true" ,
-                "Access-Control-Allow-Origin": "*" ,
-                "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-                "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-                },
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods":
+                  "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+                "Access-Control-Allow-Headers":
+                  "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+              },
             }
           );
           updatedChannel.subscribers += 1;
         }
-  
+
         dispatch(subscription(channel._id));
         setChannel(updatedChannel);
       } catch (error) {
@@ -302,7 +322,6 @@ export const Video = () => {
       alert("Login first");
     }
   };
-  
 
   const handleSave = (videoUrl) => {
     const link = document.createElement("a");
@@ -322,105 +341,142 @@ export const Video = () => {
     document.body.removeChild(textarea);
     alert("Link copied to clipboard!");
   };
-  
+
   const handleDelete = async () => {
     const shouldDelete = window.confirm("Are you sure you want to Delete?");
-    try{
-    if (shouldDelete) {
-      await axios.delete(
-        `https://vtubebackend.onrender.com/api/videos/${currentVideo._id}`,
-        {
-          headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+    try {
+      if (shouldDelete) {
+        await axios.delete(
+          `https://vtubebackend.onrender.com/api/videos/${currentVideo._id}`,
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": "true",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+              "Access-Control-Allow-Headers":
+                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
             },
           }
-      );
-      alert("Video deleted")
-      nav("/")
-    }else{
-      console.log("video not deleted")
-    }}catch{
-      alert("Video not found")
+        );
+        alert("Video deleted");
+        nav("/");
+      } else {
+        console.log("video not deleted");
+      }
+    } catch {
+      alert("Video not found");
     }
-    }
-
+  };
 
   return (
-    <Container>
-  <Content>
-    <VideoWrapper>
-      <VideoFrame src={currentVideo?.videoUrl} controls download="video.mp4" />
-    </VideoWrapper>
-    <TitleandDel>
-      <Title>{currentVideo?.title}</Title>
-      <DeleteWrapper>
-        {currentUser && currentVideo && currentUser._id === currentVideo.userId?.toString() && (
-          <Delete onClick={handleDelete}/>
-        )}
-      </DeleteWrapper>
-    </TitleandDel>
-    <Details>
-      <TitleandDesc>
-        <Info>
-          {currentVideo?.views} views • {format(currentVideo?.createdAt)}
-        </Info>
-        <Text>
-          Description:-
-        </Text>
-        <Description>{currentVideo?.desc}</Description>  
-      </TitleandDesc>
-      <Buttons>
-        <Button onClick={handleLike} disabled={!currentUser}>
-          {currentUser && currentVideo && currentVideo.likes?.includes(currentUser._id) ? (
-            <ThumbUp />
-          ) : (
-            <ThumbUpOutlined />
-          )}
-          {currentVideo?.likes?.length}
-        </Button>
-        <Button onClick={handleDislike} disabled={!currentUser}>
-          {currentUser && currentVideo && currentVideo.dislikes?.includes(currentUser._id) ? (
-            <ThumbDown />
-          ) : (
-            <ThumbDownOffAltOutlined />
-          )}{" "}
-          Dislike
-        </Button>
-        <Button onClick={handleCopyLink}>
-          <FileCopyOutlined /> Copy Link
-        </Button>
-        <Button disabled={!currentUser} onClick={() => handleSave(currentVideo?.videoUrl)}>
-          <AddTaskOutlined /> Save
-        </Button>
-      </Buttons>
-    </Details>
-    <Hr />
-    <Channel>
-      <ChannelInfo>
-        <Image src={channel && channel.img ? channel.img : 'https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png'} />
-        <ChannelDetail>
-          <ChannelName>{channel && channel.name ? channel.name :  "Unknown User" }</ChannelName>
-          <ChannelCounter>{channel && channel.subscribers !== undefined ? channel.subscribers : "Unknown"}  subscribers</ChannelCounter>
-        </ChannelDetail>
-      </ChannelInfo>
-      <Subscribe
-        onClick={handleSubscribe}
-        isSubscribed={
-          currentUser && currentUser.subscribedUsers?.includes(channel?._id)
-        }
-      >
-        {currentUser && currentUser.subscribedUsers?.includes(channel?._id)
-          ? "SUBSCRIBED"
-          : "SUBSCRIBE"}
-      </Subscribe>
-    </Channel>
-    <Hr />
-    <Comments videoId={currentVideo?._id} />
-  </Content>
-  <Recommendation tags={currentVideo?.tags} />
-</Container>
+    <>
+      <div>
+        <LoadingBar
+          color="#f11946"
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
+        />
+      </div>
+      <Container>
+        <Content>
+          <VideoWrapper>
+            <VideoFrame
+              src={currentVideo?.videoUrl}
+              controls
+              download="video.mp4"
+            />
+          </VideoWrapper>
+          <TitleandDel>
+            <Title>{currentVideo?.title}</Title>
+            <DeleteWrapper>
+              {currentUser &&
+                currentVideo &&
+                currentUser._id === currentVideo.userId?.toString() && (
+                  <Delete onClick={handleDelete} />
+                )}
+            </DeleteWrapper>
+          </TitleandDel>
+          <Details>
+            <TitleandDesc>
+              <Info>
+                {currentVideo?.views} views • {format(currentVideo?.createdAt)}
+              </Info>
+              <Text>Description:-</Text>
+              <Description>{currentVideo?.desc}</Description>
+            </TitleandDesc>
+            <Buttons>
+              <Button onClick={handleLike} disabled={!currentUser}>
+                {currentUser &&
+                currentVideo &&
+                currentVideo.likes?.includes(currentUser._id) ? (
+                  <ThumbUp />
+                ) : (
+                  <ThumbUpOutlined />
+                )}
+                {currentVideo?.likes?.length}
+              </Button>
+              <Button onClick={handleDislike} disabled={!currentUser}>
+                {currentUser &&
+                currentVideo &&
+                currentVideo.dislikes?.includes(currentUser._id) ? (
+                  <ThumbDown />
+                ) : (
+                  <ThumbDownOffAltOutlined />
+                )}{" "}
+                Dislike
+              </Button>
+              <Button onClick={handleCopyLink}>
+                <FileCopyOutlined /> Copy Link
+              </Button>
+              <Button
+                disabled={!currentUser}
+                onClick={() => handleSave(currentVideo?.videoUrl)}
+              >
+                <AddTaskOutlined /> Save
+              </Button>
+            </Buttons>
+          </Details>
+          <Hr />
+          <Channel>
+            <ChannelInfo>
+              <Image
+                src={
+                  channel && channel.img
+                    ? channel.img
+                    : "https://icons.iconarchive.com/icons/icons8/windows-8/128/Users-Name-icon.png"
+                }
+              />
+              <ChannelDetail>
+                <ChannelName>
+                  {channel && channel.name ? channel.name : "Unknown User"}
+                </ChannelName>
+                <ChannelCounter>
+                  {channel && channel.subscribers !== undefined
+                    ? channel.subscribers
+                    : "Unknown"}{" "}
+                  subscribers
+                </ChannelCounter>
+              </ChannelDetail>
+            </ChannelInfo>
+            <Subscribe
+              onClick={handleSubscribe}
+              isSubscribed={
+                currentUser &&
+                currentUser.subscribedUsers?.includes(channel?._id)
+              }
+            >
+              {currentUser &&
+              currentUser.subscribedUsers?.includes(channel?._id)
+                ? "SUBSCRIBED"
+                : "SUBSCRIBE"}
+            </Subscribe>
+          </Channel>
+          <Hr />
+          <Comments videoId={currentVideo?._id} />
+        </Content>
+        <Recommendation tags={currentVideo?.tags} />
+      </Container>
+    </>
   );
 };
