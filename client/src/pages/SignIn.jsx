@@ -158,7 +158,6 @@ export const SignIn = () => {
           });
       })
       .catch((err) => {
-        alert("Login Failed")
         dispatch(loginFailure());
       });
   };

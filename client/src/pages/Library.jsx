@@ -31,29 +31,39 @@ export const Library = () => {
   const [videos, setVideo] = useState([]);
   const { currentUser } = useSelector((state) => state.user);
   const [progress, setProgress] = useState(10);
+  const [loading,setLoading] = useState("Please wait loading videos...")
 
   useEffect(() => {
     const handleLibrary = async () => {
-      if (currentUser) {
-        const response = await axios.get(
-          `https://vtubebackend.onrender.com/api/videos/user/find/${currentUser._id}`,
-          {
-            headers: {
-              "Access-Control-Allow-Credentials": "true",
-              "Access-Control-Allow-Origin": "*",
-              "Access-Control-Allow-Methods":
-                "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-              "Access-Control-Allow-Headers":
-                "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-            },
-          }
-        );
-        setVideo(response.data);
-        setProgress(100);
-      } else {
-        alert("Login first");
+      try {
+        if (currentUser) {
+          const response = await axios.get(
+            `https://vtubebackend.onrender.com/api/videos/user/find/${currentUser._id}`,
+            {
+              headers: {
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods":
+                  "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+                "Access-Control-Allow-Headers":
+                  "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+              },
+            }
+          );
+    
+          setVideo(response.data);
+          setProgress(100);
+        } else {
+          setLoading("NO VIDEOS FOUND FOR THE USER");
+          alert("Login first");
+        }
+      } catch (error) {
+        setProgress(0)
+        console.error("Error fetching videos:", error);
+        setLoading("NO VIDEOS FOUND FOR THE USER");
+        
       }
-    };
+    };    
     handleLibrary();
   }, [currentUser]);
 
@@ -71,7 +81,7 @@ export const Library = () => {
           videos.map((video) => <Card key={video._id} video={video} />)
         ) : (
           <>
-            <Title>loading library</Title>
+            <Title>{loading}</Title>
           </>
         )}
       </Container>
