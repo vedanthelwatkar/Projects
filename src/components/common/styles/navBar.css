@@ -36,9 +36,9 @@
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  margin-left: 0; /* Adjusted margin */
-  margin-right: 20px; /* Adjusted margin */
-  margin-top: 0.5vh; /* Adjusted margin */
+  margin-left: 0;
+  margin-right: 20px;
+  margin-top: 0.5vh;
 }
 
 .nav-item {
@@ -72,7 +72,7 @@
 	  align-items: center;
 	  margin-left: 0;
 	  margin-right: 0;
-	  width: 90%;
+	  width: 90vw;
 	  font-size: 80%;
 	}
   

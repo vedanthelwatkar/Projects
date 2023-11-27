@@ -4,11 +4,12 @@
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
+	width:150%;
 	height: 100%;
 }
 
 .intern a {
-	text-decoration: none;
+	text-decoration: dotted;
 }
 
 .intern:hover {

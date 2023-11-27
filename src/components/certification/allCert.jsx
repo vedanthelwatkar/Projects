@@ -21,9 +21,9 @@ const defaultOptions = {
 
 const AllCert = () => {
 	return (
-		<div className="all-projects-container">
+		<div className="all-certs-container">
 			{INFO.certs.map((certs, index) => (
-				<div className="all-projects-project" key={index}>
+				<div className="all-certs-project" key={index}>
 					<Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
 					<Cert
 						logo={certs.logo}

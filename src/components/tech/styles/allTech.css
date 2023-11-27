@@ -4,15 +4,14 @@
 	align-items: stretch;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-left: -35px;
-	margin-right: -35px;
+	margin-left: -25px;
 }
 
 .all-tech-project {
 	width: calc(100% / 4);
 	box-sizing: border-box;
 	padding: 10px;
-	overflow: hidden;
+	overflow: visible;
 	transition: transform 0.3s ease-in-out;
 }
 
@@ -22,6 +21,15 @@
 
 @media (max-width: 600px) {
 	.all-tech-project {
-		width: calc(100% / 3);
+		width: calc(100% / 2);
+	}
+	.all-tech-container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-left: -25px;
+		width:100vw;
 	}
 }

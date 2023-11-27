@@ -1,42 +1,47 @@
 @import "../../../data/styles.css";
 
-.project {
+.cert {
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
-	height: 100%;
+	height: 110%;
 }
 
-.project a {
+.cert a {
 	text-decoration: none;
 }
 
-.project:hover {
-	background:  var(--project-hover);
+.cert:hover {
+	background: var(--project-hover);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
 
-.project:hover .project-link {
+.cert:hover .cert-link {
 	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
 }
 
-.project-container {
-	padding: 30px;
+.cert-container {
+	padding: 25px;
+	transition: transform 0.3s ease-in-out;
 }
 
-.project-logo {
+.cert-container:hover{
+	transform: scale(1);
+}
+
+.cert-logo {
 	width: 30px;
 }
 
-.project-logo img {
+.cert-logo img {
 	width: 150%;
 	background-color: white;
 	padding: 10px;
 }
 
-.project-title {
+.cert-title {
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
 	font-size: 20px;
@@ -45,11 +50,11 @@
 	font-weight: 700;
 }
 
-.project-description {
+.cert-description {
 	color: var(--secondary-color);
 }
 
-.project-link {
+.cert-link {
 	display: flex;
 	align-items: center;
 	color: var(--secondary-color);
@@ -57,18 +62,25 @@
 	padding-top: 20px;
 }
 
-.project-link-icon {
+.cert-link-icon {
 	padding-left: 5px;
 	font-size: 15px;
 }
 
-.project-link-text {
+.cert-link-text {
 	padding-left: 20px;
 	font-weight: 700;
 }
 
 @media (max-width: 600px) {
-	.project {
+	.cert {
 		height: 300px;
+	}
+	.cert {
+		mix-blend-mode: normal;
+		border-radius: 20px;
+		opacity: 0.8;
+		width:150%;
+		height: 110%;
 	}
 }

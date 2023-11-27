@@ -49,6 +49,7 @@ img{
 	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
+
 }
 
 .tech-description {
@@ -75,9 +76,10 @@ img{
 
 @media (max-width: 600px) {
 	.tech {
-		height: 150%;
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
+	
 }

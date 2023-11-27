@@ -33,9 +33,10 @@ const AllProjects = () => {
 						link={project.link}
 					/>
 					</Tilt>
-				</div>
+				</div>	
 			))}
 		</div>
+		
 	);
 };
 

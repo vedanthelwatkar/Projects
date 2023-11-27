@@ -10,20 +10,20 @@ const Cert = (props) => {
 
 	return (
 		<React.Fragment>
-			<div className="project">
+			<div className="cert">
 				<Link to={link} target="_blank">
-					<div className="project-container">
-						<div className="project-logo">
+					<div className="cert-container">
+						<div className="cert-logo">
 							<img src={logo} alt="logo" />
 						</div>
-						<div className="project-title">{title}</div>
-						<div className="project-description">{description}</div>
-						<div className="project-link">
-							<div className="project-link-icon">
+						<div className="cert-title">{title}</div>
+						<div className="cert-description">{description}</div>
+						<div className="cert-link">
+							<div className="cert-link-icon">
 								<FontAwesomeIcon icon={faLink} />
 							</div>
 
-							<div className="project-link-text">{linkText}</div>
+							<div className="cert-link-text">{linkText}</div>
 						</div>
 					</div>
 				</Link>
