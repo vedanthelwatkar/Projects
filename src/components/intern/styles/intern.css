@@ -4,7 +4,6 @@
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
-	width:150%;
 	height: 100%;
 }
 
@@ -76,5 +75,6 @@
 @media (max-width: 600px) {
 	.intern {
 		height: 300px;
+		width:150%;
 	}
 }
