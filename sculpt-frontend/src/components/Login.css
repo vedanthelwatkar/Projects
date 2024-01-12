@@ -42,6 +42,19 @@ body {
     border-radius: 55px;
 }
 
+@media (max-width:768px){
+    .lform{
+        width:60vw;
+        height:60vh;
+    }
+
+    .log-fm {
+        display: flex;
+        justify-content: center;
+        padding-left: 45vw;
+    }
+}
+
 .login-logo {
     display: flex;
     flex-direction: column;
