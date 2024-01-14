@@ -1,0 +1,207 @@
+body{
+    background-color:#040d12;
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+.file-box {
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 18px;
+    background-color: rgb(253, 255, 207);
+    border-color: #5C8374;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    color:white;
+}
+#pdfCard{
+    margin-left:1%;
+}
+#pdfCard,
+#HomeCard {
+    background-color: #183D3D;
+    width: 45%;
+    float: left;
+    margin-top:2%;
+    margin-right: 1%;
+    padding:1%;
+}
+
+#messageContainer {
+    height: 400px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.message-container img {
+    width: 45px;
+    height: 100%;
+}
+
+.process {
+    margin-top: 7px;
+    background: #5C8374;
+    border-color: #5C8374;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.process:hover {
+    background-color: lightyellow;
+    color: black;
+    border-color: #113f67;
+}
+
+.del {
+    background: #5C8374;
+    border-color: #5C8374;
+}
+
+.del:hover {
+    background-color: lightyellow;
+    color: black;
+    border-color: #5C8374;
+}
+
+.styled-heading {
+    font-size: 130%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #5C8374;
+    padding: 10px 20px;
+    border: 2px solid #5C8374;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.styled-heading:hover {
+    color: black;
+    background-color: #e7eaf6;
+    border-color: #e7eaf6;
+    transform: scale(1.05);
+}
+
+.styled-url-heading {
+    font-size: 150%;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.styled-url-heading:hover {
+    transform: scale(1.03);
+    border-radius: 15px;
+}
+
+.card-footer .input-group,
+.card-footer .form-control {
+    width: 100%;
+}
+
+.chat1{
+    display: flex;
+    position: inherit;
+    left:0;
+    margin-top: 5%;
+    padding:1vw;
+}
+
+.chat2{
+    display: flex;
+    position: absolute;
+    right:0;
+    padding:1vw;
+}
+
+.input-group{
+    display: flex;
+}
+
+#HomeCard h5 {
+    border-bottom: 2px solid #5C8374;
+    padding: 10px;
+    margin: 0;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+  
+
+@media (max-width: 360px) {
+    #pdfCard,
+    #HomeCard {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin: 3% 0 3% 0;
+    }
+    .styled-heading {
+        font-size: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+        background-color: #f8e9b4;
+        padding: 10px 20px;
+        border: 2px solid #5C8374;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 361px) and (max-width: 767px) {
+    #pdfCard,
+    #HomeCard {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin: 3% 0 3% 0;
+    }
+    .styled-heading {
+        font-size: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+        background-color: #f8e9b4;
+        padding: 10px 20px;
+        border: 2px solid #5C8374;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #pdfCard,
+    #HomeCard {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin: 3% 0 3% 0;
+    }
+    .styled-heading {
+        font-size: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+        background-color: #f8e9b4;
+        padding: 10px 20px;
+        border: 2px solid #5C8374;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
