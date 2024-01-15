@@ -14,28 +14,7 @@ from PyPDF2 import PdfReader
 
 load_dotenv()
 # OPENAI_API_KEY = os.getenv('OPENAI', default='')
-OPENAI_API_KEY='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'
-# def read_word_document(uploaded_file):
-#     if uploaded_file.name.endswith(('.doc', '.docx')):
-#         with tempfile.NamedTemporaryFile(delete=False) as temp_docx:
-#             temp_docx.write(uploaded_file.read())
-#             document_path = temp_docx.name
-
-#         doc = Document(document_path)
-#         document_content = ""
-
-#         for paragraph in doc.paragraphs:
-#             document_content += paragraph.text + "\n"
-
-#         for table in doc.tables:
-#             for row in table.rows:
-#                 for cell in row.cells:
-#                     document_content += cell.text + "\n"
-
-#         os.remove(document_path)
-#         return document_content
-
-#     return ""
+OPENAI_API_KEY='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'
 
 def get_pdf_text(pdf_docs):
     text = ""

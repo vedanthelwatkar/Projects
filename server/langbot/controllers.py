@@ -9,6 +9,8 @@ from langbot.services import (
 )
 from docx2txt import process
 import tempfile,os,json
+
+
 def home(request):
     global chunks
     if request.method == 'POST':

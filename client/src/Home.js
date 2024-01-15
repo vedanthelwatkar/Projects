@@ -51,11 +51,11 @@ export const Home = () => {
         }
         else {
           console.log('error creating vectorstore');
+          alert("Error creating vector store try again with different file")
         }
       }
     } catch (error) {
       setLoading(false);
-      alert("Error creating vector store try again with different file")
       console.error('Error sending files to the backend:', error);
     }
   };
