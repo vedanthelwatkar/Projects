@@ -51,19 +51,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOW_CREDENTIALS = True
-CSRF_COOKIE_HTTPONLY = True
-CORS_ALLOW_ORIGIN = [
-    'http://localhost:3000',
-    'https://qna-bot-frontend.onrender.com',
-]
-
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'https://qna-bot-frontend.onrender.com',
 ]
-
-
-
 CORS_ALLOW_HEADERS = [
     'accept',
     'accept-encoding',
@@ -75,7 +66,6 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
-
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",

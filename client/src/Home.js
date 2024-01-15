@@ -29,11 +29,12 @@ export const Home = () => {
     try {
       const response = await axios.post(url, formData,{
         headers: {
+          'Content-Type': 'multipart/form-data',
           "Access-Control-Allow-Credentials": "true" ,
-          "Access-Control-Allow-Origin": "*" ,
-          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-          },
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        },
       }
         );
       setLoading(false);
@@ -65,11 +66,12 @@ export const Home = () => {
       setLoadingAnswer(true);
       const response = await axios.post(url, { query: q, chunks: chunks },{
         headers: {
+          'Content-Type': 'multipart/form-data',
           "Access-Control-Allow-Credentials": "true" ,
-          "Access-Control-Allow-Origin": "*" ,
-          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-          },
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        },
       });
       setLoadingAnswer(false);
 
@@ -113,11 +115,12 @@ export const Home = () => {
       const url = 'https://qnabot.pythonanywhere.com/delete_vectorstore/';
       const response = await axios.post(url,{
         headers: {
+          'Content-Type': 'multipart/form-data',
           "Access-Control-Allow-Credentials": "true" ,
-          "Access-Control-Allow-Origin": "*" ,
-          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-          },
+            "Access-Control-Allow-Origin": "*" ,
+            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+        },
       });
 
       if (response && response.data) {
