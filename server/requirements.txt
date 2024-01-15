@@ -6,4 +6,5 @@ faiss-cpu
 pypdf2
 langchain
 langchain-openai
-corsheaders>=3.5,<4.0
+django-cors-headers
+docx
