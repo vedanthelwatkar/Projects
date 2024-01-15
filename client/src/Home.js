@@ -21,7 +21,7 @@ export const Home = () => {
     const formData = new FormData();
     const fileInput = document.getElementById('pdfInput');
     for (let i = 0; i < fileInput.files.length; i++) {
-      formData.append('pdfFiles', fileInput.files[i]);
+      formData.append('Files', fileInput.files[i]);
     }
 
     let url = 'https://qnabot.pythonanywhere.com/';

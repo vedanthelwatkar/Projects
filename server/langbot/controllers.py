@@ -12,13 +12,13 @@ import tempfile,os,json
 def home(request):
     global chunks
     if request.method == 'POST':
-        pdf_files = request.FILES.getlist("pdfFiles")
+        files = request.FILES.getlist("Files")
         pdf_docs = []
-        if not pdf_files:
+        if not files:
             return JsonResponse({"message": "no input"})
         try:
             pdf_filenames = []
-            for pdf_file in pdf_files:
+            for pdf_file in files:
                 pdf_filename = pdf_file.name
                 with tempfile.NamedTemporaryFile(delete=False) as temp_pdf:
                     temp_pdf.write(pdf_file.read())

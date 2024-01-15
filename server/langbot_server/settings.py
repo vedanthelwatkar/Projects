@@ -52,9 +52,10 @@ MIDDLEWARE = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_COOKIE_HTTPONLY = True
-CORS_ALLOW_ORIGIN = 'http://localhost:3000'
+CORS_ALLOW_ORIGIN = 'http://localhost:3000','https://qna-bot-frontend.onrender.com/'
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'https://qna-bot-frontend.onrender.com/'
 ]
 
 
