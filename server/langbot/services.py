@@ -8,7 +8,6 @@ from langchain_openai import ChatOpenAI,OpenAIEmbeddings
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from langchain.chains import LLMChain
-from docx import Document
 import faiss,numpy as np,tempfile,os
 from PyPDF2 import PdfReader
 
@@ -16,27 +15,27 @@ from PyPDF2 import PdfReader
 load_dotenv()
 OPENAI_API_KEY = os.getenv('OPENAI', default='')
 
-def read_word_document(uploaded_file):
-    if uploaded_file.name.endswith(('.doc', '.docx')):
-        with tempfile.NamedTemporaryFile(delete=False) as temp_docx:
-            temp_docx.write(uploaded_file.read())
-            document_path = temp_docx.name
+# def read_word_document(uploaded_file):
+#     if uploaded_file.name.endswith(('.doc', '.docx')):
+#         with tempfile.NamedTemporaryFile(delete=False) as temp_docx:
+#             temp_docx.write(uploaded_file.read())
+#             document_path = temp_docx.name
 
-        doc = Document(document_path)
-        document_content = ""
+#         doc = Document(document_path)
+#         document_content = ""
 
-        for paragraph in doc.paragraphs:
-            document_content += paragraph.text + "\n"
+#         for paragraph in doc.paragraphs:
+#             document_content += paragraph.text + "\n"
 
-        for table in doc.tables:
-            for row in table.rows:
-                for cell in row.cells:
-                    document_content += cell.text + "\n"
+#         for table in doc.tables:
+#             for row in table.rows:
+#                 for cell in row.cells:
+#                     document_content += cell.text + "\n"
 
-        os.remove(document_path)
-        return document_content
+#         os.remove(document_path)
+#         return document_content
 
-    return ""
+#     return ""
 
 def get_pdf_text(pdf_docs):
     text = ""

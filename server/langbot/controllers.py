@@ -5,7 +5,6 @@ from langbot.services import (
     load_vectorstore,
     get_similar_docs,
     chatgpt,
-    read_word_document,
     get_pdf_text
 )
 import tempfile,os,json
