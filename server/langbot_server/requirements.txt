@@ -1,9 +1,0 @@
-django
-python-dotenv
-openai
-numpy
-faiss-cpu
-pypdf2
-langchain
-langchain-openai
-django-cors-headers
