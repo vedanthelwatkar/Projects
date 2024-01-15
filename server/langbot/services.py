@@ -13,8 +13,8 @@ from PyPDF2 import PdfReader
 
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv('OPENAI', default='')
-
+# OPENAI_API_KEY = os.getenv('OPENAI', default='')
+OPENAI_API_KEY='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'
 # def read_word_document(uploaded_file):
 #     if uploaded_file.name.endswith(('.doc', '.docx')):
 #         with tempfile.NamedTemporaryFile(delete=False) as temp_docx:
