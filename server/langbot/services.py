@@ -14,7 +14,7 @@ from PyPDF2 import PdfReader
 
 load_dotenv()
 # OPENAI_API_KEY = os.getenv('OPENAI', default='')
-OPENAI_API_KEY='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'
+OPENAI_API_KEY='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'
 # def read_word_document(uploaded_file):
 #     if uploaded_file.name.endswith(('.doc', '.docx')):
 #         with tempfile.NamedTemporaryFile(delete=False) as temp_docx:
@@ -85,11 +85,12 @@ def get_vectorstore(text_chunks):
     index.add(vectors)
 
     faiss.write_index(index, "vectorstore.index")
-
+    print("vector store created")
     return index
 
 def load_vectorstore():
     index = faiss.read_index("vectorstore.index")
+    print('vector store loaded')
     return index
 
 def get_similar_docs(query, text_chunks, index, k=1):
@@ -118,7 +119,7 @@ def get_similar_docs(query, text_chunks, index, k=1):
         similar_doc_indices = similar_doc_indices.flatten().tolist()
         most_similar_doc_index = similar_doc_indices[0]
         most_similar_doc = text_chunks[most_similar_doc_index]
-
+    print('most similar doc sent')
     return most_similar_doc_index, most_similar_doc
 
 
@@ -144,7 +145,9 @@ def chatgpt(most_similar_doc, query, chat_history=[]):
     response = conversation({"query": query})
     if isinstance(response, str):
         memory.chat_memory.add_ai_message(response)
+    
     print(response['chat_history'][-1].content)
+
     return response['chat_history'][-1].content
         # try:    
         #     paragraph = most_similar_doc

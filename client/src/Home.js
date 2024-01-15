@@ -138,7 +138,7 @@ export const Home = () => {
                     <input
                       type="file"
                       id="pdfInput"
-                      accept=".pdf, .doc, .docx"
+                      accept=".pdf,.docx"
                       style={{ flex: 1 }}
                       name="pdfInput"
                       multiple
