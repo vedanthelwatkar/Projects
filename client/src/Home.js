@@ -27,7 +27,15 @@ export const Home = () => {
     let url = 'https://qnabot.pythonanywhere.com/';
 
     try {
-      const response = await axios.post(url, formData);
+      const response = await axios.post(url, formData,{
+        headers: {
+          "Access-Control-Allow-Credentials": "true" ,
+          "Access-Control-Allow-Origin": "*" ,
+          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+      }
+        );
       setLoading(false);
 
       if (response && response.data) {
@@ -55,7 +63,14 @@ export const Home = () => {
     try {
       const url = 'https://qnabot.pythonanywhere.com/bot/';
       setLoadingAnswer(true);
-      const response = await axios.post(url, { query: q, chunks: chunks });
+      const response = await axios.post(url, { query: q, chunks: chunks },{
+        headers: {
+          "Access-Control-Allow-Credentials": "true" ,
+          "Access-Control-Allow-Origin": "*" ,
+          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+      });
       setLoadingAnswer(false);
 
       if (response && response.data) {
@@ -96,7 +111,14 @@ export const Home = () => {
     event.preventDefault();
     try {
       const url = 'https://qnabot.pythonanywhere.com/delete_vectorstore/';
-      const response = await axios.post(url);
+      const response = await axios.post(url,{
+        headers: {
+          "Access-Control-Allow-Credentials": "true" ,
+          "Access-Control-Allow-Origin": "*" ,
+          "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+      });
 
       if (response && response.data) {
         const message = response.data.message;
