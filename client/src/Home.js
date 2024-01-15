@@ -24,7 +24,7 @@ export const Home = () => {
       formData.append('pdfFiles', fileInput.files[i]);
     }
 
-    let url = 'http://127.0.0.1:8000/';
+    let url = 'https://qnabot.pythonanywhere.com/';
 
     try {
       const response = await axios.post(url, formData);
@@ -53,7 +53,7 @@ export const Home = () => {
   const question = async (event) => {
     event.preventDefault();
     try {
-      const url = 'http://127.0.0.1:8000/bot/';
+      const url = 'https://qnabot.pythonanywhere.com/bot/';
       setLoadingAnswer(true);
       const response = await axios.post(url, { query: q, chunks: chunks });
       setLoadingAnswer(false);
@@ -95,7 +95,7 @@ export const Home = () => {
   const delvector = async (event) => {
     event.preventDefault();
     try {
-      const url = 'http://127.0.0.1:8000/delete_vectorstore/';
+      const url = 'https://qnabot.pythonanywhere.com/delete_vectorstore/';
       const response = await axios.post(url);
 
       if (response && response.data) {
