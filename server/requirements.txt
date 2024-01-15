@@ -7,3 +7,4 @@ pypdf2
 langchain
 langchain-openai
 django-cors-headers
+docx2txt

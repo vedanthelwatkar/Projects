@@ -74,7 +74,7 @@ CORS_ALLOW_METHODS = (
     "POST",
     "PUT",
 )
-
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'langbot_server.urls'
 
 TEMPLATES = [
