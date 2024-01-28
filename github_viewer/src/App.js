@@ -17,7 +17,7 @@ function App() {
     try{
       const response = await axios.get(`https://api.github.com/users/${username}`, {
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer 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`,
         },
       })
       if (response.data===null){
@@ -36,6 +36,7 @@ function App() {
       }
   }
     catch (error) {
+      console.log(error)
       alert("User not found")
       return
     }
