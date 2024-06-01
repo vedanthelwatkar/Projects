@@ -26,11 +26,11 @@ const Homepage = () => {
 
 
 	const resume = ()=>{
-		let url = "https://drive.google.com/file/d/1O_5SpR0ZLAjihlDgb5B153EyhgGO-JR9/view?usp=sharing"
+		let url = "https://drive.google.com/file/d/1yExS56XBzmLfHLsayl2_EedqPDol5mm0/view?usp=sharing"
 		window.open(url, '_blank');
 	}
 	const download = () => {
-		let url = "https://drive.google.com/u/1/uc?id=1O_5SpR0ZLAjihlDgb5B153EyhgGO-JR9&export=download";
+		let url = "https://drive.google.com/uc?export=download&id=1yExS56XBzmLfHLsayl2_EedqPDol5mm0";
 		let a = document.createElement('a');
 		a.href = url;
 		a.download = 'Resume Vedant_Helwatkar.pdf';

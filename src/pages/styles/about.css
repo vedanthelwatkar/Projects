@@ -52,11 +52,13 @@
 	display: inline-block;
 	width: 100%;
 	transform: rotate(3deg);
+	overflow: hidden;
 }
 
 .about-image-wrapper img {
 	display: block;
 	width: 100%;
+	
 }
 
 .about-socials {

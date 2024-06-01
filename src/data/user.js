@@ -26,6 +26,13 @@ const INFO = {
 
 	intern: [
 		{
+			title: "Unifynd",
+			description:
+				"29/01/2024 - 08/05/2024",
+			logo: "unifynd.jpeg",
+			linkText:"certificate will be uploaded soon"
+		},
+		{
 			title: "Ranjana Enterprises",
 			description:
 				"05/09/2023 - 04/11/2023",

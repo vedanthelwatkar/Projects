@@ -6,30 +6,49 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/intern.css";
 
 const Intern = (props) => {
-	const { logo, title, description, linkText, link } = props;
-	
-	return (
-		<React.Fragment>
-			<div className="intern">
-				<Link to={link} target="_blank">
-					<div className="intern-container">
-						<div className="intern-logo">
-							<img src={logo} alt="logo" />
-						</div>
-						<div className="intern-title">{title}</div>
-						<div className="intern-description">{description}</div>
-						<div className="intern-link">
-							<div className="intern-link-icon">
-								<FontAwesomeIcon icon={faLink} />
-							</div>
+    const { logo, title, description, linkText, link } = props;
 
-							<div className="intern-link-text">{linkText}</div>
-						</div>
-					</div>
-				</Link>
-			</div>
-		</React.Fragment>
-	);
+    const isCertificateLink = linkText !== "certificate will be uploaded soon";
+
+    return (
+        <React.Fragment>
+            <div className="intern">
+                {isCertificateLink ? (
+                    <Link to={link} target="_blank">
+                        <div className="intern-container">
+                            <div className="intern-logo">
+                                <img src={logo} alt="logo" />
+                            </div>
+                            <div className="intern-title">{title}</div>
+                            <div className="intern-description">{description}</div>
+                            <div className="intern-link">
+                                <div className="intern-link-icon">
+                                    <FontAwesomeIcon icon={faLink} />
+                                </div>
+                                <div className="intern-link-text">{linkText}</div>
+                            </div>
+                        </div>
+                    </Link>
+                ) : (
+                    <div className="intern-container">
+                        <div className="intern-logo">
+                            <img src={logo} alt="logo" />
+                        </div>
+                        <div className="intern-title">{title}</div>
+                        <div className="intern-description">{description}</div>
+                        <div className="intern-link">
+                            {isCertificateLink && (
+                                <div className="intern-link-icon">
+                                    <FontAwesomeIcon icon={faLink} />
+                                </div>
+                            )}
+                            <div className="intern-link-text">{linkText}</div>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </React.Fragment>
+    );
 };
 
 export default Intern;

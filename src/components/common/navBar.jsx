@@ -59,9 +59,9 @@ const NavBar = (props) => {
 							>
 								<Link to="/contact">Contact</Link>
 							</li>
-							<li className="nav-item">
-                <DarkMode />
-              </li>
+							<li className="nav-item-mode">
+                				<DarkMode />
+              				</li>
 						</ul>
 					</div>
 				</nav>
