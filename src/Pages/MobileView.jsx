@@ -699,9 +699,10 @@ const MobileView = ({
                     align="right"
                     sx={{
                       borderBottom: 0,
+                      padding: "0px",
                     }}
                   >
-                    <img src={row.AlbumImage} alt={row.title} width={"70%"} />
+                    <img src={row.AlbumImage} alt={row.title} width={"100%"} />
                   </TableCell>
                   <TableCell
                     align="left"
