@@ -45,7 +45,10 @@ export const videoSlice = createSlice({
     },
     addComment: (state, action) => {
       if (Array.isArray(state.currentVideo.comments)) {
-        state.currentVideo.comments = [...state.currentVideo.comments, action.payload];
+        state.currentVideo.comments = [
+          ...state.currentVideo.comments,
+          action.payload,
+        ];
       } else {
         state.currentVideo.comments = [action.payload];
       }
@@ -53,14 +56,21 @@ export const videoSlice = createSlice({
     deleteComment: (state, action) => {
       if (state.currentVideo && Array.isArray(state.currentVideo.comments)) {
         state.currentVideo.comments = state.currentVideo.comments.filter(
-          (comment) => comment._id !== action.payload
+          (comment) => comment?._id !== action.payload
         );
       }
     },
   },
 });
 
-export const { fetchStart, fetchSuccess, fetchFailure, like, dislike,addComment,deleteComment } =
-  videoSlice.actions;
+export const {
+  fetchStart,
+  fetchSuccess,
+  fetchFailure,
+  like,
+  dislike,
+  addComment,
+  deleteComment,
+} = videoSlice.actions;
 
 export default videoSlice.reducer;

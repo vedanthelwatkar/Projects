@@ -100,7 +100,7 @@ export const Card = ({ type, video }) => {
 
   const incViews = async () => {
     await axios.put(
-      `https://vtubebackend.onrender.com/api/videos/view/${currentVideo._id}`,
+      `https://vtubebackend.onrender.com/api/videos/view/${currentVideo?._id}`,
       {
         headers: {
           "Access-Control-Allow-Credentials": "true",
@@ -118,7 +118,7 @@ export const Card = ({ type, video }) => {
   };
 
   return (
-    <Link to={`/video/${video._id}`} style={{ textDecoration: "none" }}>
+    <Link to={`/video/${video?._id}`} style={{ textDecoration: "none" }}>
       <Container type={type}>
         <Image type={type} src={video.imgUrl} onClick={incViews} />
         <Display type={type}>

@@ -58,7 +58,7 @@ export const Home = ({ type }) => {
         const intervalId = setInterval(() => {
           setProgress((prevProgress) => prevProgress + 5);
         }, 5000);
-  
+
         const res = await axios.get(
           `https://vtubebackend.onrender.com/api/videos/${type}`,
           {
@@ -72,7 +72,7 @@ export const Home = ({ type }) => {
             },
           }
         );
-  
+
         clearInterval(intervalId);
         setProgress(100);
         setVideo(res.data);
@@ -80,10 +80,9 @@ export const Home = ({ type }) => {
         console.error("Error fetching videos:", error);
       }
     };
-  
+
     fetchVideos();
   }, [type]);
-  
 
   return (
     <>
@@ -102,7 +101,7 @@ export const Home = ({ type }) => {
       </Link>
       <Container>
         {Array.isArray(videos) && videos.length > 0 ? (
-          videos.map((video) => <Card key={video._id} video={video} />)
+          videos.map((video) => <Card key={video?._id} video={video} />)
         ) : (
           <>
             <div class="loading-container">

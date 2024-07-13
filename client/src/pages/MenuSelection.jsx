@@ -24,7 +24,7 @@ const Title = styled.h1`
 export const MenuSelection = () => {
   const [videos, setVideos] = useState([]);
   const query = useLocation().search;
-  const [progress, setProgress] = 10;
+  const [progress, setProgress] = useState(10);
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -63,7 +63,7 @@ export const MenuSelection = () => {
       </div>
       <Container>
         {videos.length > 0 ? (
-          videos.map((video) => <Card key={video._id} video={video} />)
+          videos.map((video) => <Card key={video?._id} video={video} />)
         ) : (
           <Title>There is nothing to show in this category.</Title>
         )}

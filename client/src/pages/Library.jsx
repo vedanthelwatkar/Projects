@@ -31,14 +31,14 @@ export const Library = () => {
   const [videos, setVideo] = useState([]);
   const { currentUser } = useSelector((state) => state.user);
   const [progress, setProgress] = useState(10);
-  const [loading,setLoading] = useState("Please wait loading videos...")
+  const [loading, setLoading] = useState("Please wait loading videos...");
 
   useEffect(() => {
     const handleLibrary = async () => {
       try {
         if (currentUser) {
           const response = await axios.get(
-            `https://vtubebackend.onrender.com/api/videos/user/find/${currentUser._id}`,
+            `https://vtubebackend.onrender.com/api/videos/user/find/${currentUser?._id}`,
             {
               headers: {
                 "Access-Control-Allow-Credentials": "true",
@@ -50,7 +50,7 @@ export const Library = () => {
               },
             }
           );
-    
+
           setVideo(response.data);
           setProgress(100);
         } else {
@@ -58,12 +58,11 @@ export const Library = () => {
           alert("Login first");
         }
       } catch (error) {
-        setProgress(0)
+        setProgress(0);
         console.error("Error fetching videos:", error);
         setLoading("NO VIDEOS FOUND FOR THE USER");
-        
       }
-    };    
+    };
     handleLibrary();
   }, [currentUser]);
 
@@ -78,7 +77,7 @@ export const Library = () => {
       </div>
       <Container>
         {Array.isArray(videos) && videos.length > 0 ? (
-          videos.map((video) => <Card key={video._id} video={video} />)
+          videos.map((video) => <Card key={video?._id} video={video} />)
         ) : (
           <>
             <Title>{loading}</Title>

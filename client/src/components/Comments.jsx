@@ -113,7 +113,7 @@ export const Comments = ({ videoId }) => {
     const fetchComments = async () => {
       try {
         const res = await axios.get(
-          `https://vtubebackend.onrender.com/api/comments/${currentVideo._id}`,
+          `https://vtubebackend.onrender.com/api/comments/${currentVideo?._id}`,
           {},
           {
             headers: {
@@ -132,14 +132,14 @@ export const Comments = ({ videoId }) => {
       }
     };
     fetchComments();
-  }, [currentVideo._id]);
+  }, [currentVideo?._id]);
 
   const handleComment = async () => {
     if (currentVideo && currentUser) {
       const newComment = {
         desc: comment,
-        videoId: currentVideo._id,
-        userId: currentUser._id,
+        videoId: currentVideo?._id,
+        userId: currentUser?._id,
       };
 
       try {
@@ -199,7 +199,7 @@ export const Comments = ({ videoId }) => {
         {Array.isArray(comments) && comments.length > 0 ? (
           comments.map((comment) => (
             <Comment
-              key={comment._id}
+              key={comment?._id}
               comment={comment}
               setComments={setComments}
             />
