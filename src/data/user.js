@@ -27,36 +27,30 @@ const INFO = {
 	intern: [
 		{
 			title: "Unifynd",
-			description:
-				"29/01/2024 - 08/05/2024",
+			description: "29/01/2024 - 08/05/2024",
 			logo: "unifynd.jpeg",
-			linkText:"certificate will be uploaded soon"
 		},
 		{
 			title: "Ranjana Enterprises",
-			description:
-				"05/09/2023 - 04/11/2023",
+			description: "05/09/2023 - 04/11/2023",
 			logo: "RanjanaLogo.jpeg",
 			linkText: "View Internship Certificate",
 			link: "https://drive.google.com/file/d/1qQNi-tByvAU6NOKKHvreVrxkrOAPOzqI/view?usp=sharing",
 		},
 		{
 			title: "Mira Advanced Engineering",
-			description:
-				"02/08/2023 - 02/09/2023",
+			description: "02/08/2023 - 02/09/2023",
 			logo: "MiraLogo.jpeg",
 			linkText: "View Internship Certificate",
 			link: "https://drive.google.com/file/d/1rCONPFKWTW244nj-ANGmYtsQPLL18EDZ/view?usp=sharing",
 		},
 		{
 			title: "Trivia Software's",
-			description:
-				"09/01/2023 - 03/06/2023",
+			description: "09/01/2023 - 03/06/2023",
 			logo: "TriviaLogo.png",
 			linkText: "View Internship Certificate",
 			link: "https://drive.google.com/file/d/1-2jSgBzG7OTrIowQP4YdZu1wHN5xJqWN/view?usp=sharing",
 		},
-
 	],
 
 	certs: [
@@ -80,8 +74,7 @@ const INFO = {
 
 		{
 			title: "Django",
-			description:
-				"Django Web Framework & REST API",
+			description: "Django Web Framework & REST API",
 			logo: "https://img.icons8.com/color/100/django.png",
 			linkText: "View Certificate",
 			link: "https://drive.google.com/file/d/1p9yKY0P548wdPDRxKoXtPFxLcA5zdwGI/view?usp=sharing",
@@ -89,8 +82,7 @@ const INFO = {
 
 		{
 			title: "Machine Learning & Flask",
-			description:
-				"Machine Learning & Flask with deployment",
+			description: "Machine Learning & Flask with deployment",
 			logo: "https://img.icons8.com/external-soft-fill-juicy-fish/60/external-artificial-big-data-soft-fill-soft-fill-juicy-fish.png",
 			linkText: "View Certificate",
 			link: "https://drive.google.com/file/d/1p8l53rgFHVDnyQ5p_okMs69OTfXGuhNJ/view?usp=sharing",
@@ -98,8 +90,7 @@ const INFO = {
 
 		{
 			title: "MySQl",
-			description:
-				"MYSQL 8.x : SQL, PL/SQL & DBA Activities",
+			description: "MYSQL 8.x : SQL, PL/SQL & DBA Activities",
 			logo: "https://img.icons8.com/ios-filled/50/mysql.png",
 			linkText: "View Certificate",
 			link: "https://drive.google.com/file/d/1pA0L2Mwvs0WsKnynmXVfXYLkROUIEWci/view?usp=sharing",
@@ -110,7 +101,6 @@ const INFO = {
 		{
 			title: "Python",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			
 		},
 
 		{
@@ -135,41 +125,40 @@ const INFO = {
 			title: "Node.js",
 			logo: "https://img.icons8.com/color/96/nodejs.png",
 		},
-		
+
 		{
 			title: "Flask",
 			logo: "https://img.icons8.com/cute-clipart/64/flask.png",
 		},
-		
+
 		{
 			title: "MongoDB",
 			logo: "https://img.icons8.com/color/96/mongodb.png",
 		},
-		
+
 		{
 			title: "MySQL",
 			logo: "https://img.icons8.com/ios-filled/50/mysql.png",
 		},
-		
+
 		{
 			title: "Firebase",
 			logo: "https://img.icons8.com/color/96/firebase.png",
 		},
-		
-		
 	],
 	projects: [
 		{
-			title:"Vtube-Youtube Clone",
-			description:"Developed a feature-rich YouTube clone using the MERN stack (MongoDB, Express.js, React, Node.js), incorporating Redux for seamless state management, JWT for secure authentication, and Cookies for enhanced user experiences. Key features include secure user authentication, video upload/streaming, real-time updates with Redux, and a responsive design for optimal user engagement.",
-			logo:"https://icons.iconarchive.com/icons/dakirby309/simply-styled/128/YouTube-icon.png",
-			linkText:"View Project",
-			link:"https://vtube-ytclone.vercel.app/"
+			title: "Vtube-Youtube Clone",
+			description:
+				"Developed a feature-rich YouTube clone using the MERN stack (MongoDB, Express.js, React, Node.js), incorporating Redux for seamless state management, JWT for secure authentication, and Cookies for enhanced user experiences. Key features include secure user authentication, video upload/streaming, real-time updates with Redux, and a responsive design for optimal user engagement.",
+			logo: "https://icons.iconarchive.com/icons/dakirby309/simply-styled/128/YouTube-icon.png",
+			linkText: "View Project",
+			link: "https://vtube-ytclone.vercel.app/",
 		},
 		{
 			title: "DocGPT",
 			description:
-				"I led the development of a web app that fuses Django and React for efficient query handling and PDF processing. I achieved user authentication with JWT tokens, utilized Firebase for data storage, and seamlessly integrated ChatGPT LLM for enhanced interactions. This project showcases my full-stack skills and innovative tech integration.",	
+				"I led the development of a web app that fuses Django and React for efficient query handling and PDF processing. I achieved user authentication with JWT tokens, utilized Firebase for data storage, and seamlessly integrated ChatGPT LLM for enhanced interactions. This project showcases my full-stack skills and innovative tech integration.",
 			logo: "https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/128/Chat-icon.png",
 			linkText: "View Project",
 			link: "https://docgpt-c4f84.web.app/",
@@ -209,7 +198,7 @@ const INFO = {
 			logo: "https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/128/logout-icon.png",
 			linkText: "View Project",
 			link: "https://visitorms-3d090.web.app/",
-		}
+		},
 	],
 };
 
