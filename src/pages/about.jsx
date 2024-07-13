@@ -32,7 +32,6 @@ const About = () => {
 			<div className="page-content">
 				<NavBar active="about" />
 				<div className="content-wrapper">
-
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-right-side">
@@ -49,23 +48,20 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="myself.jpg"
+											src="formal.jpg"
 											alt="about"
 											className="about-image"
 										/>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
-					<div className="about-title">
-									Technologies I Know
-								</div>
+					<div className="about-title">Technologies I Know</div>
 					<div className="homepage-projects">
-							<AllTech/>
-						</div>
-						<div className="page-footer">
+						<AllTech />
+					</div>
+					<div className="page-footer">
 						<Footer />
 					</div>
 				</div>
