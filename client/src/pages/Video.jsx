@@ -234,8 +234,8 @@ export const Video = () => {
   const handleLike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `https://vtubebackend.onrender.com/api/users/like/${currentVideo._id}`,
-        { userId: currentUser._id },
+        `https://vtubebackend.onrender.com/api/users/like/${currentVideo?._id}`,
+        { userId: currentUser?._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true",
@@ -246,7 +246,7 @@ export const Video = () => {
           },
         }
       );
-      dispatch(like(currentUser._id));
+      dispatch(like(currentUser?._id));
     } else {
       alert("Login first");
     }
@@ -255,8 +255,8 @@ export const Video = () => {
   const handleDislike = async () => {
     if (currentVideo && currentUser) {
       await axios.put(
-        `https://vtubebackend.onrender.com/api/users/dislike/${currentVideo._id}`,
-        { userId: currentUser._id },
+        `https://vtubebackend.onrender.com/api/users/dislike/${currentVideo?._id}`,
+        { userId: currentUser?._id },
         {
           headers: {
             "Access-Control-Allow-Credentials": "true",
@@ -267,7 +267,7 @@ export const Video = () => {
           },
         }
       );
-      dispatch(dislike(currentUser._id));
+      dispatch(dislike(currentUser?._id));
     } else {
       alert("Login first");
     }
@@ -276,13 +276,13 @@ export const Video = () => {
   const handleSubscribe = async () => {
     if (currentUser && channel) {
       try {
-        const isSubscribed = currentUser.subscribedUsers.includes(channel._id);
+        const isSubscribed = currentUser.subscribedUsers.includes(channel?._id);
         const updatedChannel = { ...channel };
 
         if (isSubscribed) {
           await axios.put(
-            `https://vtubebackend.onrender.com/api/users/unsub/${channel._id}`,
-            { userId: currentUser._id },
+            `https://vtubebackend.onrender.com/api/users/unsub/${channel?._id}`,
+            { userId: currentUser?._id },
             {
               headers: {
                 "Access-Control-Allow-Credentials": "true",
@@ -297,8 +297,8 @@ export const Video = () => {
           updatedChannel.subscribers -= 1;
         } else {
           await axios.put(
-            `https://vtubebackend.onrender.com/api/users/sub/${channel._id}`,
-            { userId: currentUser._id },
+            `https://vtubebackend.onrender.com/api/users/sub/${channel?._id}`,
+            { userId: currentUser?._id },
             {
               headers: {
                 "Access-Control-Allow-Credentials": "true",
@@ -313,7 +313,7 @@ export const Video = () => {
           updatedChannel.subscribers += 1;
         }
 
-        dispatch(subscription(channel._id));
+        dispatch(subscription(channel?._id));
         setChannel(updatedChannel);
       } catch (error) {
         console.error("Error updating subscription:", error);
@@ -347,7 +347,7 @@ export const Video = () => {
     try {
       if (shouldDelete) {
         await axios.delete(
-          `https://vtubebackend.onrender.com/api/videos/${currentVideo._id}`,
+          `https://vtubebackend.onrender.com/api/videos/${currentVideo?._id}`,
           {
             headers: {
               "Access-Control-Allow-Credentials": "true",
@@ -392,7 +392,7 @@ export const Video = () => {
             <DeleteWrapper>
               {currentUser &&
                 currentVideo &&
-                currentUser._id === currentVideo.userId?.toString() && (
+                currentUser?._id === currentVideo.userId?.toString() && (
                   <Delete onClick={handleDelete} />
                 )}
             </DeleteWrapper>
@@ -409,7 +409,7 @@ export const Video = () => {
               <Button onClick={handleLike} disabled={!currentUser}>
                 {currentUser &&
                 currentVideo &&
-                currentVideo.likes?.includes(currentUser._id) ? (
+                currentVideo.likes?.includes(currentUser?._id) ? (
                   <ThumbUp />
                 ) : (
                   <ThumbUpOutlined />
@@ -419,7 +419,7 @@ export const Video = () => {
               <Button onClick={handleDislike} disabled={!currentUser}>
                 {currentUser &&
                 currentVideo &&
-                currentVideo.dislikes?.includes(currentUser._id) ? (
+                currentVideo.dislikes?.includes(currentUser?._id) ? (
                   <ThumbDown />
                 ) : (
                   <ThumbDownOffAltOutlined />

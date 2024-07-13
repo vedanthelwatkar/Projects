@@ -98,9 +98,9 @@ export const Upload = ({ setOpen }) => {
   const [videoPerc, setVideoPerc] = useState(0);
   const [inputs, setInputs] = useState({});
   const [tags, setTags] = useState([]);
-  const nav = useNavigate()
+  const nav = useNavigate();
   const { currentUser } = useSelector((state) => state.user);
-  const [progress,setProgress] = useState(10)
+  const [progress, setProgress] = useState(10);
 
   const handleChange = (e) => {
     setInputs((prev) => {
@@ -142,13 +142,12 @@ export const Upload = ({ setOpen }) => {
     );
   };
   useEffect(() => {
-    video && uploadFile(video,"videoUrl");
+    video && uploadFile(video, "videoUrl");
   }, [video]);
 
   useEffect(() => {
-    img && uploadFile(img,"imgUrl");
+    img && uploadFile(img, "imgUrl");
   }, [img]);
-
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -168,85 +167,88 @@ export const Upload = ({ setOpen }) => {
   };
 
   const handleUpload = async (e) => {
-      if (!inputs.title || !inputs.desc || !inputs.imgUrl || !inputs.videoUrl) {
-        alert("Fill all the details");
-        return
-      }
-      e.preventDefault()
-      if(imgPerc===100 && videoPerc===100){
-        const res = await axios.post("https://vtubebackend.onrender.com/api/videos",{...inputs,tags,userId: currentUser._id},
+    if (!inputs.title || !inputs.desc || !inputs.imgUrl || !inputs.videoUrl) {
+      alert("Fill all the details");
+      return;
+    }
+    e.preventDefault();
+    if (imgPerc === 100 && videoPerc === 100) {
+      const res = await axios.post(
+        "https://vtubebackend.onrender.com/api/videos",
+        { ...inputs, tags, userId: currentUser?._id },
         {
           headers: {
-            "Access-Control-Allow-Credentials": "true" ,
-            "Access-Control-Allow-Origin": "*" ,
-            "Access-Control-Allow-Methods":"GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+            "Access-Control-Allow-Headers":
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
           },
-        })
-        setOpen(false)
-        res.status===200 && nav(`/video/${res.data._id}`)
-        setProgress(100)
-      }else{
-        alert("Wait before Uploading")
-      }
+        }
+      );
+      setOpen(false);
+      res.status === 200 && nav(`/video/${res.data?._id}`);
+      setProgress(100);
+    } else {
+      alert("Wait before Uploading");
     }
-      
+  };
 
   return (
     <>
-    <div>
+      <div>
         <LoadingBar
           color="#f11946"
           progress={progress}
           onLoaderFinished={() => setProgress(0)}
         />
       </div>
-    <Container>
-      <Wrapper ref={wrapperRef}>
-        <Close onClick={() => setOpen(false)}>X</Close>
-        <Title>Upload a new Video</Title>
-        <Label>Video</Label>
-        {videoPerc > 0 ? (
-          "Uploading:" + videoPerc + "%"
+      <Container>
+        <Wrapper ref={wrapperRef}>
+          <Close onClick={() => setOpen(false)}>X</Close>
+          <Title>Upload a new Video</Title>
+          <Label>Video</Label>
+          {videoPerc > 0 ? (
+            "Uploading:" + videoPerc + "%"
           ) : (
             <Input
-            type="file"
-            accept="video/*"
-            onChange={(e) => setVideo(e.target.files[0])}
+              type="file"
+              accept="video/*"
+              onChange={(e) => setVideo(e.target.files[0])}
             />
-            )}
-        <Input
-          type="text"
-          placeholder="Title"
-          name="title"
-          onChange={handleChange}
-          />
-        <Desc
-          type="text"
-          placeholder="Description"
-          rows={8}
-          name="desc"
-          onChange={handleChange}
-          />
-        <Input
-          type="text"
-          placeholder="Tags    *seperate tags with commas*"
-          onChange={handleTags}
-          />
-        <Label>Image</Label>
-        {imgPerc > 0 ? (
-          "Uploading:" + imgPerc + "%"
-          ) : (
+          )}
           <Input
-            type="file"
-            accept="image/*"
-            placeholder="Thumbnail"
-            onChange={(e) => setImg(e.target.files[0])}
+            type="text"
+            placeholder="Title"
+            name="title"
+            onChange={handleChange}
+          />
+          <Desc
+            type="text"
+            placeholder="Description"
+            rows={8}
+            name="desc"
+            onChange={handleChange}
+          />
+          <Input
+            type="text"
+            placeholder="Tags    *seperate tags with commas*"
+            onChange={handleTags}
+          />
+          <Label>Image</Label>
+          {imgPerc > 0 ? (
+            "Uploading:" + imgPerc + "%"
+          ) : (
+            <Input
+              type="file"
+              accept="image/*"
+              placeholder="Thumbnail"
+              onChange={(e) => setImg(e.target.files[0])}
             />
-            )}
-        <Button onClick={handleUpload}>Upload</Button>
-      </Wrapper>
-    </Container>
-            </>
+          )}
+          <Button onClick={handleUpload}>Upload</Button>
+        </Wrapper>
+      </Container>
+    </>
   );
 };
