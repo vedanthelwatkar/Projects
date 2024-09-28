@@ -1,5 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 from rest_framework.test import APIClient
 from rest_framework import status
 from .models import Item
@@ -42,3 +43,30 @@ class ItemFunctionTests(TestCase):
         response = client.delete(f'/api/items/{item.id}/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(Item.objects.count(), 0)
+
+class AuthFunctionTests(TestCase):
+    def setUp(self):
+        self.client = APIClient()
+
+    def test_register_user(self):
+        response = self.client.post('/api/register/', {'username': 'newuser', 'password': 'newpass'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(User.objects.count(), 1)
+        self.assertEqual(User.objects.get().username, 'newuser')
+
+    def test_register_user_already_exists(self):
+        User.objects.create_user(username='existinguser', password='existingpass')
+        response = self.client.post('/api/register/', {'username': 'existinguser', 'password': 'newpass'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_login_user(self):
+        User.objects.create_user(username='testlogin', password='testpass')
+        response = self.client.post('/api/login/', {'username': 'testlogin', 'password': 'testpass'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn('refresh', response.data)
+        self.assertIn('access', response.data)
+
+    def test_login_user_invalid_credentials(self):
+        User.objects.create_user(username='testlogin', password='testpass')
+        response = self.client.post('/api/login/', {'username': 'testlogin', 'password': 'wrongpass'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
