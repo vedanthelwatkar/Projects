@@ -1,31 +1,50 @@
-# inventory_management/views.py
-
-from rest_framework import viewsets
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from django.core.cache import cache
+from rest_framework.response import Response
+from rest_framework import status
 from .models import Item
 from .serializers import ItemSerializer
 import logging
 
 logger = logging.getLogger(__name__)
 
-class ItemViewSet(viewsets.ModelViewSet):
-    queryset = Item.objects.all()
-    serializer_class = ItemSerializer
-    permission_classes = [IsAuthenticated]
+@api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
+def item_list(request):
+    if request.method == 'GET':
+        items = Item.objects.all()
+        serializer = ItemSerializer(items, many=True)
+        return Response(serializer.data)
 
-    def get_object(self):
-        obj = super().get_object()
-        return obj
+    elif request.method == 'POST':
+        serializer = ItemSerializer(data=request.data)
+        if serializer.is_valid():
+            logger.info(f"Creating new item: {serializer.validated_data['name']}")
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def perform_create(self, serializer):
-        logger.info(f"Creating new item: {serializer.validated_data['name']}")
-        serializer.save()
+@api_view(['GET', 'PUT', 'DELETE'])
+@permission_classes([IsAuthenticated])
+def item_detail(request, pk):
+    try:
+        item = Item.objects.get(pk=pk)
+    except Item.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
-    def perform_update(self, serializer):
-        logger.info(f"Updating item: {serializer.instance.id}")
-        serializer.save()
+    if request.method == 'GET':
+        serializer = ItemSerializer(item)
+        return Response(serializer.data)
 
-    def perform_destroy(self, instance):
-        logger.info(f"Deleting item: {instance.id}")
-        instance.delete()
+    elif request.method == 'PUT':
+        serializer = ItemSerializer(item, data=request.data)
+        if serializer.is_valid():
+            logger.info(f"Updating item: {item.id}")
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        logger.info(f"Deleting item: {item.id}")
+        item.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
