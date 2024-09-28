@@ -8,7 +8,7 @@ This project is a backend API for a simple Inventory Management System using Dja
 
    ```
    git clone <repository-url>
-   cd inventory_management_api
+   cd <repo>
    ```
 
 2. Create a virtual environment and activate it:
