@@ -10,11 +10,7 @@ from .serializers import ItemSerializer
 import logging
 from django.contrib.auth import authenticate
 
-
 logger = logging.getLogger(__name__)
-
-# inventory_management/auth_views.py
-
 
 @api_view(['POST'])
 @permission_classes([AllowAny])

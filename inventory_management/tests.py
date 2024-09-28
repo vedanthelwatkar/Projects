@@ -5,7 +5,6 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from .models import Item
 
-# Global setup to initialize the common test setup for all functions
 def setUp():
     global client, user, item_data, response
     client = APIClient()
@@ -17,7 +16,6 @@ def setUp():
 class ItemFunctionTests(TestCase):
     @classmethod
     def setUpTestData(cls):
-        # This will run once for the test class and set up the initial data.
         setUp()
 
     def test_create_item(self):
