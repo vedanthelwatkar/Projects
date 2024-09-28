@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'inventory_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vedant',  
-        'USER': 'vedant',  
-        'PASSWORD': 'abc123',
-        'HOST': 'localhost', 
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'INVENTORY',                    
+        'USER': 'root',                         
+        'PASSWORD': 'vedd2201',       
+        'HOST': 'localhost',                    
+        'PORT': '3306',                         
     }
 }
 
